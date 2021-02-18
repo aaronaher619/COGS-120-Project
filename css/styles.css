@@ -1,0 +1,115 @@
+h1{
+    text-align: center;
+    padding: 5%;
+}
+
+.margin{
+    margin: 5%;
+}
+
+.container-fluid{
+    padding: 1% 15%;
+}
+
+a:link {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navigation Bar Section */
+.navbar_brand{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+}
+
+.navbar_brand:hover{
+    color: lightgrey;
+    cursor: pointer;
+}
+
+.icon{
+    color:black;
+}
+
+.icon:hover{
+    color: lightgrey;
+    cursor: pointer;
+}
+
+/* Classes Section */
+#class_page{
+    background-color:white;
+}
+
+.class_title{
+    color: black;
+    text-align: center;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    margin: 0px;
+    padding: 0px;
+}
+
+hr{
+    margin-top: 1%;
+}
+
+.class_bubble{
+    display: block;
+    background-color: grey;
+    border-radius: 25px;
+    margin: 3% 18%;
+}
+
+.class_bubble:hover{
+    background-color: lightgrey;
+    cursor: pointer;
+}
+
+.classes{
+    padding: 20px;
+    margin: 0px;
+}
+
+.grade{
+    font-family: 'Oxygen', sans-serif;
+    margin-bottom: 0px;
+    font-size: 5rem;
+    text-align: center;
+    color: black;
+}
+
+.class_name{
+    font-family: 'Oxygen', sans-serif;
+    margin-bottom: 0px;
+    font-size: 3rem;
+    text-align: center;
+    color: black;
+}
+
+.prof{
+    font-family: 'Oxygen', sans-serif;
+    margin-bottom: 0px;
+    font-size: 1.5rem;
+    text-align: center;
+    color: black;
+}
+
+.class_column{
+    padding: 1% 2%;
+}
+
+/* Footer Section */
+#footer{
+    padding: 3% 3%;
+    background-color: white;
+}
+
+.footer_text{
+    font-family: 'Libre Baskerville', serif;
+    text-align: center;
+    color: black;
+}
