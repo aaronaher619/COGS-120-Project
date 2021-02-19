@@ -1,0 +1,49 @@
+*{ 
+font-family: 'Oxygen';
+text-align: center;
+}
+
+.percentile {
+	color: grey;
+}
+
+.class-name{
+	font-size: 2rem;
+}
+
+.score{
+	font-size: 7rem;
+	font-family: 'Georgia' !important;
+}
+
+.base-grade{
+	border-radius: 25px;
+	background-color: lightgrey;
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.class-title{
+	font-size: 2.5rem;
+}
+
+.section{
+	border: 2px solid black;
+	border-radius: 60px;
+	background-color: grey;
+	width: 50%;
+	margin-right: auto;
+	margin-left: auto;
+	line-height: 190%;
+	font-size: 2em;
+}
+
+.section:hover{
+	background-color: lightgrey;
+}
+
+a.sections{
+	color: black;
+	text-decoration: none;
+}
