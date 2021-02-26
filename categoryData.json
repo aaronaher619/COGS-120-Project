@@ -1,0 +1,512 @@
+{
+    "COGS120": {
+		"Weekly Assignments": [
+			{
+				"completion": "1",
+				"date": "Jan 1",
+				"Grade": "100"
+			},
+			{
+				"completion": "1",
+				"date": "Jan 1",
+				"Grade": "100"
+			},
+			{
+				"completion": "1",
+				"date": "Jan 1",
+				"Grade": "100"
+			},
+			{
+				"completion": "1",
+				"date": "Jan 1",
+				"Grade": "100"
+			},
+			{
+				"completion": "0",
+				"date": "Jan 1",
+				"Grade": "100"
+			},
+			{
+				"completion": "0",
+				"date": "Jan 1",
+				"Grade": "100"
+			},
+			{
+				"completion": "0",
+				"date": "Jan 1",
+				"Grade": "100"
+			},
+			{
+				"completion": "0",
+				"date": "Jan 1",
+				"Grade": "100"
+			},
+			{
+				"completion": "0",
+				"date": "Jan 1",
+				"Grade": "100"
+			},
+			{
+				"completion": "0",
+				"date": "Jan 1",
+				"Grade": "100"
+			}
+		],
+		"In-Class Quiz": [
+			{
+				"completion": "1",
+				"date": "Jan 1",
+				"Grade": "100"
+			},
+			{
+				"completion": "1",
+				"date": "Jan 1",
+				"Grade": "100"
+			},
+			{
+				"completion": "1",
+				"date": "Jan 1",
+				"Grade": "100"
+			},
+			{
+				"completion": "1",
+				"date": "Jan 1",
+				"Grade": "100"
+			}
+		],
+		"Labs" : [
+			{
+				"completion": "1",
+				"date": "Jan 1",
+				"Grade": "100"
+			},
+			{
+				"completion": "1",
+				"date": "Jan 1",
+				"Grade": "100"
+			},
+			{
+				"completion": "1",
+				"date": "Jan 1",
+				"Grade": "100"
+			},
+			{
+				"completion": "1",
+				"date": "Jan 1",
+				"Grade": "100"
+			},
+			{
+				"completion": "1",
+				"date": "Jan 1",
+				"Grade": "100"
+			},
+			{
+				"completion": "1",
+				"date": "Jan 1",
+				"Grade": "100"
+			},
+			{
+				"completion": "0",
+				"date": "Jan 1",
+				"Grade": "100"
+			},
+			{
+				"completion": "0",
+				"date": "Jan 1",
+				"Grade": "100"
+			},
+			{
+				"completion": "0",
+				"date": "Jan 1",
+				"Grade": "100"
+			},
+			{
+				"completion": "0",
+				"date": "Jan 1",
+				"Grade": "100"
+			}
+		],
+		"Participation": [
+			{
+				"completion": "2",
+				"date": "???",
+				"Grade": "0"
+			}
+		],
+		"Self & Team Assessments": [
+			{
+				"completion": "1",
+				"date": "Jan 1",
+				"Grade": "100"
+			},
+			{
+				"completion": "1",
+				"date": "Jan 1",
+				"Grade": "100"
+			},
+			{
+				"completion": "1",
+				"date": "Jan 1",
+				"Grade": "100"
+			},
+			{
+				"completion": "1",
+				"date": "Jan 1",
+				"Grade": "100"
+			},
+			{
+				"completion": "1",
+				"date": "Jan 1",
+				"Grade": "100"
+			},
+			{
+				"completion": "1",
+				"date": "Jan 1",
+				"Grade": "100"
+			},
+			{
+				"completion": "0",
+				"date": "Jan 1",
+				"Grade": "100"
+			},
+			{
+				"completion": "0",
+				"date": "Jan 1",
+				"Grade": "100"
+			},
+			{
+				"completion": "0",
+				"date": "Jan 1",
+				"Grade": "100"
+			},
+			{
+				"completion": "0",
+				"date": "Jan 1",
+				"Grade": "100"
+			}
+		]
+    },
+	"TDGE124": {
+		"Collages": [
+		{
+			"completion": "1",
+			"date": "Jan 1",
+			"Grade": "100"
+		},
+		{
+			"completion": "1",
+			"date": "Jan 1",
+			"Grade": "100"
+		},
+		{
+			"completion": "0",
+			"date": "Jan 1",
+			"Grade": "100"
+		}
+		],
+		"Initial Designs": [
+			{
+				"completion": "0",
+				"date": "Jan 1",
+				"Grade": "100"
+			},
+			{
+				"completion": "0",
+				"date": "Jan 1",
+				"Grade": "100"
+			},
+			{
+				"completion": "0",
+				"date": "Jan 1",
+				"Grade": "100"
+			}
+		],
+		"Quiz Checkpoints": [
+				{
+					"completion": "1",
+					"date": "Jan 1",
+					"Grade": "100"
+				},
+				{
+					"completion": "1",
+					"date": "Jan 1",
+					"Grade": "100"
+				},				
+				{
+					"completion": "1",
+					"date": "Jan 1",
+					"Grade": "100"
+				},				
+				{
+					"completion": "1",
+					"date": "Jan 1",
+					"Grade": "100"
+				},	
+				{
+					"completion": "1",
+					"date": "Jan 1",
+					"Grade": "100"
+				},
+				{
+					"completion": "1",
+					"date": "Jan 1",
+					"Grade": "100"
+				},
+				{
+					"completion": "0",
+					"date": "Jan 1",
+					"Grade": "100"
+				},
+				{
+					"completion": "0",
+					"date": "Jan 1",
+					"Grade": "100"
+				},
+				{
+					"completion": "0",
+					"date": "Jan 1",
+					"Grade": "100"
+				},
+				{
+					"completion": "0",
+					"date": "Jan 1",
+					"Grade": "100"
+				},
+				{
+					"completion": "0",
+					"date": "June 31",
+					"Grade": "100"
+				}
+			],
+		"Final Exam": [
+			{
+				"completion": "0",
+				"date": "???",
+				"Grade": "100"
+			}
+		]
+	},
+	   "COGS100": {
+    		"Weekly Quiz": [
+				{
+					"completion": "0",
+					"date": "Jan 1",
+					"Grade": "100"
+				},
+				{
+					"completion": "0",
+					"date": "Jan 1",
+					"Grade": "100"
+				},				
+				{
+					"completion": "0",
+					"date": "Jan 1",
+					"Grade": "100"
+				},				
+				{
+					"completion": "0",
+					"date": "Jan 1",
+					"Grade": "100"
+				},	
+				{
+					"completion": "0",
+					"date": "Jan 1",
+					"Grade": "100"
+				},
+				{
+					"completion": "0",
+					"date": "Jan 1",
+					"Grade": "100"
+				},
+				{
+					"completion": "0",
+					"date": "Jan 1",
+					"Grade": "100"
+				},
+				{
+					"completion": "0",
+					"date": "Jan 1",
+					"Grade": "100"
+				},
+				{
+					"completion": "0",
+					"date": "Jan 1",
+					"Grade": "100"
+				}
+			],
+			"Assignments": [
+				{
+					"completion": "0",
+					"date": "Jan 1",
+					"Grade": "100"
+				},
+				{
+					"completion": "0",
+					"date": "Jan 1",
+					"Grade": "100"
+				},
+				{
+					"completion": "0",
+					"date": "Jan 1",
+					"Grade": "100"
+				},
+				{
+					"completion": "0",
+					"date": "Jan 1",
+					"Grade": "100"
+				}
+			],
+			"Midterm & Final": [
+				{							
+					"completion": "0",
+					"date": "Jan 1",
+					"Grade": "100"
+				},
+				{
+					"completion": "0",
+					"date": "Jan 1",
+					"Grade": "100"
+				}
+			]
+		},
+		"COGS107B": {
+			"Peer Discussion": [
+				{
+					"completion": "1",
+					"date": "Jan 1",
+					"Grade": "100"
+				},
+				{
+					"completion": "1",
+					"date": "Jan 1",
+					"Grade": "100"
+				},
+				{
+					"completion": "1",
+					"date": "Jan 1",
+					"Grade": "100"
+				},
+				{
+					"completion": "1",
+					"date": "Jan 1",
+					"Grade": "100"
+				},
+				{
+					"completion": "1",
+					"date": "Jan 1",
+					"Grade": "100"
+				},
+				{
+					"completion": "1",
+					"date": "Jan 1",
+					"Grade": "100"
+				},
+				{
+					"completion": "0",
+					"date": "Jan 1",
+					"Grade": "100"
+				},
+				{
+					"completion": "0",
+					"date": "Jan 1",
+					"Grade": "100"
+				}
+			],
+			"Quizzes": [
+				{
+					"completion": "1",
+					"date": "Jan 1",
+					"Grade": "100"
+				},
+				{
+					"completion": "1",
+					"date": "Jan 1",
+					"Grade": "100"
+				},
+				{
+					"completion": "1",
+					"date": "Jan 1",
+					"Grade": "100"
+				},
+				{
+					"completion": "1",
+					"date": "Jan 1",
+					"Grade": "100"
+				},
+				{
+					"completion": "1",
+					"date": "Jan 1",
+					"Grade": "100"
+				},
+				{
+					"completion": "0",
+					"date": "Jan 1",
+					"Grade": "100"
+				},
+				{
+					"completion": "0",
+					"date": "Jan 1",
+					"Grade": "100"
+				},
+				{
+					"completion": "0",
+					"date": "Jan 1",
+					"Grade": "100"
+				}
+			],
+			"Section Activities": [
+				{
+					"completion": "1",
+					"date": "Jan 1",
+					"Grade": "100"
+				},
+				{
+					"completion": "1",
+					"date": "Jan 1",
+					"Grade": "100"
+				},
+				{
+					"completion": "1",
+					"date": "Jan 1",
+					"Grade": "100"
+				},
+				{
+					"completion": "1",
+					"date": "Jan 1",
+					"Grade": "100"
+				},
+				{
+					"completion": "0",
+					"date": "Jan 1",
+					"Grade": "100"
+				},
+				{
+					"completion": "0",
+					"date": "Jan 1",
+					"Grade": "100"
+				}
+			],
+			"Exams": [
+				{
+					"completion": "1",
+					"date": "Jan 1",
+					"Grade": "100"
+				},
+				{
+					"completion": "1",
+					"date": "Jan 1",
+					"Grade": "100"
+				},
+				{
+					"completion": "0",
+					"date": "Jan 1",
+					"Grade": "100"
+				},
+				{
+					"completion": "0",
+					"date": "Jan 1",
+					"Grade": "100"
+				}
+			]
+		}
+}

@@ -1,0 +1,169 @@
+{
+    "COGS120":{
+		"class": "COGS120",
+		"professer": "Klemmer",
+		"grade": "C",
+		"percentile": "37",
+		"focus": "In-Class Quiz",
+		"categories": [
+			{
+				"category_name": "Weekly Assignments",
+				"percent": "66",
+				"first": "4",
+				"second": "10",
+				"tests": "0",
+				"URL": "COGS120"
+			},
+			{
+				"category_name": "In-Class Quiz",
+				"percent": "14",
+				"first": "0",
+				"second": "4",
+				"tests": "0",
+				"URL": "COGS120"
+			},
+			{
+				"category_name": "Labs",
+				"percent": "8",
+				"first": "6",
+				"second": "10",
+				"tests": "0",
+				"URL": "COGS120"
+			},
+			{
+				"category_name": "Participation",
+				"percent": "8",
+				"first": "0",
+				"second": "1",
+				"tests": "1",
+				"URL": "COGS120"
+			},
+			{
+				"category_name": "Self & Team Assessments",
+				"percent": "4",
+				"first": "6",
+				"second": "10",
+				"tests": "0",
+				"URL": "COGS120"
+			}
+		]
+    },
+
+	"TDGE124":{
+		"class": "TDGE124",
+		"professer": "Fulton",
+		"grade": "B+",
+		"percentile": "39",
+		"focus": "Collages",
+		"categories": [
+			{
+				"category_name": "Collages",
+				"percent": "50",
+				"first": "2",
+				"second": "3",
+				"tests": "0",
+				"URL": "TDGE124"
+			},
+			{
+				"category_name": "Initial Designs",
+				"percent": "14",
+				"first": "0",
+				"second": "3",
+				"tests": "0",
+				"URL": "TDGE124"
+			},
+			{
+				"category_name": "Quiz Checkpoints",
+				"percent": "11",
+				"first": "6",
+				"second": "11",
+				"tests": "1",
+				"URL": "TDGE124"
+			},
+			{
+				"category_name": "Final Exam",
+				"percent": "25",
+				"first": "0",
+				"second": "1",
+				"tests": "1",
+				"URL": "TDGE124"
+			}
+		]
+	},
+
+	"COGS100":{
+		"class": "COGS100",
+		"professer": "Kirsh",
+		"grade": "B+",
+		"percentile": "0",
+		"focus": "Weekly Quiz",
+		"categories": [
+			{
+				"category_name": "Weekly Quiz",
+				"percent": "10",
+				"first": "0",
+				"second": "9",
+				"tests": "0",
+				"URL": "COGS100"
+			},
+			{
+				"category_name": "Assignments",
+				"percent": "36",
+				"first": "0",
+				"second": "4",
+				"tests": "0",
+				"URL": "COGS100"
+			},
+			{
+				"category_name": "Midterm & Final",
+				"percent": "54",
+				"first": "0",
+				"second": "2",
+				"tests": "0",
+				"URL": "COGS100"
+			}
+		]
+	},
+
+	"COGS107B": {
+		"class": "COGS107B",
+		"professer": "Rangel",
+		"grade": "B+",
+		"percentile": "57",
+		"focus": "Exams",
+		"categories": [
+			{
+				"category_name": "Peer Discussion",
+				"percent": "8",
+				"first": "6",
+				"second": "8",
+				"tests": "0",
+				"URL": "COGS107B"
+			},
+			{
+				"category_name": "Quizzes",
+				"percent": "8",
+				"first": "5",
+				"second": "8",
+				"tests": "0",
+				"URL": "COGS107B"
+			},
+			{
+				"category_name": "Section Activities",
+				"percent": "24",
+				"first": "4",
+				"second": "6",
+				"tests": "0",
+				"URL": "COGS107B"
+			},
+			{
+				"category_name": "Exams",
+				"percent": "60",
+				"first": "2",
+				"second": "4",
+				"tests": "0",
+				"URL": "COGS107B"
+			}
+		]
+	}
+}

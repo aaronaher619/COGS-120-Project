@@ -1,0 +1,89 @@
+*{ 
+font-family: 'Oxygen';
+text-align: center;
+}
+
+.percentile {
+	color: grey;
+}
+
+.class-name{
+	font-size: 2rem;
+}
+
+.score{
+	font-size: 7rem;
+	font-family: 'Georgia' !important;
+}
+
+.base-grade{
+	border-radius: 25px;
+	background-color: lightgrey;
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.class-title{
+	font-size: 4rem;
+}
+
+.class-holder{
+	font-size: 3rem;
+	color: grey;
+}
+
+.section{
+	border: 2px solid black;
+	border-radius: 60px;
+	width: 50%;
+	margin-right: auto;
+	margin-left: auto;
+	line-height: 190%;
+	font-size: 2em;
+	overflow: hidden;
+}
+
+.final-grade, .test-grade{
+	background-color: grey;
+}
+
+.final-grade:hover, .test-grade:hover{
+	background-color: lightgrey;
+}
+
+.nothing-grade {
+	background-color: lightgrey;
+}
+
+.nothing-grade:hover{
+	background-color: white;
+}
+
+.new-grade{
+	background-color: firebrick;
+}
+
+.new-grade:hover{
+	background-color: lightcoral;
+}
+
+.fw {
+	line-height: 100%;
+	font-size: 2em;
+}
+
+a.sections{
+	color: black;
+	text-decoration: none;
+}
+
+.custom-of {
+	overflow: auto;
+	height: 440px;
+}
+
+.final-text{
+	font-size: 1.5rem;
+	font-weight: bold;
+}
