@@ -13,8 +13,6 @@ var all_courses = require('./routes/all_courses');
 var course = require('./routes/course');
 var category = require('./routes/category');
 var settings = require('./routes/settings');
-// Example route
-// var user = require('./routes/user');
 
 var app = express();
 
@@ -51,8 +49,6 @@ app.post("/course/category/catData/:course_name/:category_name", category.postDa
 app.post("/all_courses", all_courses.view)
 app.get("/all_courses/catData", all_courses.getData);
 app.post("/all_courses/catData", all_courses.postData);
-// Example route
-// app.get('/users', user.list);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

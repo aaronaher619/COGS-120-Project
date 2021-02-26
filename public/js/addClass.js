@@ -24,7 +24,7 @@ function requestClasses (url) {
 			var grade = value["grade"];
 
 			newClass +=
-			'<a href="course/' + class_name + '" class="class_bubble">' +
+			'<a href="all_courses/course/' + class_name + '" class="class_bubble">' +
 				'<div class="container-fluid classes">' +
 					'<div class="row align-items-center">' +
 						'<div class="col-lg-6 col-md-6 class_column">' +
