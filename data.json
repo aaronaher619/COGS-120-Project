@@ -12,7 +12,59 @@
 				"total_percent": "66",
 				"first": "4",
 				"second": "10",
-				"tests": "0"
+				"tests": "0",
+				"items": [
+					{
+						"completion": "1",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "1",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "1",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "1",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "0",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "0",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "0",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "0",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "0",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "0",
+						"date": "Jan 1",
+						"Grade": "100"
+					}
+				]
 			},
 			{
 				"category_name": "In-Class Quiz",
@@ -20,7 +72,29 @@
 				"total_percent": "14",
 				"first": "0",
 				"second": "4",
-				"tests": "0"
+				"tests": "0",
+				"items": [
+					{
+						"completion": "1",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "1",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "1",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "1",
+						"date": "Jan 1",
+						"Grade": "100"
+					}
+				]
 			},
 			{
 				"category_name": "Labs",
@@ -28,7 +102,59 @@
 				"total_percent": "8",
 				"first": "6",
 				"second": "10",
-				"tests": "0"
+				"tests": "0",
+				"items" : [
+					{
+						"completion": "1",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "1",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "1",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "1",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "1",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "1",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "0",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "0",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "0",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "0",
+						"date": "Jan 1",
+						"Grade": "100"
+					}
+				]
 			},
 			{
 				"category_name": "Participation",
@@ -36,7 +162,14 @@
 				"total_percent": "8",
 				"first": "0",
 				"second": "1",
-				"tests": "1"
+				"tests": "1",
+				"items": [
+					{
+						"completion": "2",
+						"date": "???",
+						"Grade": "0"
+					}
+				]
 			},
 			{
 				"category_name": "Self & Team Assessments",
@@ -44,7 +177,59 @@
 				"total_percent": "4",
 				"first": "6",
 				"second": "10",
-				"tests": "0"
+				"tests": "0",
+				"items": [
+					{
+						"completion": "1",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "1",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "1",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "1",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "1",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "1",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "0",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "0",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "0",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "0",
+						"date": "Jan 1",
+						"Grade": "100"
+					}
+				]
 			}
 		]
     },
@@ -62,7 +247,24 @@
 				"total_percent": "50",
 				"first": "2",
 				"second": "3",
-				"tests": "0"
+				"tests": "0",
+				"items": [
+					{
+						"completion": "1",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "1",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "0",
+						"date": "Jan 1",
+						"Grade": "100"
+					}
+					]
 			},
 			{
 				"category_name": "Initial Designs",
@@ -70,7 +272,24 @@
 				"total_percent": "14",
 				"first": "0",
 				"second": "3",
-				"tests": "0"
+				"tests": "0",
+				"items": [
+					{
+						"completion": "0",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "0",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "0",
+						"date": "Jan 1",
+						"Grade": "100"
+					}
+				]
 			},
 			{
 				"category_name": "Quiz Checkpoints",
@@ -78,7 +297,64 @@
 				"total_percent": "11",
 				"first": "6",
 				"second": "11",
-				"tests": "1"
+				"tests": "1",
+				"items": [
+					{
+						"completion": "1",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "1",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "1",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "1",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "1",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "1",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "0",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "0",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "0",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "0",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "0",
+						"date": "June 31",
+						"Grade": "100"
+					}
+				]
 			},
 			{
 				"category_name": "Final Exam",
@@ -86,7 +362,14 @@
 				"total_percent": "25",
 				"first": "0",
 				"second": "1",
-				"tests": "1"
+				"tests": "1",
+				"items": [
+					{
+						"completion": "0",
+						"date": "???",
+						"Grade": "100"
+					}
+				]
 			}
 		]
 	},
@@ -104,7 +387,54 @@
 				"total_percent": "10",
 				"first": "0",
 				"second": "9",
-				"tests": "0"
+				"tests": "0",
+				"items": [
+					{
+						"completion": "0",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "0",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "0",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "0",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "0",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "0",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "0",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "0",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "0",
+						"date": "Jan 1",
+						"Grade": "100"
+					}
+				]
 			},
 			{
 				"category_name": "Assignments",
@@ -112,7 +442,29 @@
 				"total_percent": "36",
 				"first": "0",
 				"second": "4",
-				"tests": "0"
+				"tests": "0",
+				"items": [
+					{
+						"completion": "0",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "0",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "0",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "0",
+						"date": "Jan 1",
+						"Grade": "100"
+					}
+				]
 			},
 			{
 				"category_name": "Midterm & Final",
@@ -120,7 +472,19 @@
 				"total_percent": "54",
 				"first": "0",
 				"second": "2",
-				"tests": "0"
+				"tests": "0",
+				"items": [
+					{
+						"completion": "0",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "0",
+						"date": "Jan 1",
+						"Grade": "100"
+					}
+				]
 			}
 		]
 	},
@@ -138,7 +502,49 @@
 				"total_percent": "8",
 				"first": "6",
 				"second": "8",
-				"tests": "0"
+				"tests": "0",
+				"items": [
+					{
+						"completion": "1",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "1",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "1",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "1",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "1",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "1",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "0",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "0",
+						"date": "Jan 1",
+						"Grade": "100"
+					}
+				]
 			},
 			{
 				"category_name": "Quizzes",
@@ -147,7 +553,49 @@
 				"percent": "8",
 				"first": "5",
 				"second": "8",
-				"tests": "0"
+				"tests": "0",
+				"items": [
+					{
+						"completion": "1",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "1",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "1",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "1",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "1",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "0",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "0",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "0",
+						"date": "Jan 1",
+						"Grade": "100"
+					}
+				]
 			},
 			{
 				"category_name": "Section Activities",
@@ -155,7 +603,39 @@
 				"total_percent": "24",
 				"first": "4",
 				"second": "6",
-				"tests": "0"
+				"tests": "0",
+				"items": [
+					{
+						"completion": "1",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "1",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "1",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "1",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "0",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "0",
+						"date": "Jan 1",
+						"Grade": "100"
+					}
+				]
 			},
 			{
 				"category_name": "Exams",
@@ -163,7 +643,29 @@
 				"total_percent": "60",
 				"first": "2",
 				"second": "4",
-				"tests": "0"
+				"tests": "0",
+				"items": [
+					{
+						"completion": "1",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "1",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "0",
+						"date": "Jan 1",
+						"Grade": "100"
+					},
+					{
+						"completion": "0",
+						"date": "Jan 1",
+						"Grade": "100"
+					}
+				]
 			}
 		]
 	}

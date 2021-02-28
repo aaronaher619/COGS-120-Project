@@ -20,7 +20,7 @@
         <section id="navigation">
             <nav class="navbar">
             <div class="navbar-header">
-                <a href=".." class="navbar-brand">
+                <a href="/all_courses" class="navbar-brand">
                 Grade Guru
                 </a>
             </div>
@@ -28,60 +28,60 @@
         </section>
 
         <!-- Header -->
-        <div class="button_header">
-            <a href="/all_courses"class="back_button">
-                <button type="button" class="btn buttons btn-lg">Back To Classes</button>
-            </a>
+        <section id="header">
+            <div class="button_header">
+                <a href="/all_courses"class="back_button">
+                    <button type="button" class="btn buttons btn-lg">Back To Classes</button>
+                </a>
 
-            <a href="/" class="logoff_button">
-                <button type="button" class="btn buttons btn-lg">Log Off</button>
-            </a>
-        </div>
-
-        <h1 class="class_header">{{class}}</h1>
-
-        <br/>
-
-        <div class="base-grade">
-            <h3 class="current_grade">Current Grade:</h3>
-            <p class="score">{{grade}}</p>
-        </div>
-
-        <br/>
-
-        <div class="percentile"> {{percentile}}% of Final Grade Received</div>
-        <div>
-            <span class="percentile"> Focus On: </span>
-            <b> {{focus}} </b>
-        </div>
-
-        <hr>
-
-        <!-- Grades -->
-        <div>
-        <button type="button" tyle="display: show" onclick="addCategory()" class="btn buttons btn-lg addButton">Add A Category</button>
-        </div>
-
-        <div id="addCategory" style="display: none">
-            <form id="addCategoryForm" class="form">
-            <div class="form-group ">
-                <label for="category_name">Enter Category Name</label>
-                <input type="text" class="form-control" id="category_name" maxlength="15" required name="category_name">
+                <a href="/" class="logoff_button">
+                    <button type="button" class="btn buttons btn-lg">Log Off</button>
+                </a>
             </div>
 
-            <div class="form-group ">
-                <label for="percentage">Enter Total Category Percentage</label>
-                <input type="number" class="form-control" id="percentage" required name="percentage">
+            <h1 class="class_header">{{class}}</h1>
+            <br/>
+
+            <div class="base-grade">
+                <h3 class="current_grade">Current Grade:</h3>
+                <p class="score">{{grade}}</p>
+            </div>
+            <br/>
+            <div class="percentile"> {{percentile}}% of Final Grade Received</div>
+            <div>
+                <span class="percentile"> Focus On: </span>
+                <b> {{focus}} </b>
+            </div>
+            <hr>
+        </section>
+
+        <!-- Categories -->
+        <section id="categories">
+            <div>
+                <button type="button" tyle="display: show" onclick="addCategory()" class="btn buttons btn-lg addButton">Add A Category</button>
             </div>
 
-            <div class="submit">
-                <button type="button" onclick="cancelAddCategory()" class="btn buttons btn-lg cancel_button">Cancel</button>
-                <input type="submit" id="submitCategory" class="btn buttons btn-lg" value="Add The Category"></input>
-            </div>
-            </form>
-        </div>
+            <div id="addCategory" style="display: none">
+                <form id="addCategoryForm" class="form">
+                <div class="form-group ">
+                    <label for="category_name">Enter Category Name</label>
+                    <input type="text" class="form-control" id="category_name" maxlength="15" required name="category_name">
+                </div>
 
-        <div class="root-container"></div>
+                <div class="form-group ">
+                    <label for="percentage">Enter Total Category Percentage</label>
+                    <input type="number" class="form-control" id="percentage" required name="percentage">
+                </div>
+
+                <div class="submit">
+                    <button type="button" onclick="cancelAddCategory()" class="btn buttons btn-lg cancel_button">Cancel</button>
+                    <input type="submit" id="submitCategory" class="btn buttons btn-lg" value="Add The Category"></input>
+                </div>
+                </form>
+            </div>
+
+            <div class="root-container"></div>
+        </section>
 
         <footer id="footer">
             <p class="footer_text">Grade Guru 2021</p>

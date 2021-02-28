@@ -7,12 +7,9 @@
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <link rel="stylesheet" href="/css/styles.css">
-         <link rel="stylesheet" href="/css/category.css">
+        <link rel="stylesheet" href="/css/category.css">
 
-        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Oxygen&display=swap" rel="stylesheet">
-
-        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-        <script src="/js/category_make.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@500&family=Oxygen&display=swap" rel="stylesheet">
 
         <title>Grade Guru Class</title>
     </head>
@@ -22,26 +19,58 @@
         <section id="navigation">
             <nav class="navbar">
             <div class="navbar-header">
-                <a href=".." class="navbar-brand">
+                <a href="/all_courses" class="navbar-brand">
                 Grade Guru
                 </a>
             </div>
             </nav>
         </section>
 
-        <a href="../../{{course}}">
-            <button type="button" class="btn btn-dark btn-lg margin">Back To {{course}}</button>
-        </a>
-        <h1 class="class-title"> {{category}} </h1>
-        <h2 class="class-holder"> {{course}} </h2>
-        <br />
+        <!-- Header -->
+        <section id="header">
+            <div class="button_header">
+                <a href="../../{{course}}"class="back_button">
+                    <button type="button" class="btn buttons btn-lg">Back To {{course}}</button>
+                </a>
 
-        <hr>
+                <a href="/" class="logoff_button">
+                    <button type="button" class="btn buttons btn-lg">Log Off</button>
+                </a>
+            </div>
 
-        <br />
+            <h1 class="class-title"> {{category}} </h1>
+            <h2 class="class-holder"> {{course}} </h2>
+            <hr>
+        </section>
 
-        <div class="root-container"></div>
-        <div class="add-container"></div>
+        <!-- Items -->
+        <section id="Items">
+            <div>
+                <button type="button" tyle="display: show" onclick="addCategory()" class="btn buttons btn-lg addButton">Add A Category Item</button>
+            </div>
+
+            <div id="addCategory" style="display: none">
+                <form id="addCategoryForm" class="form">
+                <div class="form-group ">
+                    <label for="category_name">Enter Category Name</label>
+                    <input type="text" class="form-control" id="category_name" maxlength="15" required name="category_name">
+                </div>
+
+                <div class="form-group ">
+                    <label for="percentage">Enter Total Category Percentage</label>
+                    <input type="number" class="form-control" id="percentage" required name="percentage">
+                </div>
+
+                <div class="submit">
+                    <button type="button" onclick="cancelAddCategory()" class="btn buttons btn-lg cancel_button">Cancel</button>
+                    <input type="submit" id="submitCategory" class="btn buttons btn-lg" value="Add The Category"></input>
+                </div>
+                </form>
+            </div>
+
+            <div class="root-container"></div>
+            <div class="add-container"></div>
+        </section>
 
         <footer id="footer">
             <p class="footer_text">Grade Guru 2021</p>
@@ -52,6 +81,6 @@
         <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-        <script src="/js/category_make.js"></script>
+        <script src="/js/makeItems.js"></script>
     </body>
 </html>

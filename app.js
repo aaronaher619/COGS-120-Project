@@ -12,7 +12,6 @@ var index = require('./routes/index');
 var all_courses = require('./routes/all_courses');
 var course = require('./routes/course');
 var category = require('./routes/category');
-var settings = require('./routes/settings');
 
 var app = express();
 
