@@ -3,14 +3,14 @@
  */
 var data = require("../data.json");
 
-exports.view = function(request, response){
+  exports.view = function(request, response){
 
-  var username = request.body.username;
-	var password = request.body.password;
+    var username = request.body.username;
+    var password = request.body.password;
 
-  response.render('all_courses', {
-    "username": username
-});
+    response.render('all_courses', {
+      "username": username
+  });
 };
 
 exports.postData = function(req, res) {

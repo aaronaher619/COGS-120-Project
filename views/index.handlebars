@@ -8,33 +8,35 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="/css/styles.css" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Oxygen&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@500&family=Oxygen&display=swap" rel="stylesheet">
 
-    <title>Grade Guru</title>
+    <title>Login to Grade Guru</title>
   </head>
 
   <body>
-
     <!-- Nav Bar -->
-    <section id="nav_bar">
-      <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-          <a href="#" class="nav-link"><p class="navbar_brand">Grade Guru</p></a>
+    <section id="navigation">
+        <nav class="navbar">
+          <div class="navbar-header">
+            <a href="#" class="navbar-brand">
+              Grade Guru
+            </a>
+          </div>
         </nav>
-      </div>
     </section>
 
     <!-- Classes -->
-    <h1 class="class_title">Please Login</h1>
+    <h1 class="welcome_header">Please Login</h1>
     <hr>
     <div>
       <form id="addFriendForm" class="form" role="form" method="post" action="/all_courses">
         <div class="form-group ">
-          <input type="text" class="form-control" id="username" placeholder="Username" name="username">
+          <input type="text" class="form-control" id="username" required maxlength="15" placeholder="Username" name="username">
         </div>
 
         <div class="form-group ">
-          <input type="password" class="form-control" id="password" placeholder="Password" name="password">
+          <input type="password" class="form-control" id="password" required maxlength="15" placeholder="Password" name="password">
         </div>
 
         <div class="submit">

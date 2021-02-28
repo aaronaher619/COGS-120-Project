@@ -8,36 +8,63 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="/css/styles.css" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Oxygen&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@500&family=Oxygen&display=swap" rel="stylesheet">
 
-    <title>Grade Guru</title>
+    <title>Grade Guru Classes</title>
   </head>
 
   <body>
 
     <!-- Nav Bar -->
-    <section id="nav_bar">
-      <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-          <a href="#" class="nav-link"><p class="navbar_brand">Grade Guru</p></a>
-
-          <ul class="navbar-nav ml-auto">
-            <li class="navbar_item">
-              <a href="settings" class="nav-link"><i class="fas fa-cogs fa-3x icon"></i></a>
-            </li>
-          </ul>
+    <section id="navigation">
+        <nav class="navbar">
+          <div class="navbar-header">
+            <a href="." class="navbar-brand">
+              Grade Guru
+            </a>
+          </div>
         </nav>
-      </div>
+    </section>
+
+    <!-- Header -->
+    <section id="header">
+      <a href=".." class="logoff_button">
+        <button type="button" class="btn buttons btn-lg">Log Off</button>
+      </a>
+
+      <h1 class="welcome_header">Welcome </h1>
+      <h1 class="welcome_header">{{username}}</h1>
+      <br/>
+      <h1 class="header">Select Your Class:</h1>
+      <hr>
     </section>
 
     <!-- Classes -->
-    <h1 class="class_title">Welcome {{username}}</h1>
-    <br/>
-    <h1 class="class_title">Select Your Class:</h1>
-    <hr>
-
     <section id="class_page">
-      <div class="add-container"></div>
+      <div>
+        <button type="button" tyle="display: show" onclick="addClass()" class="btn buttons btn-lg">Add a Class</button>
+      </div>
+
+      <div id="addClass" style="display: none">
+        <form id="addClassForm" class="form">
+          <div class="form-group ">
+            <label for="class_name">Enter Class Name</label>
+            <input type="text" class="form-control" id="class_name" maxlength="10" required name="class_name">
+          </div>
+
+          <div class="form-group ">
+            <label for="professer">Enter Professor Name</label>
+            <input type="text" class="form-control" id="professer" maxlength="15" required name="professer">
+          </div>
+
+          <div class="submit">
+            <button type="button" onclick="cancelAddClass()" class="btn buttons btn-lg">Cancel</button>
+            <input type="submit" id="submitClass" class="btn buttons btn-lg" value="Add The Class"></input>
+          </div>
+        </form>
+      </div>
+
       <div class="root-container"></div>
     </section>
 
@@ -50,6 +77,6 @@
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <script src="/js/addClass.js"></script>
+    <script src="/js/makeClasses.js"></script>
   </body>
 </html>

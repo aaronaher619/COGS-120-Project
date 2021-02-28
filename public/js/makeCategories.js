@@ -24,7 +24,7 @@ function requestClasses (url) {
 			var grade = value["grade"];
 
 			newClass +=
-			'<a href="all_courses/course/' + class_name + '" class="class_bubble">' +
+			'<a href="./all_courses/course/' + class_name + '" class="class_bubble">' +
 				'<div class="container-fluid classes">' +
 					'<div class="row align-items-center">' +
 						'<div class="col-lg-6 col-md-6 class_column">' +
@@ -39,31 +39,6 @@ function requestClasses (url) {
 				'</div>' +
 			'</a>';
 		}
-
-		var addClassButton =
-		'<div>' +
-			'<button type="button" style="display: show" onclick="addClass()" class="btn btn-dark btn-lg addButton">Add a Class</button>' +
-		'</div>' +
-
-		'<div id="addClass" style="display: none">' +
-			'<form id="addClassForm" class="form" method="post">' +
-				'<div class="form-group ">' +
-					'<label for="class_name">Enter Class Name</label>' +
-					'<input type="text" class="form-control" id="class_name" name="class_name">' +
-				'</div>' +
-
-				'<div class="form-group ">' +
-					'<label for="professer">Enter Professor Name</label>' +
-					'<input type="text" class="form-control" id="professer" name="professer">' +
-				'</div>' +
-
-				'<div class="submit">' +
-					'<input type="submit" id="submitClass" class="btn btn-dark btn-lg" value="Add The Class"></input>' +
-				'</div>' +
-			'</form>' +
-		'</div>';
-
-		$(".add-container").html(addClassButton)
 		$(".root-container").html(newClass);
 
 		$('#addClassForm').submit(function(e){
@@ -123,4 +98,9 @@ function requestClasses (url) {
 function addClass() {
 	$("#addClass").show();
 	$(".addButton").hide();
+}
+
+function cancelAddClass(){
+	$("#addClass").hide();
+	$(".addButton").show();
 }
