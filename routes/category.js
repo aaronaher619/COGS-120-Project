@@ -17,10 +17,11 @@ exports.postData = function(req, res) {
 
     var con = req.params.course_name;
     var can = req.params.category_name;
-
+    console.log(data[con][can]);
     data[con][can].push(newClass);
 
     res.send(newClass);
+    console.log(data[con][can]);
 }
 
 exports.getData = function(req, res) {

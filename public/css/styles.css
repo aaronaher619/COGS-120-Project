@@ -4,7 +4,6 @@
 }
 
 h1{
-    text-align: center;
     padding: 5%;
 }
 
@@ -12,16 +11,12 @@ h1{
     margin: 5%;
 }
 
-.container-fluid{
-    padding: 1% 15%;
-}
-
 a:link {
     text-decoration: none;
     color: inherit;
 }
 
-/* Navigation Bar Section navbar-expand-lg navbar-dark*/
+/* Navigation Bar Section*/
 #navigation{
     margin-bottom: 25px;
 }
@@ -55,10 +50,35 @@ a:link {
     background-color:white;
 }
 
-.logoff_button{
-    margin: 0% 5% 3% 0%;
+.buttons{
+    color: black;
+    background-color: lightskyblue;
+}
+
+.buttons:hover{
+    background-color: lightseagreen;
+}
+
+.button_header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2%;
+}
+
+.back_button{
+    margin-left: 5%;
     display: block;
+}
+
+.logoff_button{
+    margin-right: 5%;
+    display: block;
+}
+
+.main_logoff_button{
+    margin-right: 5%;
     text-align: right;
+    display: block;
 }
 
 .welcome_header{
@@ -79,7 +99,7 @@ a:link {
 }
 
 hr{
-    margin: 2%;
+    margin: 3%;
     background-color: lightskyblue;
 }
 
@@ -88,25 +108,30 @@ hr{
     background-color:white;
 }
 
-.buttons{
-    color: black;
-    background-color: lightskyblue;
+.form{
+    padding: 2% 30%;
 }
 
-.buttons:hover{
-    background-color: lightseagreen;
+.submit{
+    text-align: center;
+    margin: 8% 0% 0% 0%;
+}
+
+.cancel_button{
+    margin-right: 20px;
 }
 
 .class_bubble{
     display: block;
     background-color: lightskyblue;
     border-radius: 60px;
-    margin: 3% 18%;
+    border: 2px solid black;
+    margin: 2.5% auto;
+    width: 50vw;
 }
 
 .class_bubble:hover{
     background-color: lightseagreen;
-    cursor: pointer;
 }
 
 .classes{
@@ -138,15 +163,6 @@ hr{
 
 .class_column{
     padding: 1% 2%;
-}
-
-.form{
-    padding: 2% 30%;
-}
-
-.submit{
-    text-align: center;
-    margin: 10% 0% 0% 0%;
 }
 
 /* Footer Section */

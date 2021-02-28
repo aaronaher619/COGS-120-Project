@@ -27,21 +27,27 @@
             </nav>
         </section>
 
-        <a href="/all_courses">
-            <button type="button" class="btn btn-dark btn-lg margin0">Back To Classes</button>
-        </a>
-
         <!-- Header -->
-        <h1 class="class-title">{{class}}</h1>
+        <div class="button_header">
+            <a href="/all_courses"class="back_button">
+                <button type="button" class="btn buttons btn-lg">Back To Classes</button>
+            </a>
 
-        <br />
-
-        <div class="base-grade">
-            <b class="class-name">Current Grade:</b>
-            <div class="score">{{grade}}</div>
+            <a href="/" class="logoff_button">
+                <button type="button" class="btn buttons btn-lg">Log Off</button>
+            </a>
         </div>
 
-        <br />
+        <h1 class="class_header">{{class}}</h1>
+
+        <br/>
+
+        <div class="base-grade">
+            <h3 class="current_grade">Current Grade:</h3>
+            <p class="score">{{grade}}</p>
+        </div>
+
+        <br/>
 
         <div class="percentile"> {{percentile}}% of Final Grade Received</div>
         <div>
@@ -53,37 +59,29 @@
 
         <!-- Grades -->
         <div>
-        <button type="button" tyle="display: show" onclick="addClass()" class="btn btn-info btn-lg addButton">Add a Class</button>
+        <button type="button" tyle="display: show" onclick="addCategory()" class="btn buttons btn-lg addButton">Add A Category</button>
         </div>
 
-        <div id="addClass" style="display: none">
-            <form id="addClassForm" class="form">
+        <div id="addCategory" style="display: none">
+            <form id="addCategoryForm" class="form">
             <div class="form-group ">
-                <label for="class_name">Enter Class Name</label>
-                <input type="text" class="form-control" id="class_name" maxlength="10" required name="class_name">
+                <label for="category_name">Enter Category Name</label>
+                <input type="text" class="form-control" id="category_name" maxlength="15" required name="category_name">
             </div>
 
             <div class="form-group ">
-                <label for="professer">Enter Professor Name</label>
-                <input type="text" class="form-control" id="professer" maxlength="15" required name="professer">
+                <label for="percentage">Enter Total Category Percentage</label>
+                <input type="number" class="form-control" id="percentage" required name="percentage">
             </div>
 
             <div class="submit">
-                <button type="button" onclick="cancelAddClass()" class="btn btn-lg btn-info">Cancel</button>
-                <input type="submit" id="submitClass" class="btn btn-dark btn-lg" value="Add The Class"></input>
+                <button type="button" onclick="cancelAddCategory()" class="btn buttons btn-lg cancel_button">Cancel</button>
+                <input type="submit" id="submitCategory" class="btn buttons btn-lg" value="Add The Category"></input>
             </div>
             </form>
         </div>
 
-        {{#each categories}}
-            <a href="category/{{URL}}/{{category_name}}" class="sections">
-                <div class="section">
-                    <div>{{category_name}} {{percent}}%</div>
-                    <div>{{first}} of {{second}} ({{tests}} tests)</div>
-                </div>
-            </a>
-            <br />
-        {{/each}}
+        <div class="root-container"></div>
 
         <footer id="footer">
             <p class="footer_text">Grade Guru 2021</p>
@@ -94,6 +92,6 @@
         <script src="https://code.jquery.com/jquery.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-        <script src="/js/makeClasses.js"></script>
+        <script src="/js/makeCategories.js"></script>
     </body>
 </html>

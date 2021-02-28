@@ -7,8 +7,11 @@ text-align: center;
 	color: grey;
 }
 
-.class-name{
+.current_grade{
 	font-size: 2rem;
+	font-weight: bold;
+	padding: 10px;
+	margin: 0%
 }
 
 .score{
@@ -18,30 +21,46 @@ text-align: center;
 
 .base-grade{
 	border-radius: 25px;
-	background-color: lightgrey;
+	background-color: lightskyblue;
 	width: 300px;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-.class-title{
-	font-size: 2.5rem;
-	padding: 0px;
+.class_header{
+    color: black;
+    font-weight: bold;
+    font-size: 4rem;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container-fluid{
+    padding: 1% 1%;
 }
 
 .section{
 	border: 2px solid black;
 	border-radius: 60px;
-	background-color: grey;
-	width: 50%;
-	margin-right: auto;
-	margin-left: auto;
-	line-height: 190%;
+	background-color: lightskyblue;
+	width: 50vw;
+	margin: 2.5% auto;
 	font-size: 2em;
+	padding: 20px;
+}
+
+.category_name{
+	font-size: 2.5rem;
+	font-weight: bold;
+}
+
+.info{
+	margin: 0%;
+	font-size: 1.5rem;
 }
 
 .section:hover{
-	background-color: lightgrey;
+	background-color: lightseagreen;
 }
 
 a.sections{

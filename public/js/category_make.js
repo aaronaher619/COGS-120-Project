@@ -10,9 +10,8 @@ $(document).ready(function() {
 
 function requestCategories (url) {
     var parsedURL = url.replace("category/", "category/catData/");
-
+    console.log(parsedURL)
     var got = $.get(parsedURL, (res, req) => {
-        var classJSON = res;
         console.log(res);
 
         var newProjects = '';

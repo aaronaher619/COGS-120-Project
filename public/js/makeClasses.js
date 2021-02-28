@@ -11,7 +11,7 @@ $(document).ready(function() {
 })
 
 function requestClasses (url) {
-	var parsedURL = url.replace("all_courses", "all_courses/catData");
+	var parsedURL = url.concat("/catData");
 
 	$.get(parsedURL, (res, req) => {
 		console.log(res);
@@ -24,7 +24,7 @@ function requestClasses (url) {
 			var grade = value["grade"];
 
 			newClass +=
-			'<a href="./all_courses/course/' + class_name + '" class="class_bubble">' +
+			'<a href="all_courses/course/' + class_name + '" class="class_bubble">' +
 				'<div class="container-fluid classes">' +
 					'<div class="row align-items-center">' +
 						'<div class="col-lg-6 col-md-6 class_column">' +
@@ -55,7 +55,7 @@ function requestClasses (url) {
 			var currentHTML = $(".root-container").html();
 
 			currentHTML +=
-			'<a href="course/' + course + '" class="class_bubble">' +
+			'<a href="all_courses/course/' + course + '" class="class_bubble">' +
 				'<div class="container-fluid classes">' +
 					'<div class="row align-items-center">' +
 						'<div class="col-lg-6 col-md-6 class_column">' +
@@ -78,7 +78,7 @@ function requestClasses (url) {
 				"grade": grade,
 				"percentile": "N/A",
 				"focus": "N/A",
-				"categories": "N/A"
+				"categories": ['N/A']
 			}}, postCallback);
 		  });
 

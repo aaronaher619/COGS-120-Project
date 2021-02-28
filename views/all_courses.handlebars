@@ -29,9 +29,11 @@
 
     <!-- Header -->
     <section id="header">
-      <a href=".." class="logoff_button">
-        <button type="button" class="btn buttons btn-lg">Log Off</button>
-      </a>
+      <div>
+          <a href="/" class="main_logoff_button">
+              <button type="button" class="btn buttons btn-lg">Log Off</button>
+          </a>
+      </div>
 
       <h1 class="welcome_header">Welcome </h1>
       <h1 class="welcome_header">{{username}}</h1>
@@ -43,7 +45,7 @@
     <!-- Classes -->
     <section id="class_page">
       <div>
-        <button type="button" tyle="display: show" onclick="addClass()" class="btn buttons btn-lg">Add a Class</button>
+        <button type="button" tyle="display: show" onclick="addClass()" class="btn buttons btn-lg addButton">Add A Class</button>
       </div>
 
       <div id="addClass" style="display: none">
@@ -59,7 +61,7 @@
           </div>
 
           <div class="submit">
-            <button type="button" onclick="cancelAddClass()" class="btn buttons btn-lg">Cancel</button>
+            <button type="button" onclick="cancelAddClass()" class="btn buttons btn-lg cancel_button">Cancel</button>
             <input type="submit" id="submitClass" class="btn buttons btn-lg" value="Add The Class"></input>
           </div>
         </form>

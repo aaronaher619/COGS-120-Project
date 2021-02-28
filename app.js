@@ -37,19 +37,19 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', index.view);
+
 app.get("/all_courses", all_courses.view);
-app.get('/all_courses/course/:course_name', course.viewCourse);
-app.get("/all_courses/course/category/:course_name/:category_name", category.viewCategory);
-
-app.get('/all_courses/settings', settings.view);
-app.get("/all_courses/course/settings/:course_name", settings.view);
-
-app.get("/course/category/catData/:course_name/:category_name", category.getData);
-app.post("/course/category/catData/:course_name/:category_name", category.postData);
-
 app.post("/all_courses", all_courses.view)
 app.get("/all_courses/catData", all_courses.getData);
 app.post("/all_courses/catData", all_courses.postData);
+
+app.get('/all_courses/course/:course_name', course.viewCourse);
+app.get("/all_courses/course/:course_name/catData", course.getData);
+app.post("/all_courses/course/:course_name/catData", course.postData);
+
+app.get("/all_courses/course/category/:course_name/:category_name", category.viewCategory);
+app.get("/all_courses/course/category/catData/:course_name/:category_name", category.getData);
+app.post("/all_courses/course/category/catData/:course_name/:category_name", category.postData);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
