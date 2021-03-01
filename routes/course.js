@@ -9,12 +9,11 @@ exports.postData = function(req, res) {
     var course_name = req.params.course_name;
     var newAddedCategory = req.body.newAddedCategory;
 
-    if (data[course_name]['categories'][0] == 'N/A'){
-      data[course_name]['categories'].splice(0,1);
+    if (data[course_name]['categories'].hasOwnProperty('N/A')){
+      delete data[course_name]['categories']['N/A']
     }
 
-    console.log(data[course_name].categories);
-    data[course_name].categories.push(newAddedCategory);
+    data[course_name]['categories'][newAddedCategory.category_name] = newAddedCategory;
 
     res.send(newAddedCategory);
     console.log(data[course_name]['categories']);

@@ -1,4 +1,4 @@
-var data = require("../categoryData.json");
+var data = require("../data.json");
 
 exports.viewCategory = function(request, response){
 
@@ -12,23 +12,22 @@ exports.viewCategory = function(request, response){
 }
 
 exports.postData = function(req, res) {
+    var course_name = req.params.course_name;
+    var category_name = req.params.category_name;
 
     var newClass = req.body.newClass;
 
-    var con = req.params.course_name;
-    var can = req.params.category_name;
-    console.log(data[con][can]);
-    data[con][can].push(newClass);
+    data[course_name][category_name].push(newClass);
 
     res.send(newClass);
-    console.log(data[con][can]);
+    console.log(data[course_name][category_name]);
 }
 
 exports.getData = function(req, res) {
 
-    var co_name = req.params.course_name;
-    var ca_name = req.params.category_name;
+    var course_name = req.params.course_name;
+    var category_name = req.params.category_name;
 
-    var jso = data[co_name][ca_name];
+    var jso = data[course_name]['categories'][category_name];
     res.json(jso);
 }

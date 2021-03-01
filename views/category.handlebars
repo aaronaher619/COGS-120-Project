@@ -46,30 +46,29 @@
         <!-- Items -->
         <section id="Items">
             <div>
-                <button type="button" tyle="display: show" onclick="addCategory()" class="btn buttons btn-lg addButton">Add A Category Item</button>
+                <button type="button" tyle="display: show" onclick="addItem()" class="btn buttons btn-lg addButton">Add A Category Item</button>
             </div>
 
-            <div id="addCategory" style="display: none">
-                <form id="addCategoryForm" class="form">
+            <div id="addItem" style="display: none">
+                <form id="addItemForm" class="form">
                 <div class="form-group ">
-                    <label for="category_name">Enter Category Name</label>
-                    <input type="text" class="form-control" id="category_name" maxlength="15" required name="category_name">
+                    <label for="item_name">Enter Category Item Name</label>
+                    <input type="text" class="form-control" id="item_name" maxlength="15" required name="item_name">
                 </div>
 
                 <div class="form-group ">
-                    <label for="percentage">Enter Total Category Percentage</label>
-                    <input type="number" class="form-control" id="percentage" required name="percentage">
+                    <label for="grade">Enter Grade</label>
+                    <input type="number" class="form-control" id="grade" required name="grade">
                 </div>
 
                 <div class="submit">
-                    <button type="button" onclick="cancelAddCategory()" class="btn buttons btn-lg cancel_button">Cancel</button>
-                    <input type="submit" id="submitCategory" class="btn buttons btn-lg" value="Add The Category"></input>
+                    <button type="button" onclick="cancelAddItem()" class="btn buttons btn-lg cancel_button">Cancel</button>
+                    <input type="submit" id="submitCategory" class="btn buttons btn-lg" value="Add The Category Item"></input>
                 </div>
                 </form>
             </div>
 
             <div class="root-container"></div>
-            <div class="add-container"></div>
         </section>
 
         <footer id="footer">

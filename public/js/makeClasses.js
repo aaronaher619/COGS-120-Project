@@ -78,7 +78,7 @@ function requestClasses (url) {
 				"grade": grade,
 				"percentile": "N/A",
 				"focus": "N/A",
-				"categories": ['N/A']
+				"categories": {"N/A": "N/A"}
 			}}, postCallback);
 		  });
 
@@ -91,7 +91,7 @@ function requestClasses (url) {
 
 			$("#addClass").hide();
 			$(".addButton").show();
-		  }
+		}
 	});
 }
 

@@ -16,13 +16,13 @@ function requestCategories (url) {
 	$.get(parsedURL, (res, req) => {
 		console.log(res)
 
-		if (res.categories[0] != 'N/A'){
+		if (!res.categories.hasOwnProperty('N/A')){
 			var newCategory = '';
 
 			for (var [key, value] of Object.entries(res.categories)) {
 				newCategory +=
 				'<div class="container-fluid section">' +
-					'<a href="category/' + res["class"] + '/' + value["category_name"] + '" class="sections">' +
+					'<a href="' + res["class"] + '/category/' + value["category_name"] + '" class="sections">' +
 						'<h3 class="category_name">' + value["category_name"] + '</h3>' +
 						'<p class="info">' + value["current_percent"] + '% of ' + value["total_percent"] + '%</p>' +
 						'<p class="info">' + value["first"] + ' of ' + value["second"] + ' (' + value["tests"] + ' tests)' + '</p>' +
@@ -74,7 +74,7 @@ function requestCategories (url) {
 
 			$("#addCategory").hide();
 			$(".addButton").show();
-		  }
+		}
 	});
 }
 

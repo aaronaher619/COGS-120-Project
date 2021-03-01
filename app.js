@@ -46,9 +46,9 @@ app.get('/all_courses/course/:course_name', course.viewCourse);
 app.get("/all_courses/course/:course_name/catData", course.getData);
 app.post("/all_courses/course/:course_name/catData", course.postData);
 
-app.get("/all_courses/course/category/:course_name/:category_name", category.viewCategory);
-app.get("/all_courses/course/category/catData/:course_name/:category_name", category.getData);
-app.post("/all_courses/course/category/catData/:course_name/:category_name", category.postData);
+app.get("/all_courses/course/:course_name/category/:category_name", category.viewCategory);
+app.get("/all_courses/course/:course_name/category/:category_name/catData", category.getData);
+app.post("/all_courses/course/:course_name/category/:category_name/catData", category.postData);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

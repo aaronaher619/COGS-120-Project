@@ -5,20 +5,24 @@ var url;
 $(document).ready(function() {
 
     url = document.URL;
-    var categorySet = requestCategories(url)
+    requestItems(url)
 });
 
-function requestCategories (url) {
-    var parsedURL = url.replace("category/", "category/catData/");
+function requestItems (url) {
+    var parsedURL = url.concat("/catData");
     console.log(parsedURL)
-    var got = $.get(parsedURL, (res, req) => {
+
+    $.get(parsedURL, (res, req) => {
         console.log(res);
 
-        var newProjects = '';
+        var newItems = '';
 
-        for(var i = 0; i < res.length; i++){
+        //for(var i = 0; i < res.length; i++){
+        for (var [key, value] of Object.entries(res.items)) {
+            console.log(res.items);
+            console.log(key);
 
-            var currentCompletion = res[i]["completion"];
+            var currentCompletion = value["completion"];
 
             var test;
             var bubbleClass;
@@ -30,36 +34,70 @@ function requestCategories (url) {
                 test = "(test grade)";
                 bubbleClass = "test-grade";
 			} else {
-                test = "<br />";
+                test = "<br/>";
                 bubbleClass = "nothing-grade";
 			}
 
-            newProjects += '<div class="section ' + bubbleClass + '"> <div> Assignment ' + (i + 1) + '</div> <div class="final-text">';
-            newProjects += test + '</div></div> <br />';
+            newItems +=
+                '<div class="section ' + bubbleClass + '">' +
+                    '<div>' + key + '</div>' +
+                    '<div class="final-text">' + test + '</div>' +
+                '</div>' +
+                '<br/>';
 		}
 
-        var addProject = '<div class="section new-grade"> <div class="fw"> + ADD NEW ASSIGNMENT </div> </div>';
+        $(".root-container").html(newItems);
 
-        $(".root-container").html(newProjects);
-        $(".add-container").html(addProject)
+        $('#addItemForm').submit(function(e){
 
-        $(".new-grade").click(addNewClass);
+			//Prevents default submit + reload (we only want submit part)
+			e.preventDefault();
+
+			var item_name = $('#item_name').val();
+			var grade = $('#grade').val();
+
+			console.log("Submitting  " + item_name + '  ' + grade);
+
+			var currentHTML = $(".root-container").html();
+
+			currentHTML +=
+                '<div class="section ' + bubbleClass + '">' +
+                        '<div>' + key + '</div>' +
+                        '<div class="final-text">' + test + '</div>' +
+                '</div>' +
+                '<br/>';
+
+    		$(".root-container").html(currentHTML);
+
+			$.post(parsedURL, {newAddedCategory: {
+				"category_name": category_name,
+				"current_percent": "0",
+				"total_percent": percentage,
+				"first": "0",
+				"second": "0",
+				"tests": "0"
+			}}, postCallback);
+		  });
+
+		function postCallback(){
+			alert("Category Item Successfully Added!");
+
+			//Clear Form
+			$('#item_name').val('');
+			$('#grade').val('');
+
+			$("#addItem").hide();
+			$(".addButton").show();
+		  }
     });
 }
 
-function addNewClass(e) {
+function addItem() {
+	$("#addItem").show();
+	$(".addButton").hide();
+}
 
-
-    var parsedPostURL = url.replace("category/", "category/catData/");
-
-    var currentHTML = $(".root-container").html();
-    currentHTML += '<div class="section nothing-grade"> <div> new assignment </div> <br /> </div> <br />';
-
-    $(".root-container").html(currentHTML);
-
-    $.post(parsedPostURL, {newClass: {
-        "completion": "0",
-        "date": "Jan 1",
-        "Grade": "100"
-	}}, () => console.log('postFinish'));
+function cancelAddItem(){
+	$("#addItem").hide();
+	$(".addButton").show();
 }

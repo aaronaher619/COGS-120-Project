@@ -5,233 +5,233 @@
 		"grade": "C",
 		"percentile": "37",
 		"focus": "In-Class Quiz",
-		"categories": [
-			{
+		"categories": {
+			"Weekly Assignments":{
 				"category_name": "Weekly Assignments",
 				"current_percent": "30",
 				"total_percent": "66",
 				"first": "4",
 				"second": "10",
 				"tests": "0",
-				"items": [
-					{
+				"items": {
+					"Assignment 1": {
 						"completion": "1",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Assignment 2": {
 						"completion": "1",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Assignment 3": {
 						"completion": "1",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Assignment 4": {
 						"completion": "1",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Assignment 5": {
 						"completion": "0",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Assignment 6": {
 						"completion": "0",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Assignment 7": {
 						"completion": "0",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Assignment 8": {
 						"completion": "0",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Assignment 9": {
 						"completion": "0",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Assignment 10": {
 						"completion": "0",
 						"date": "Jan 1",
 						"Grade": "100"
 					}
-				]
+				}
 			},
-			{
+			"In-Class Quiz":{
 				"category_name": "In-Class Quiz",
 				"current_percent": "10",
 				"total_percent": "14",
 				"first": "0",
 				"second": "4",
 				"tests": "0",
-				"items": [
-					{
+				"items": {
+					"Quiz 1": {
 						"completion": "1",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Quiz 2": {
 						"completion": "1",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Quiz 3": {
 						"completion": "1",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Quiz 4": {
 						"completion": "1",
 						"date": "Jan 1",
 						"Grade": "100"
 					}
-				]
+				}
 			},
-			{
+			"Labs":{
 				"category_name": "Labs",
 				"current_percent": "6",
 				"total_percent": "8",
 				"first": "6",
 				"second": "10",
 				"tests": "0",
-				"items" : [
-					{
+				"items" : {
+					"Lab 1": {
 						"completion": "1",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Lab 2": {
 						"completion": "1",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Lab 3": {
 						"completion": "1",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Lab 4": {
 						"completion": "1",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Lab 5": {
 						"completion": "1",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Lab 6": {
 						"completion": "1",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Lab 7": {
 						"completion": "0",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Lab 8": {
 						"completion": "0",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Lab 9": {
 						"completion": "0",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Lab 10": {
 						"completion": "0",
 						"date": "Jan 1",
 						"Grade": "100"
 					}
-				]
+				}
 			},
-			{
+			"Participation":{
 				"category_name": "Participation",
 				"current_percent": "7",
 				"total_percent": "8",
 				"first": "0",
 				"second": "1",
 				"tests": "1",
-				"items": [
-					{
+				"items": {
+					"Participation": {
 						"completion": "2",
 						"date": "???",
 						"Grade": "0"
 					}
-				]
+				}
 			},
-			{
+			"Self & Team Assessments":{
 				"category_name": "Self & Team Assessments",
 				"current_percent": "4",
 				"total_percent": "4",
 				"first": "6",
 				"second": "10",
 				"tests": "0",
-				"items": [
-					{
+				"items": {
+					"Assessment 1": {
 						"completion": "1",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Assessment 2": {
 						"completion": "1",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Assessment 3": {
 						"completion": "1",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Assessment 4": {
 						"completion": "1",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Assessment 5": {
 						"completion": "1",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Assessment 6": {
 						"completion": "1",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Assessment 7": {
 						"completion": "0",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Assessment 8": {
 						"completion": "0",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Assessment 9": {
 						"completion": "0",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Assessment 10": {
 						"completion": "0",
 						"date": "Jan 1",
 						"Grade": "100"
 					}
-				]
+				}
 			}
-		]
+		}
     },
 
 	"TDGE124":{
@@ -240,138 +240,138 @@
 		"grade": "B+",
 		"percentile": "39",
 		"focus": "Collages",
-		"categories": [
-			{
+		"categories": {
+			"Collages":{
 				"category_name": "Collages",
 				"current_percent": "40",
 				"total_percent": "50",
 				"first": "2",
 				"second": "3",
 				"tests": "0",
-				"items": [
-					{
+				"items": {
+					"Collage 1": {
 						"completion": "1",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Collage 2": {
 						"completion": "1",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Collage 3": {
 						"completion": "0",
 						"date": "Jan 1",
 						"Grade": "100"
 					}
-					]
+				}
 			},
-			{
-				"category_name": "Initial Designs",
-				"current_percent": "12",
-				"total_percent": "14",
-				"first": "0",
-				"second": "3",
-				"tests": "0",
-				"items": [
-					{
-						"completion": "0",
-						"date": "Jan 1",
-						"Grade": "100"
-					},
-					{
-						"completion": "0",
-						"date": "Jan 1",
-						"Grade": "100"
-					},
-					{
-						"completion": "0",
-						"date": "Jan 1",
-						"Grade": "100"
+			"Initial Designs":{
+					"category_name": "Initial Designs",
+					"current_percent": "12",
+					"total_percent": "14",
+					"first": "0",
+					"second": "3",
+					"tests": "0",
+					"items": {
+						"Design 1": {
+							"completion": "0",
+							"date": "Jan 1",
+							"Grade": "100"
+						},
+						"Design 2": {
+							"completion": "0",
+							"date": "Jan 1",
+							"Grade": "100"
+						},
+						"Design 3": {
+							"completion": "0",
+							"date": "Jan 1",
+							"Grade": "100"
+						}
 					}
-				]
-			},
-			{
+				},
+			"Quiz Checkpoints":{
 				"category_name": "Quiz Checkpoints",
 				"current_percent": "10",
 				"total_percent": "11",
 				"first": "6",
 				"second": "11",
 				"tests": "1",
-				"items": [
-					{
+				"items": {
+					"Quiz 1": {
 						"completion": "1",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Quiz 2": {
 						"completion": "1",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Quiz 3": {
 						"completion": "1",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Quiz 4": {
 						"completion": "1",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Quiz 5": {
 						"completion": "1",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Quiz 6": {
 						"completion": "1",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Quiz 7": {
 						"completion": "0",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Quiz 8": {
 						"completion": "0",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Quiz 9": {
 						"completion": "0",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Quiz 10": {
 						"completion": "0",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Quiz 11": {
 						"completion": "0",
 						"date": "June 31",
 						"Grade": "100"
 					}
-				]
+				}
 			},
-			{
+			"Final Exam":{
 				"category_name": "Final Exam",
 				"current_percent": "20",
 				"total_percent": "25",
 				"first": "0",
 				"second": "1",
 				"tests": "1",
-				"items": [
-					{
+				"items": {
+					"Final Exam": {
 						"completion": "0",
 						"date": "???",
 						"Grade": "100"
 					}
-				]
+				}
 			}
-		]
+		}
 	},
 
 	"COGS100":{
@@ -380,113 +380,113 @@
 		"grade": "B+",
 		"percentile": "0",
 		"focus": "Weekly Quiz",
-		"categories": [
-			{
+		"categories": {
+			"Weekly Quiz":{
 				"category_name": "Weekly Quiz",
 				"current_percent": "8",
 				"total_percent": "10",
 				"first": "0",
 				"second": "9",
 				"tests": "0",
-				"items": [
-					{
+				"items": {
+					"Quiz 1": {
 						"completion": "0",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Quiz 2": {
 						"completion": "0",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Quiz 3": {
 						"completion": "0",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Quiz 4": {
 						"completion": "0",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Quiz 5": {
 						"completion": "0",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Quiz 6": {
 						"completion": "0",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Quiz 7": {
 						"completion": "0",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Quiz 8": {
 						"completion": "0",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Quiz 9": {
 						"completion": "0",
 						"date": "Jan 1",
 						"Grade": "100"
 					}
-				]
+				}
 			},
-			{
+			"Assignments":{
 				"category_name": "Assignments",
 				"current_percent": "30",
 				"total_percent": "36",
 				"first": "0",
 				"second": "4",
 				"tests": "0",
-				"items": [
-					{
+				"items": {
+					"Assignment 1": {
 						"completion": "0",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Assignment 2": {
 						"completion": "0",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Assignment 3": {
 						"completion": "0",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Assignment 4": {
 						"completion": "0",
 						"date": "Jan 1",
 						"Grade": "100"
 					}
-				]
+				}
 			},
-			{
+			"Midterm & Final":{
 				"category_name": "Midterm & Final",
 				"current_percent": "50",
 				"total_percent": "54",
 				"first": "0",
 				"second": "2",
 				"tests": "0",
-				"items": [
-					{
+				"items": {
+					"Midterm": {
 						"completion": "0",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Final": {
 						"completion": "0",
 						"date": "Jan 1",
 						"Grade": "100"
 					}
-				]
+				}
 			}
-		]
+		}
 	},
 
 	"COGS107B": {
@@ -495,58 +495,58 @@
 		"grade": "B+",
 		"percentile": "57",
 		"focus": "Exams",
-		"categories": [
-			{
+		"categories": {
+			"Peer Discussion":{
 				"category_name": "Peer Discussion",
 				"current_percent": "6",
 				"total_percent": "8",
 				"first": "6",
 				"second": "8",
 				"tests": "0",
-				"items": [
-					{
+				"items": {
+					"Peer Discussion 1": {
 						"completion": "1",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Peer Discussion 2": {
 						"completion": "1",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Peer Discussion 3": {
 						"completion": "1",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Peer Discussion 4": {
 						"completion": "1",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Peer Discussion 5": {
 						"completion": "1",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Peer Discussion 6": {
 						"completion": "1",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Peer Discussion 7": {
 						"completion": "0",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Peer Discussion 8": {
 						"completion": "0",
 						"date": "Jan 1",
 						"Grade": "100"
 					}
-				]
+				}
 			},
-			{
+			"Quizzes":{
 				"category_name": "Quizzes",
 				"current_percent": "7",
 				"total_percent": "8",
@@ -554,119 +554,119 @@
 				"first": "5",
 				"second": "8",
 				"tests": "0",
-				"items": [
-					{
+				"items": {
+					"Quiz 1": {
 						"completion": "1",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Quiz 2": {
 						"completion": "1",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Quiz 3": {
 						"completion": "1",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Quiz 4": {
 						"completion": "1",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Quiz 5": {
 						"completion": "1",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Quiz 6": {
 						"completion": "0",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Quiz 7": {
 						"completion": "0",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Quiz 8": {
 						"completion": "0",
 						"date": "Jan 1",
 						"Grade": "100"
 					}
-				]
+				}
 			},
-			{
+			"Section Activities":{
 				"category_name": "Section Activities",
 				"current_percent": "20",
 				"total_percent": "24",
 				"first": "4",
 				"second": "6",
 				"tests": "0",
-				"items": [
-					{
+				"items": {
+					"Activity 1": {
 						"completion": "1",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Activity 2": {
 						"completion": "1",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Activity 3": {
 						"completion": "1",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Activity 4": {
 						"completion": "1",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Activity 5": {
 						"completion": "0",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Activity 6": {
 						"completion": "0",
 						"date": "Jan 1",
 						"Grade": "100"
 					}
-				]
+				}
 			},
-			{
+			"Exams":	{
 				"category_name": "Exams",
 				"current_percent": "55",
 				"total_percent": "60",
 				"first": "2",
 				"second": "4",
 				"tests": "0",
-				"items": [
-					{
+				"items": {
+					"Exam 1": {
 						"completion": "1",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Exam 2": {
 						"completion": "1",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Exam 3": {
 						"completion": "0",
 						"date": "Jan 1",
 						"Grade": "100"
 					},
-					{
+					"Exam 4": {
 						"completion": "0",
 						"date": "Jan 1",
 						"Grade": "100"
 					}
-				]
+				}
 			}
-		]
+		}
 	}
 }
