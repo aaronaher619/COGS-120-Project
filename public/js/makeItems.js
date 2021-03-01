@@ -33,7 +33,7 @@ function requestItems (url) {
                     '<div class="container-fluid item_bubble ' + bubble_color + '">' +
                         '<h3 class="item_name">' + key + '</h3>' +
                         '<p class="info">' + value['points_received'] + ' out of ' + value['points_total'] + ' Points</p>' +
-                        '<p class="info">Grade: ' + value['grade'] + '%</p>' +
+                        '<p class="item_grade">Grade: ' + value['grade'] + '%</p>' +
                         '<p class="info">' + value['completion_type'] + '</p>' +
                     '</div>';
             }
@@ -69,7 +69,7 @@ function requestItems (url) {
             '<div class="container-fluid item_bubble ' + bubble_color + '">' +
                 '<h3 class="item_name">' + item_name + '</h3>' +
                 '<p class="info">' + pointsR + ' out of ' + pointsT + ' Points</p>' +
-                '<p class="info">Grade: ' + grade + '%</p>' +
+                '<p class="item_grade">Grade: ' + grade + '%</p>' +
                 '<p class="info">' + ForT + '</p>' +
             '</div>';
 

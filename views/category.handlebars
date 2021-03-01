@@ -37,10 +37,15 @@
                     <button type="button" class="btn buttons btn-lg">Log Off</button>
                 </a>
             </div>
-
+            
+            <h2 class="class_header"> {{course}} </h2>
             <h1 class="category_header"> {{category}} </h1>
-            <br/>
-            <h2 class="class_holder"> {{course}} </h2>
+
+            <div class="grade_bubble">
+                <h3 class="current_grade">Category Grade:</h3>
+                <p class="score">{{grade}}</p>
+                <p class="percent"> {{percent}}%</p>
+            </div>
             <hr>
         </section>
 

@@ -7,24 +7,33 @@ text-align: center;
 	color: grey;
 }
 
-.current_grade{
-	font-size: 2rem;
-	font-weight: bold;
-	padding: 10px;
-	margin: 0%
-}
-
-.score{
-	font-size: 7rem;
-	font-family: 'Georgia' !important;
-}
-
-.base-grade{
+.grade_bubble{
 	border-radius: 25px;
 	background-color: lightskyblue;
 	width: 300px;
 	margin-left: auto;
 	margin-right: auto;
+	padding: 20px;
+}
+
+.current_grade{
+	font-size: 2rem;
+	font-weight: bold;
+	padding-bottom: 10px;
+	margin: 0%;
+}
+
+.score{
+	font-size: 7rem;
+	line-height: 100%;
+	margin: 0%;
+	font-family: 'Georgia';
+}
+
+.percent{
+	margin: 0%;
+	line-height: 100%;
+	font-size: 3rem;
 }
 
 .class_header{

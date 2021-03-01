@@ -7,7 +7,9 @@ exports.viewCategory = function(request, response){
 
     response.render("category", {
         "course": course_name,
-        "category": category_name
+        "category": category_name,
+        "grade": data[course_name]['categories'][category_name]['grade'],
+        "percent": data[course_name]['categories'][category_name]['percent']
     });
 }
 

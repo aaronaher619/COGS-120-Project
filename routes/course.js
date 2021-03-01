@@ -2,13 +2,14 @@ var data = require("../data.json");
 
 exports.viewCourse = function(request, response){
     var course_name = request.params.course_name;
-    var tempJSON = {
+
+    response.render("course", {
       "course": course_name,
       "grade": data[course_name].grade,
+      "percent": data[course_name].percent,
       "percentile": data[course_name].percentile,
       "focus": data[course_name].focus
-    }
-    response.render("course", tempJSON);
+    });
 }
 
 exports.postData = function(req, res) {

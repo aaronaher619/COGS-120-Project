@@ -7,14 +7,14 @@ $(document).ready(function() {
 	console.log("Page ready");
 
 	url = document.URL;
-	requestCategories(url)
+	requestCategories(url);
 })
 
 function requestCategories (url) {
 	var parsedURL = url.concat("/catData");
 
 	$.get(parsedURL, (res, req) => {
-		console.log(res)
+		console.log(res);
 
 		if (!res.categories.hasOwnProperty('N/A')){
 			var newCategory = '';
@@ -24,7 +24,8 @@ function requestCategories (url) {
 				'<a href="' + url + '/category/' + key + '" class="category_bubble">' +
 					'<div class="container-fluid categories">' +
 						'<h3 class="category_name">' + key + '</h3>' +
-						'<p class="info">' + value["current_percent"] + '% of ' + value["total_percent"] + '%</p>' +
+						'<p class="info">Grade: ' + value["grade"] + ' with ' + value["percent"] + '%</p>' +
+						'<p class="info">Attained ' + value["current_percent"] + '% of ' + value["total_percent"] + '% Category Total</p>' +
 						'<p class="info">' + value["first"] + ' of ' + value["second"] + ' (' + value["tests"] + ' tests)' + '</p>' +
 					'</div>' +
 				'</a>';
@@ -43,12 +44,13 @@ function requestCategories (url) {
 			console.log("Submitting  " + category_name + '  ' + percentage);
 
 			var currentHTML = $(".root-container").html();
-
+			console.log(url);
 			currentHTML +=
-			'<a href="' + res["class"] + '/category/' + category_name + '" class="category_bubble">' +
+			'<a href="' + url + '/category/' + category_name + '" class="category_bubble">' +
 				'<div class="container-fluid categories">' +
 					'<h3 class="category_name">' + category_name + '</h3>' +
-					'<p class="info">0% of ' + percentage + '%</p>' +
+					'<p class="info">Grade: ' + 'N/A' + ' with ' + '0' + '%</p>' +
+					'<p class="info">Attained 0% of ' + percentage + '% Category Total</p>' +
 					'<p class="info"> 0 of 0 (0 tests)</p>' +
 				'</div>' +
 			'</a>';
@@ -59,6 +61,8 @@ function requestCategories (url) {
 				newAddedCategory: {
 					"current_percent": "0",
 					"total_percent": percentage,
+					"grade": "N/A",
+					"percent": "0",
 					"first": "0",
 					"second": "0",
 					"tests": "0",
