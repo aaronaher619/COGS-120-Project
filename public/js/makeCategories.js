@@ -21,13 +21,13 @@ function requestCategories (url) {
 
 			for (var [key, value] of Object.entries(res.categories)) {
 				newCategory +=
-				'<div class="container-fluid section">' +
-					'<a href="' + res["class"] + '/category/' + value["category_name"] + '" class="sections">' +
-						'<h3 class="category_name">' + value["category_name"] + '</h3>' +
+				'<a href="' + url + '/category/' + key + '" class="category_bubble">' +
+					'<div class="container-fluid categories">' +
+						'<h3 class="category_name">' + key + '</h3>' +
 						'<p class="info">' + value["current_percent"] + '% of ' + value["total_percent"] + '%</p>' +
 						'<p class="info">' + value["first"] + ' of ' + value["second"] + ' (' + value["tests"] + ' tests)' + '</p>' +
-					'</a>' +
-				'</div>';
+					'</div>' +
+				'</a>';
 			}
 			$(".root-container").html(newCategory);
 		}
@@ -45,24 +45,26 @@ function requestCategories (url) {
 			var currentHTML = $(".root-container").html();
 
 			currentHTML +=
-			'<div class="container-fluid section">' +
-				'<a href="category/' + res["class"] + '/' + category_name + '" class="sections">' +
+			'<a href="' + res["class"] + '/category/' + category_name + '" class="category_bubble">' +
+				'<div class="container-fluid categories">' +
 					'<h3 class="category_name">' + category_name + '</h3>' +
 					'<p class="info">0% of ' + percentage + '%</p>' +
 					'<p class="info"> 0 of 0 (0 tests)</p>' +
-				'</a>' +
-			'</div>';
+				'</div>' +
+			'</a>';
 
     		$(".root-container").html(currentHTML);
 
-			$.post(parsedURL, {newAddedCategory: {
-				"category_name": category_name,
-				"current_percent": "0",
-				"total_percent": percentage,
-				"first": "0",
-				"second": "0",
-				"tests": "0"
-			}}, postCallback);
+			$.post(parsedURL, {
+				newAddedCategory: {
+					"current_percent": "0",
+					"total_percent": percentage,
+					"first": "0",
+					"second": "0",
+					"tests": "0",
+					"items": {"N/A": "N/A"}
+				}, category_name
+			}, postCallback);
 		  });
 
 		function postCallback(){

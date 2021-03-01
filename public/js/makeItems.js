@@ -3,50 +3,42 @@
 var url;
 
 $(document).ready(function() {
+	console.log("Page ready");
 
     url = document.URL;
-    requestItems(url)
+    requestItems(url);
 });
 
 function requestItems (url) {
     var parsedURL = url.concat("/catData");
-    console.log(parsedURL)
 
     $.get(parsedURL, (res, req) => {
         console.log(res);
 
-        var newItems = '';
+        if (!res.items.hasOwnProperty('N/A')){
+            var newItems = '';
 
-        //for(var i = 0; i < res.length; i++){
-        for (var [key, value] of Object.entries(res.items)) {
-            console.log(res.items);
-            console.log(key);
+            for (var [key, value] of Object.entries(res.items)) {
+                var bubble_color;
 
-            var currentCompletion = value["completion"];
+                if (value['completion_type'] == "Finalized"){
+                    var bubble_color = "final_color";
+                }
 
-            var test;
-            var bubbleClass;
+                else{
+                    var bubble_color = "test_color";
+                }
 
-            if(currentCompletion == "1"){
-                test = " F I N A L";
-                bubbleClass = "final-grade";
-			} else if (currentCompletion == "2"){
-                test = "(test grade)";
-                bubbleClass = "test-grade";
-			} else {
-                test = "<br/>";
-                bubbleClass = "nothing-grade";
-			}
-
-            newItems +=
-                '<div class="section ' + bubbleClass + '">' +
-                    '<div>' + key + '</div>' +
-                    '<div class="final-text">' + test + '</div>' +
-                '</div>' +
-                '<br/>';
-		}
-
-        $(".root-container").html(newItems);
+                newItems +=
+                    '<div class="container-fluid item_bubble ' + bubble_color + '">' +
+                        '<h3 class="item_name">' + key + '</h3>' +
+                        '<p class="info">' + value['points_received'] + ' out of ' + value['points_total'] + ' Points</p>' +
+                        '<p class="info">Grade: ' + value['grade'] + '%</p>' +
+                        '<p class="info">' + value['completion_type'] + '</p>' +
+                    '</div>';
+            }
+            $(".root-container").html(newItems);
+        }
 
         $('#addItemForm').submit(function(e){
 
@@ -54,29 +46,43 @@ function requestItems (url) {
 			e.preventDefault();
 
 			var item_name = $('#item_name').val();
-			var grade = $('#grade').val();
+			var pointsR = $('#pointsR').val();
+            var pointsT = $('#pointsT').val();
+            var grade = ((parseInt(pointsR, 10) * 100) / parseInt(pointsT, 10)).toFixed(2);
+			var ForT = $('#ForT').val();
 
-			console.log("Submitting  " + item_name + '  ' + grade);
+            var bubble_color;
+
+            if (ForT == "Finalized"){
+                var bubble_color = "final_color";
+            }
+
+            else{
+                var bubble_color = "test_color";
+            }
+
+			console.log("Submitting  " + item_name + '  ' + pointsR + '  ' + pointsT + '  ' + ForT);
 
 			var currentHTML = $(".root-container").html();
 
 			currentHTML +=
-                '<div class="section ' + bubbleClass + '">' +
-                        '<div>' + key + '</div>' +
-                        '<div class="final-text">' + test + '</div>' +
-                '</div>' +
-                '<br/>';
+            '<div class="container-fluid item_bubble ' + bubble_color + '">' +
+                '<h3 class="item_name">' + item_name + '</h3>' +
+                '<p class="info">' + pointsR + ' out of ' + pointsT + ' Points</p>' +
+                '<p class="info">Grade: ' + grade + '%</p>' +
+                '<p class="info">' + ForT + '</p>' +
+            '</div>';
 
     		$(".root-container").html(currentHTML);
 
-			$.post(parsedURL, {newAddedCategory: {
-				"category_name": category_name,
-				"current_percent": "0",
-				"total_percent": percentage,
-				"first": "0",
-				"second": "0",
-				"tests": "0"
-			}}, postCallback);
+			$.post(parsedURL, {
+                newAddedItem: {
+                    "points_received": pointsR,
+                    "points_total": pointsT,
+                    "grade": grade,
+                    "completion_type": ForT
+			    }, item_name
+            }, postCallback);
 		  });
 
 		function postCallback(){
@@ -84,7 +90,9 @@ function requestItems (url) {
 
 			//Clear Form
 			$('#item_name').val('');
-			$('#grade').val('');
+			$('#pointsR').val('');
+            $('#pointsT').val('');
+			$('#ForT').val('');
 
 			$("#addItem").hide();
 			$(".addButton").show();

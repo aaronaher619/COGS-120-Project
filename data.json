@@ -1,13 +1,11 @@
 {
     "COGS120":{
-		"class": "COGS120",
 		"professer": "Klemmer",
 		"grade": "C",
 		"percentile": "37",
 		"focus": "In-Class Quiz",
 		"categories": {
 			"Weekly Assignments":{
-				"category_name": "Weekly Assignments",
 				"current_percent": "30",
 				"total_percent": "66",
 				"first": "4",
@@ -15,59 +13,68 @@
 				"tests": "0",
 				"items": {
 					"Assignment 1": {
-						"completion": "1",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Assignment 2": {
-						"completion": "1",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "8",
+						"points_total": "10",
+						"grade": "80",
+						"completion_type": "Finalized"
 					},
 					"Assignment 3": {
-						"completion": "1",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "9",
+						"points_total": "10",
+						"grade": "90",
+						"completion_type": "Finalized"
 					},
 					"Assignment 4": {
-						"completion": "1",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "7",
+						"points_total": "10",
+						"grade": "70",
+						"completion_type": "Finalized"
 					},
 					"Assignment 5": {
-						"completion": "0",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "10",
+						"points_total": "10",
+						"grade": "100",
+						"completion_type": "Finalized"
 					},
 					"Assignment 6": {
-						"completion": "0",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "8",
+						"points_total": "10",
+						"grade": "80",
+						"completion_type": "Test"
 					},
 					"Assignment 7": {
-						"completion": "0",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "8",
+						"points_total": "10",
+						"grade": "80",
+						"completion_type": "Test"
 					},
 					"Assignment 8": {
-						"completion": "0",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "8",
+						"points_total": "10",
+						"grade": "80",
+						"completion_type": "Test"
 					},
 					"Assignment 9": {
-						"completion": "0",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "8",
+						"points_total": "10",
+						"grade": "80",
+						"completion_type": "Test"
 					},
 					"Assignment 10": {
-						"completion": "0",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "8",
+						"points_total": "10",
+						"grade": "80",
+						"completion_type": "Test"
 					}
 				}
 			},
 			"In-Class Quiz":{
-				"category_name": "In-Class Quiz",
 				"current_percent": "10",
 				"total_percent": "14",
 				"first": "0",
@@ -75,29 +82,32 @@
 				"tests": "0",
 				"items": {
 					"Quiz 1": {
-						"completion": "1",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Quiz 2": {
-						"completion": "1",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Quiz 3": {
-						"completion": "1",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Quiz 4": {
-						"completion": "1",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					}
 				}
 			},
 			"Labs":{
-				"category_name": "Labs",
 				"current_percent": "6",
 				"total_percent": "8",
 				"first": "6",
@@ -105,59 +115,68 @@
 				"tests": "0",
 				"items" : {
 					"Lab 1": {
-						"completion": "1",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Lab 2": {
-						"completion": "1",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Lab 3": {
-						"completion": "1",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Lab 4": {
-						"completion": "1",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Lab 5": {
-						"completion": "1",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Lab 6": {
-						"completion": "1",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Lab 7": {
-						"completion": "0",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Lab 8": {
-						"completion": "0",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Lab 9": {
-						"completion": "0",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Lab 10": {
-						"completion": "0",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					}
 				}
 			},
 			"Participation":{
-				"category_name": "Participation",
 				"current_percent": "7",
 				"total_percent": "8",
 				"first": "0",
@@ -165,14 +184,14 @@
 				"tests": "1",
 				"items": {
 					"Participation": {
-						"completion": "2",
-						"date": "???",
-						"Grade": "0"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					}
 				}
 			},
 			"Self & Team Assessments":{
-				"category_name": "Self & Team Assessments",
 				"current_percent": "4",
 				"total_percent": "4",
 				"first": "6",
@@ -180,54 +199,64 @@
 				"tests": "0",
 				"items": {
 					"Assessment 1": {
-						"completion": "1",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Assessment 2": {
-						"completion": "1",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Assessment 3": {
-						"completion": "1",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Assessment 4": {
-						"completion": "1",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Assessment 5": {
-						"completion": "1",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Assessment 6": {
-						"completion": "1",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Assessment 7": {
-						"completion": "0",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Assessment 8": {
-						"completion": "0",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Assessment 9": {
-						"completion": "0",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Assessment 10": {
-						"completion": "0",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					}
 				}
 			}
@@ -235,14 +264,12 @@
     },
 
 	"TDGE124":{
-		"class": "TDGE124",
 		"professer": "Fulton",
 		"grade": "B+",
 		"percentile": "39",
 		"focus": "Collages",
 		"categories": {
 			"Collages":{
-				"category_name": "Collages",
 				"current_percent": "40",
 				"total_percent": "50",
 				"first": "2",
@@ -250,49 +277,53 @@
 				"tests": "0",
 				"items": {
 					"Collage 1": {
-						"completion": "1",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Collage 2": {
-						"completion": "1",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Collage 3": {
-						"completion": "0",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					}
 				}
 			},
 			"Initial Designs":{
-					"category_name": "Initial Designs",
-					"current_percent": "12",
-					"total_percent": "14",
-					"first": "0",
-					"second": "3",
-					"tests": "0",
-					"items": {
-						"Design 1": {
-							"completion": "0",
-							"date": "Jan 1",
-							"Grade": "100"
-						},
-						"Design 2": {
-							"completion": "0",
-							"date": "Jan 1",
-							"Grade": "100"
-						},
-						"Design 3": {
-							"completion": "0",
-							"date": "Jan 1",
-							"Grade": "100"
-						}
+				"current_percent": "12",
+				"total_percent": "14",
+				"first": "0",
+				"second": "3",
+				"tests": "0",
+				"items": {
+					"Design 1": {
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
+					},
+					"Design 2": {
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
+					},
+					"Design 3": {
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					}
-				},
+				}
+			},
 			"Quiz Checkpoints":{
-				"category_name": "Quiz Checkpoints",
 				"current_percent": "10",
 				"total_percent": "11",
 				"first": "6",
@@ -300,64 +331,74 @@
 				"tests": "1",
 				"items": {
 					"Quiz 1": {
-						"completion": "1",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Quiz 2": {
-						"completion": "1",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Quiz 3": {
-						"completion": "1",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Quiz 4": {
-						"completion": "1",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Quiz 5": {
-						"completion": "1",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Quiz 6": {
-						"completion": "1",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Quiz 7": {
-						"completion": "0",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Quiz 8": {
-						"completion": "0",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Quiz 9": {
-						"completion": "0",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Quiz 10": {
-						"completion": "0",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Quiz 11": {
-						"completion": "0",
-						"date": "June 31",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					}
 				}
 			},
 			"Final Exam":{
-				"category_name": "Final Exam",
 				"current_percent": "20",
 				"total_percent": "25",
 				"first": "0",
@@ -365,9 +406,10 @@
 				"tests": "1",
 				"items": {
 					"Final Exam": {
-						"completion": "0",
-						"date": "???",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					}
 				}
 			}
@@ -375,14 +417,12 @@
 	},
 
 	"COGS100":{
-		"class": "COGS100",
 		"professer": "Kirsh",
 		"grade": "B+",
 		"percentile": "0",
 		"focus": "Weekly Quiz",
 		"categories": {
 			"Weekly Quiz":{
-				"category_name": "Weekly Quiz",
 				"current_percent": "8",
 				"total_percent": "10",
 				"first": "0",
@@ -390,54 +430,62 @@
 				"tests": "0",
 				"items": {
 					"Quiz 1": {
-						"completion": "0",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Quiz 2": {
-						"completion": "0",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Quiz 3": {
-						"completion": "0",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Quiz 4": {
-						"completion": "0",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Quiz 5": {
-						"completion": "0",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Quiz 6": {
-						"completion": "0",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Quiz 7": {
-						"completion": "0",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Quiz 8": {
-						"completion": "0",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Quiz 9": {
-						"completion": "0",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					}
 				}
 			},
 			"Assignments":{
-				"category_name": "Assignments",
 				"current_percent": "30",
 				"total_percent": "36",
 				"first": "0",
@@ -445,29 +493,32 @@
 				"tests": "0",
 				"items": {
 					"Assignment 1": {
-						"completion": "0",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Assignment 2": {
-						"completion": "0",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Assignment 3": {
-						"completion": "0",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Assignment 4": {
-						"completion": "0",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					}
 				}
 			},
 			"Midterm & Final":{
-				"category_name": "Midterm & Final",
 				"current_percent": "50",
 				"total_percent": "54",
 				"first": "0",
@@ -475,14 +526,16 @@
 				"tests": "0",
 				"items": {
 					"Midterm": {
-						"completion": "0",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Final": {
-						"completion": "0",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					}
 				}
 			}
@@ -490,14 +543,12 @@
 	},
 
 	"COGS107B": {
-		"class": "COGS107B",
 		"professer": "Rangel",
 		"grade": "B+",
 		"percentile": "57",
 		"focus": "Exams",
 		"categories": {
 			"Peer Discussion":{
-				"category_name": "Peer Discussion",
 				"current_percent": "6",
 				"total_percent": "8",
 				"first": "6",
@@ -505,49 +556,56 @@
 				"tests": "0",
 				"items": {
 					"Peer Discussion 1": {
-						"completion": "1",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Peer Discussion 2": {
-						"completion": "1",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Peer Discussion 3": {
-						"completion": "1",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Peer Discussion 4": {
-						"completion": "1",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Peer Discussion 5": {
-						"completion": "1",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Peer Discussion 6": {
-						"completion": "1",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Peer Discussion 7": {
-						"completion": "0",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Peer Discussion 8": {
-						"completion": "0",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					}
 				}
 			},
 			"Quizzes":{
-				"category_name": "Quizzes",
 				"current_percent": "7",
 				"total_percent": "8",
 				"percent": "8",
@@ -556,49 +614,56 @@
 				"tests": "0",
 				"items": {
 					"Quiz 1": {
-						"completion": "1",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Quiz 2": {
-						"completion": "1",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Quiz 3": {
-						"completion": "1",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Quiz 4": {
-						"completion": "1",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Quiz 5": {
-						"completion": "1",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Quiz 6": {
-						"completion": "0",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Quiz 7": {
-						"completion": "0",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Quiz 8": {
-						"completion": "0",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					}
 				}
 			},
 			"Section Activities":{
-				"category_name": "Section Activities",
 				"current_percent": "20",
 				"total_percent": "24",
 				"first": "4",
@@ -606,39 +671,44 @@
 				"tests": "0",
 				"items": {
 					"Activity 1": {
-						"completion": "1",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Activity 2": {
-						"completion": "1",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Activity 3": {
-						"completion": "1",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Activity 4": {
-						"completion": "1",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Activity 5": {
-						"completion": "0",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Activity 6": {
-						"completion": "0",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					}
 				}
 			},
-			"Exams":	{
-				"category_name": "Exams",
+			"Exams":{
 				"current_percent": "55",
 				"total_percent": "60",
 				"first": "2",
@@ -646,24 +716,28 @@
 				"tests": "0",
 				"items": {
 					"Exam 1": {
-						"completion": "1",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Exam 2": {
-						"completion": "1",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Exam 3": {
-						"completion": "0",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					},
 					"Exam 4": {
-						"completion": "0",
-						"date": "Jan 1",
-						"Grade": "100"
+						"points_received": "60",
+						"points_total": "100",
+						"grade": "60",
+						"completion_type": "Finalized"
 					}
 				}
 			}

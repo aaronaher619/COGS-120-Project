@@ -15,12 +15,17 @@ exports.postData = function(req, res) {
     var course_name = req.params.course_name;
     var category_name = req.params.category_name;
 
-    var newClass = req.body.newClass;
+    var newAddedItem = req.body.newAddedItem;
+    var item_name = req.body.item_name;
 
-    data[course_name][category_name].push(newClass);
+    if (data[course_name]['categories'][category_name]['items'].hasOwnProperty('N/A')){
+        delete data[course_name]['categories'][category_name]['items']['N/A'];
+    }
 
-    res.send(newClass);
-    console.log(data[course_name][category_name]);
+    data[course_name]['categories'][category_name]['items'][item_name] = newAddedItem;
+
+    res.send(newAddedItem);
+    console.log(data[course_name]['categories'][category_name]['items']);
 }
 
 exports.getData = function(req, res) {
@@ -28,6 +33,5 @@ exports.getData = function(req, res) {
     var course_name = req.params.course_name;
     var category_name = req.params.category_name;
 
-    var jso = data[course_name]['categories'][category_name];
-    res.json(jso);
+    res.json(data[course_name]['categories'][category_name]);
 }

@@ -1,6 +1,3 @@
-/*
- * GET home page.
- */
 var data = require("../data.json");
 
   exports.view = function(request, response){
@@ -14,9 +11,11 @@ var data = require("../data.json");
 };
 
 exports.postData = function(req, res) {
-
   var newAddedClass = req.body.newAddedClass;
-  data[newAddedClass.class] = newAddedClass;
+
+  var class_name = req.body.class_name;
+
+  data[class_name] = newAddedClass;
 
   res.send(newAddedClass);
   console.log(data);

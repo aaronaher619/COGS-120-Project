@@ -19,21 +19,18 @@ function requestClasses (url) {
 		var newClass = '';
 
 		for (var [key, value] of Object.entries(res)) {
-			var class_name = value["class"];
-			var professer = value["professer"];
-			var grade = value["grade"];
 
 			newClass +=
-			'<a href="all_courses/course/' + class_name + '" class="class_bubble">' +
+			'<a href="all_courses/course/' + key + '" class="class_bubble">' +
 				'<div class="container-fluid classes">' +
 					'<div class="row align-items-center">' +
 						'<div class="col-lg-6 col-md-6 class_column">' +
-							'<h3 class="class_name">' + class_name + '</h3>' +
-							'<p class="prof">' + professer + '</p>' +
+							'<h3 class="class_name">' + key + '</h3>' +
+							'<p class="prof">' + value["professer"] + '</p>' +
 						'</div>' +
 
 						'<div class="col-lg-6 col-md-6 class_column">' +
-							'<h3 class="grade">' + grade + '</h3>' +
+							'<h3 class="grade">' + value["grade"] + '</h3>' +
 						'</div>' +
 					'</div>' +
 				'</div>' +
@@ -46,25 +43,24 @@ function requestClasses (url) {
 			//Prevents default submit + reload (we only want submit part)
 			e.preventDefault();
 
-			var course = $('#class_name').val();
+			var class_name = $('#class_name').val();
 			var professer = $('#professer').val();
-			var grade = "N/A";
 
-			console.log("Submitting  " + course + '  ' + professer);
+			console.log("Submitting  " + class_name + '  ' + professer);
 
 			var currentHTML = $(".root-container").html();
 
 			currentHTML +=
-			'<a href="all_courses/course/' + course + '" class="class_bubble">' +
+			'<a href="all_courses/course/' + class_name + '" class="class_bubble">' +
 				'<div class="container-fluid classes">' +
 					'<div class="row align-items-center">' +
 						'<div class="col-lg-6 col-md-6 class_column">' +
-							'<h3 class="class_name">' + course + '</h3>' +
+							'<h3 class="class_name">' + class_name + '</h3>' +
 							'<p class="prof">' + professer + '</p>' +
 						'</div>' +
 
 						'<div class="col-lg-6 col-md-6 class_column">' +
-							'<h3 class="grade">' + grade + '</h3>' +
+							'<h3 class="grade">' + class_name + '</h3>' +
 						'</div>' +
 					'</div>' +
 				'</div>' +
@@ -72,14 +68,15 @@ function requestClasses (url) {
 
     		$(".root-container").html(currentHTML);
 
-			$.post(parsedURL, {newAddedClass: {
-				"class": course,
-				"professer": professer,
-				"grade": grade,
-				"percentile": "N/A",
-				"focus": "N/A",
-				"categories": {"N/A": "N/A"}
-			}}, postCallback);
+			$.post(parsedURL, {
+				newAddedClass: {
+					"professer": professer,
+					"grade": "N/A",
+					"percentile": "N/A",
+					"focus": "N/A",
+					"categories": {"N/A": "N/A"}
+				}, class_name
+			}, postCallback);
 		  });
 
 		function postCallback(){
