@@ -45,6 +45,24 @@ text-align: center;
 	font-size: 3rem;
 }
 
+.category_info{
+	margin: 25px 0%;
+}
+
+.category_percentage{
+	margin-bottom: 5px;
+	color: grey;
+}
+
+.percentage_numbers{
+	color: black;
+}
+
+.category_numbers{
+	margin: 0%;
+	color: grey;
+}
+
 .item_bubble{
 	border: 2px solid black;
 	border-radius: 60px;
