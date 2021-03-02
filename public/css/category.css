@@ -63,16 +63,6 @@ text-align: center;
 	color: grey;
 }
 
-.helper_div{
-	margin: 20px;
-}
-
-.helper{
-	color: grey;
-	font-size: 5rem;
-	margin-bottom: 0%;
-}
-
 .item_bubble{
 	border: 2px solid black;
 	border-radius: 60px;

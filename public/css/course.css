@@ -60,16 +60,6 @@ text-align: center;
 	font-weight: bold;
 }
 
-.helper_div{
-	margin: 20px;
-}
-
-.helper{
-	color: grey;
-	font-size: 5rem;
-	margin-bottom: 0%;
-}
-
 .category_bubble{
 	display: block;
 	background-color: lightskyblue;

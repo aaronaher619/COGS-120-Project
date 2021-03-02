@@ -1,34 +1,60 @@
-var data = require("../data.json");
+var fs = require('fs')
 
-exports.viewCourse = function(request, response){
-    var course_name = request.params.course_name;
+exports.viewCourse = function(req, res){
+  var course_name = req.params.course_name;
+  var username = req.params.username;
 
-    response.render("course", {
-      "course": course_name,
-      "grade": data[course_name].grade,
-      "percent": data[course_name].percent,
-      "percentile": data[course_name].percentile,
-      "focus": data[course_name].focus
-    });
+  res.render("course", {
+    "username": username,
+    "course": course_name,
+  });
 }
 
-exports.postData = function(req, res) {
-    var course_name = req.params.course_name;
+exports.postLetterGrade = function(req, res) {
+  var username = req.params.username;
+  var course_name = req.params.course_name;
 
-    var newAddedCategory = req.body.newAddedCategory;
-    var category_name = req.body.category_name;
+  var letter_grade = req.body.letter_grade;
 
-    if (data[course_name]['categories'].hasOwnProperty('N/A')){
-      delete data[course_name]['categories']['N/A'];
-    }
+  var jsonString = fs.readFileSync('./data.json');
+  var data = JSON.parse(jsonString);
 
-    data[course_name]['categories'][category_name] = newAddedCategory;
+  data[username]['classes'][course_name]['grade'] = letter_grade;
 
-    res.send(newAddedCategory);
-    console.log(data[course_name]['categories']);
+  var jsonUpdated = JSON.stringify(data, null, 2)
+  fs.writeFileSync('./data.json', jsonUpdated)
+  
+  res.send(letter_grade);
+}
+
+exports.postData = function(req, res) {  
+  var username = req.params.username;
+  var course_name = req.params.course_name;
+
+  var newAddedCategory = req.body.newAddedCategory;
+  var category_name = req.body.category_name;
+
+  var jsonString = fs.readFileSync('./data.json');
+  var data = JSON.parse(jsonString);
+
+  if (data[username]['classes'][course_name]['categories'].hasOwnProperty('N/A')){
+    delete data[username]['classes'][course_name]['categories']['N/A'];
   }
 
-  exports.getData = function(req, res) {
-    var course_name = req.params.course_name;
-    res.json(data[course_name]);
+  data[username]['classes'][course_name]['categories'][category_name] = newAddedCategory;
+
+  var jsonUpdated = JSON.stringify(data, null, 2)
+  fs.writeFileSync('./data.json', jsonUpdated)
+
+  res.send(newAddedCategory);
+  }
+
+exports.getData = function(req, res) {
+  var username = req.params.username;
+  var course_name = req.params.course_name;
+
+  var jsonString = fs.readFileSync('./data.json');
+  var data = JSON.parse(jsonString);
+
+  res.json(data[username]['classes'][course_name]);
 }

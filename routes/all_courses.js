@@ -9,19 +9,31 @@ exports.view = function(req, res){
 };
 
 exports.postData = function(req, res) {
+  var username = req.params.username;
   var newAddedClass = req.body.newAddedClass;
 
   var class_name = req.body.class_name;
 
-  data[class_name] = newAddedClass;
+  var jsonString = fs.readFileSync('./data.json');
+  var data = JSON.parse(jsonString);
+
+  if (data[username]['classes'].hasOwnProperty('N/A')){
+    delete data[username]['classes']['N/A'];
+  }
+
+  data[username]['classes'][class_name] = newAddedClass;
+
+  var jsonUpdated = JSON.stringify(data, null, 2)
+  fs.writeFileSync('./data.json', jsonUpdated)
 
   res.send(newAddedClass);
-  console.log(data);
 }
 
 exports.getData = function(req, res) {
   var username = req.params.username;
+
   var jsonString = fs.readFileSync('./data.json');
   var data = JSON.parse(jsonString);
-  res.json(data[username]['classes']);
+  
+  res.json(data[username]);
 }

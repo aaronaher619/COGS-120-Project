@@ -44,6 +44,7 @@ app.get("/:username/all_courses/catData", all_courses.getData);
 app.post("/:username/all_courses/catData", all_courses.postData);
 
 app.get("/:username/all_courses/course/:course_name", course.viewCourse);
+app.post("/:username/all_courses/course/:course_name", course.postLetterGrade);
 app.get("/:username/all_courses/course/:course_name/catData", course.getData);
 app.post("/:username/all_courses/course/:course_name/catData", course.postData);
 

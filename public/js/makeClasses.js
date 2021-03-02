@@ -16,31 +16,39 @@ function requestClasses (url) {
 	$.get(parsedURL, (res, req) => {
 		console.log(res);
 
-		var newClass = '';
+		if (res.classes.hasOwnProperty('N/A')){
+			$(".helper_div").show();
+		}
 
-		for (var [key, value] of Object.entries(res)) {
+		if (!res.classes.hasOwnProperty('N/A')){
+			var newClass = '';
 
-			newClass +=
-			'<a href="all_courses/course/' + key + '" class="class_bubble">' +
-				'<div class="container-fluid classes">' +
-					'<div class="row align-items-center">' +
-						'<div class="col-lg-6 col-md-6 class_column">' +
-							'<h3 class="class_name">' + key + '</h3>' +
-							'<p class="prof">' + value["professer"] + '</p>' +
-						'</div>' +
+			for (var [key, value] of Object.entries(res.classes)) {
 
-						'<div class="col-lg-6 col-md-6 class_column">' +
-							'<h3 class="grade">' + value["grade"] + '</h3>' +
+				newClass +=
+				'<a href="all_courses/course/' + key + '" class="class_bubble">' +
+					'<div class="container-fluid classes">' +
+						'<div class="row align-items-center">' +
+							'<div class="col-lg-6 col-md-6 class_column">' +
+								'<h3 class="class_name">' + key + '</h3>' +
+								'<p class="prof">' + value["professer"] + '</p>' +
+							'</div>' +
+
+							'<div class="col-lg-6 col-md-6 class_column">' +
+								'<h3 class="grade">' + value["grade"] + '</h3>' +
+							'</div>' +
 						'</div>' +
 					'</div>' +
-				'</div>' +
-			'</a>';
+				'</a>';
+			}
+			$(".root-container").html(newClass);
 		}
-		$(".root-container").html(newClass);
 
 		$('#addClassForm').submit(function(e){
 			//Prevents default submit + reload (we only want submit part)
 			e.preventDefault();
+
+			$(".helper_div").hide();
 
 			var class_name = $('#class_name').val();
 			var professer = $('#professer').val();
@@ -72,8 +80,6 @@ function requestClasses (url) {
 					"professer": professer,
 					"grade": "N/A",
 					"percent": "0",
-					"percentile": "N/A",
-					"focus": "N/A",
 					"categories": {"N/A": "N/A"}
 				}, class_name
 			}, postCallback);
