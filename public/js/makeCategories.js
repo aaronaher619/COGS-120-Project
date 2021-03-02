@@ -16,10 +16,38 @@ function requestCategories (url) {
 	$.get(parsedURL, (res, req) => {
 		console.log(res);
 
+		if (res.grade == 'N/A'){
+			var grade_bubble =
+				'<h3 class="current_grade">Category Grade:</h3>' +
+				'<p class="score">N/A</p>' +
+				'<p class="percent">0%</p>';
+
+			$(".grade_bubble").html(grade_bubble);
+		}
+
+		if (res.categories.hasOwnProperty('N/A')){
+			$(".helper_div").show();
+		}
+
 		if (!res.categories.hasOwnProperty('N/A')){
+			var letter_grade;
+			var total_percent = 0;
+			var total_possible_percent = 0;
 			var newCategory = '';
+			var fraction = 0;
+			var fraction_percentile = 0;
+			var total_percentile = 0;
 
 			for (var [key, value] of Object.entries(res.categories)) {
+				total_percent += Number(value["current_percent"]);
+				total_possible_percent += Number(value["total_percent"]);
+
+				if(!(Number(value["second"]) == 0)){
+					fraction = Number(value["first"]) / Number(value["second"]);
+					fraction_percentile = Number(value["total_percent"]) * fraction;
+					total_percentile += fraction_percentile;
+				}
+
 				newCategory +=
 				'<a href="' + url + '/category/' + key + '" class="category_bubble">' +
 					'<div class="container-fluid categories">' +
@@ -29,13 +57,36 @@ function requestCategories (url) {
 					'</div>' +
 				'</a>';
 			}
+
+			letter_grade = getLetterGrade(total_percent)
+			var grade_bubble =
+				'<h3 class="current_grade">Category Grade:</h3>' +
+				'<p class="score">' + letter_grade + '</p>' +
+				'<p class="percent">' + total_percent.toFixed(2) + '%</p>';
+
+			$(".grade_bubble").html(grade_bubble);
+			$.post(url, {letter_grade});
+
+			if (total_possible_percent == 100){
+				var percentile = '<p>' + total_percentile.toFixed(2) + '% of Final Grade Received</p>';
+			}
+
+			else{
+				var percentile =
+			'<p>' + total_percentile.toFixed(2) + '% of Final Grade Received</p>' +
+			'<p>All Total Category %\'s Summed Equals: ' + total_possible_percent + '%</p>' +
+			'<p>Add More Categories Till It Equals 100%</p>';
+			}
+
+			$(".percentile").html(percentile);
 			$(".root-container").html(newCategory);
 		}
 
 		$('#addCategoryForm').submit(function(e){
-
 			//Prevents default submit + reload (we only want submit part)
 			e.preventDefault();
+
+			$(".helper_div").hide();
 
 			var category_name = $('#category_name').val();
 			var percentage = $('#percentage').val();
@@ -90,4 +141,49 @@ function addCategory() {
 function cancelAddCategory(){
 	$("#addCategory").hide();
 	$(".addButton").show();
+}
+
+function getLetterGrade(percent){
+    if(percent == 0){
+        return 'N/A';
+    }
+	else if(percent <= 59.99){
+        return 'F';
+    }
+    else if(percent <= 62.99){
+        return 'D-';
+    }
+    else if(percent <= 66.99){
+        return 'D';
+    }
+    else if(percent <= 69.99){
+        return 'D+';
+    }
+    else if(percent <= 72.99){
+        return 'C-';
+    }
+    else if(percent <= 76.99){
+        return 'C';
+    }
+    else if(percent <= 79.99){
+        return 'C+';
+    }
+    else if(percent <= 82.99){
+        return 'B-';
+    }
+    else if(percent <= 86.99){
+        return 'B';
+    }
+    else if(percent <= 89.99){
+        return 'B+';
+    }
+    else if(percent <= 92.99){
+        return 'A-';
+    }
+    else if(percent <= 96.99){
+        return 'A';
+    }
+    else{
+        return 'A+';
+    }
 }

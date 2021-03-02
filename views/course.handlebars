@@ -41,25 +41,16 @@
 
             <h1 class="class_header">{{course}}</h1>
 
-            <div class="grade_bubble">
-                <h3 class="current_grade">Current Grade:</h3>
-                <p class="score">{{grade}}</p>
-                <p class="percent"> {{percent}}%</p>
-            </div>
+            <div class="grade_bubble"></div>
             <br/>
-
-            <div class="percentile"> {{percentile}}% of Final Grade Received</div>
-            <div>
-                <span class="percentile"> Focus On: </span>
-                <b> {{focus}} </b>
-            </div>
+            <div class="percentile"></div>
             <hr>
         </section>
 
         <!-- Categories -->
         <section id="categories">
             <div>
-                <button type="button" tyle="display: show" onclick="addCategory()" class="btn buttons btn-lg addButton">Add A Category</button>
+                <button type="button" style="display: show" onclick="addCategory()" class="btn buttons btn-lg addButton">Add A Category</button>
             </div>
 
             <div id="addCategory" style="display: none">
@@ -79,6 +70,11 @@
                     <input type="submit" id="submitCategory" class="btn buttons btn-lg" value="Add The Category"></input>
                 </div>
                 </form>
+            </div>
+
+            <div class="helper_div" style="display: none">
+                <p class="helper">Nothing Here</p>
+                <p class="helper">Press Add A Category</p>
             </div>
 
             <div class="root-container"></div>

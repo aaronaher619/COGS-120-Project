@@ -3,8 +3,6 @@
 		"professer": "Klemmer",
 		"grade": "B",
 		"percent": "84.41",
-		"percentile": "37",
-		"focus": "In-Class Quiz",
 		"categories": {
 			"Weekly Assignments":{
 				"current_percent": "54.78",
@@ -278,8 +276,6 @@
 		"professer": "Fulton",
 		"grade": "A-",
 		"percent": "91.34",
-		"percentile": "39",
-		"focus": "Collages",
 		"categories": {
 			"Collages":{
 				"current_percent": "45.84",
@@ -434,8 +430,6 @@
 		"professer": "Kirsh",
 		"grade": "A-",
 		"percent": "91.45",
-		"percentile": "65",
-		"focus": "Weekly Quiz",
 		"categories": {
 			"Weekly Quiz":{
 				"current_percent": "9.1",
@@ -573,8 +567,6 @@
 		"professer": "Rangel",
 		"grade": "B-",
 		"percent": "82.6",
-		"percentile": "57",
-		"focus": "Exams",
 		"categories": {
 			"Peer Discussion":{
 				"current_percent": "7",

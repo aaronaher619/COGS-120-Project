@@ -15,6 +15,27 @@ function requestItems (url) {
     $.get(parsedURL, (res, req) => {
         console.log(res);
 
+        var grade_bubble =
+            '<h3 class="current_grade">Category Grade:</h3>' +
+            '<p class="score">' + res.grade + '</p>' +
+            '<p class="percent">' + res.percent + '%</p>';
+
+        $(".grade_bubble").html(grade_bubble);
+
+        var category_info =
+            '<p class="category_percentage">Attained ' +
+                '<b class="percentage_numbers">' + res.current_percent + '%</b> of ' +
+                '<b class="percentage_numbers">' + res.total_percent + '%</b> Category Total' +
+            '</p>' +
+            '<p class="category_numbers">' + res.first + ' of ' + res.second + ' Category Items Finalized</p>' +
+            '<p class="category_numbers">' + res.tests + ' Test Item(s)</p>';
+
+        $(".category_info").html(category_info);
+
+		if (res.items.hasOwnProperty('N/A')){
+			$(".helper_div").show();
+		}
+
         if (!res.items.hasOwnProperty('N/A')){
             var newItems = '';
 
@@ -40,9 +61,10 @@ function requestItems (url) {
         }
 
         $('#addItemForm').submit(function(e){
-
 			//Prevents default submit + reload (we only want submit part)
 			e.preventDefault();
+
+            $(".helper_div").hide();
 
 			var item_name = $('#item_name').val();
 			var pointsR = $('#pointsR').val();
@@ -117,7 +139,7 @@ function update_category(){
     $.get(parsedURL, (res, req) => {
         console.log("Updating Category");
         var total_cat_points = 0;
-        var toral_cat_points_received = 0;
+        var total_cat_points_received = 0;
         var first = 0;
         var second = 0;
         var tests = 0;
@@ -127,7 +149,7 @@ function update_category(){
 
         for (var [key, value] of Object.entries(res.items)) {
             total_cat_points += Number(value['points_total']);
-            toral_cat_points_received += Number(value['points_received']);
+            total_cat_points_received += Number(value['points_received']);
 
             if (value['completion_type'] == 'Test'){
                 tests += 1;
@@ -139,50 +161,12 @@ function update_category(){
 
         second = first + tests;
 
-        percent = ((toral_cat_points_received * 100) / total_cat_points).toFixed(2);
-        
-        current_percent = (percent * res['total_percent']) * .01;
+        percent = ((total_cat_points_received * 100) / total_cat_points).toFixed(2);
 
-        if(percent <= 59.99){
-            grade = 'F';
-        }
-        else if(percent <= 62.99){
-            grade = 'D-';
-        }
-        else if(percent <= 66.99){
-            grade = 'D';
-        }
-        else if(percent <= 69.99){
-            grade = 'D+';
-        }
-        else if(percent <= 72.99){
-            grade = 'C-';
-        }
-        else if(percent <= 76.99){
-            grade = 'C';
-        }
-        else if(percent <= 79.99){
-            grade = 'C+';
-        }
-        else if(percent <= 82.99){
-            grade = 'B-';
-        }
-        else if(percent <= 86.99){
-            grade = 'B';
-        }
-        else if(percent <= 89.99){
-            grade = 'B+';
-        }
-        else if(percent <= 92.99){
-            grade = 'A-';
-        }
-        else if(percent <= 96.99){
-            grade = 'A';
-        }
-        else{
-            grade = 'A+';
-        }
-        
+        current_percent = ((percent * res['total_percent']) * .01).toFixed(2);
+
+        grade = getLetterGrade(percent);
+
         $.post(url, {
             updatedCategory: {
                 "current_percent": current_percent,
@@ -193,7 +177,67 @@ function update_category(){
 				"tests": tests,
             }
         });
-        var reloadURL = url.concat("/reload");
-        $.get(reloadURL);
+
+        var grade_bubble =
+            '<h3 class="current_grade">Category Grade:</h3>' +
+            '<p class="score">' + grade + '</p>' +
+            '<p class="percent">' + percent + '%</p>';
+
+        $(".grade_bubble").html(grade_bubble);
+
+        var category_info =
+        '<p class="category_percentage">Attained ' +
+            '<b class="percentage_numbers">' + current_percent + '%</b> of ' +
+            '<b class="percentage_numbers">' + res.total_percent + '%</b> Category Total' +
+        '</p>' +
+        '<p class="category_numbers">' + first + ' of ' + second + ' Category Items Finalized</p>' +
+        '<p class="category_numbers">' + tests + ' Test Item(s)</p>';
+
+        $(".category_info").html(category_info);
     });
+}
+
+function getLetterGrade(percent){
+    if(percent == 0){
+        return 'N/A';
+    }
+	else if(percent <= 59.99){
+        return 'F';
+    }
+    else if(percent <= 62.99){
+        return 'D-';
+    }
+    else if(percent <= 66.99){
+        return 'D';
+    }
+    else if(percent <= 69.99){
+        return 'D+';
+    }
+    else if(percent <= 72.99){
+        return 'C-';
+    }
+    else if(percent <= 76.99){
+        return 'C';
+    }
+    else if(percent <= 79.99){
+        return 'C+';
+    }
+    else if(percent <= 82.99){
+        return 'B-';
+    }
+    else if(percent <= 86.99){
+        return 'B';
+    }
+    else if(percent <= 89.99){
+        return 'B+';
+    }
+    else if(percent <= 92.99){
+        return 'A-';
+    }
+    else if(percent <= 96.99){
+        return 'A';
+    }
+    else{
+        return 'A+';
+    }
 }

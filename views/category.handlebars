@@ -37,27 +37,20 @@
                     <button type="button" class="btn buttons btn-lg">Log Off</button>
                 </a>
             </div>
-            
+
             <h2 class="class_header"> {{course}} </h2>
             <h1 class="category_header"> {{category}} </h1>
 
-            <div class="grade_bubble">
-                <h3 class="current_grade">Category Grade:</h3>
-                <p class="score">{{grade}}</p>
-                <p class="percent"> {{percent}}%</p>
-            </div>
-            
-            <div class="category_info">
-                <p class="category_percentage">Attained <b class="percentage_numbers">{{current_percent}}%</b> of <b class="percentage_numbers">{{total_percent}}%</b> Category Total</p>
-                <p class="category_numbers">{{first}} of {{second}} ({{tests}} tests)</p>
-            </div>
+            <div class="grade_bubble"></div>
+
+            <div class="category_info"></div>
             <hr>
         </section>
 
         <!-- Items -->
         <section id="Items">
             <div>
-                <button type="button" tyle="display: show" onclick="addItem()" class="btn buttons btn-lg addButton">Add A Category Item</button>
+                <button type="button" style="display: show" onclick="addItem()" class="btn buttons btn-lg addButton">Add A Category Item</button>
             </div>
 
             <div id="addItem" style="display: none">
@@ -90,6 +83,11 @@
                     <input type="submit" id="submitCategory" class="btn buttons btn-lg" value="Add The Category Item"></input>
                 </div>
                 </form>
+            </div>
+
+            <div class="helper_div" style="display: none">
+                <p class="helper">Nothing Here</p>
+                <p class="helper">Press Add A Category Item</p>
             </div>
 
             <div class="root-container"></div>

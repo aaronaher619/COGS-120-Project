@@ -60,7 +60,7 @@ function requestClasses (url) {
 						'</div>' +
 
 						'<div class="col-lg-6 col-md-6 class_column">' +
-							'<h3 class="grade">' + class_name + '</h3>' +
+							'<h3 class="grade">N/A</h3>' +
 						'</div>' +
 					'</div>' +
 				'</div>' +
@@ -72,6 +72,7 @@ function requestClasses (url) {
 				newAddedClass: {
 					"professer": professer,
 					"grade": "N/A",
+					"percent": "0",
 					"percentile": "N/A",
 					"focus": "N/A",
 					"categories": {"N/A": "N/A"}

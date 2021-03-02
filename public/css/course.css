@@ -3,8 +3,12 @@ font-family: 'Oxygen';
 text-align: center;
 }
 
-.percentile {
-	color: grey;
+.class_header{
+    color: black;
+    font-weight: bold;
+    font-size: 5rem;
+    margin-bottom: 25px;
+    padding: 0px;
 }
 
 .grade_bubble{
@@ -36,12 +40,18 @@ text-align: center;
 	font-size: 3rem;
 }
 
-.class_header{
-    color: black;
-    font-weight: bold;
-    font-size: 5rem;
-    margin-bottom: 25px;
-    padding: 0px;
+.percentile {
+	color: grey;
+}
+
+.helper_div{
+	margin: 20px;
+}
+
+.helper{
+	color: grey;
+	font-size: 5rem;
+	margin-bottom: 0%;
 }
 
 .category_bubble{

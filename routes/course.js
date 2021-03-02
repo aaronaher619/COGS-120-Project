@@ -12,6 +12,17 @@ exports.viewCourse = function(request, response){
     });
 }
 
+exports.postUpdated= function(req, res) {
+  var course_name = req.params.course_name;
+
+  var letter_grade = req.body.letter_grade;
+
+  data[course_name]['grade'] = letter_grade;
+
+  res.send(letter_grade);
+  console.log(data[course_name]);
+}
+
 exports.postData = function(req, res) {
     var course_name = req.params.course_name;
 
