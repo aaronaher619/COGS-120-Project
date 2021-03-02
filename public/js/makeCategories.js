@@ -134,6 +134,8 @@ function requestCategories (url) {
 
 			$("#addCategory").hide();
 			$(".addButton").show();
+
+			update_course();
 		}
 	});
 }
@@ -146,6 +148,61 @@ function addCategory() {
 function cancelAddCategory(){
 	$("#addCategory").hide();
 	$(".addButton").show();
+}
+
+function update_course(){
+    var parsedURL = url.concat("/catData");
+
+    $.get(parsedURL, (res, req) => {
+        console.log("Updating Course");
+
+		var letter_grade;
+		var total_percent = 0;
+		var total_possible_percent = 0;
+		var fraction = 0;
+		var fraction_percentile = 0;
+		var total_percentile = 0;
+
+		for (var [key, value] of Object.entries(res.categories)) {
+			total_percent += Number(value["current_percent"]);
+			total_possible_percent += Number(value["total_percent"]);
+
+			if(!(Number(value["second"]) == 0)){
+				fraction = Number(value["first"]) / Number(value["second"]);
+				fraction_percentile = Number(value["total_percent"]) * fraction;
+				total_percentile += fraction_percentile;
+			}
+		}
+
+		letter_grade = getLetterGrade(total_percent)
+
+		var grade_bubble =
+			'<h3 class="current_grade">Category Grade:</h3>' +
+			'<p class="score">' + letter_grade + '</p>' +
+			'<p class="percent">' + total_percent.toFixed(2) + '%</p>';
+
+		$(".grade_bubble").html(grade_bubble);
+
+		$.post(url, {letter_grade});
+		var course_info;
+
+		if (total_possible_percent == 100){
+			course_info = '<p>' + total_percentile.toFixed(2) + '% of Final Grade Received</p>';
+		}
+
+		else{
+			course_info =
+		'<p class="course_percentage">' +
+			'<b class="percentage_numbers">' + total_percentile.toFixed(2) + '%</b> of Final Grade Received' +
+			'</p>' +
+		'<p class="course_correcter">All Total Category %\'s Summed Equals: ' +
+			'<b class="percentage_numbers">' + total_possible_percent + '%</b>' +
+		'</p>' +
+		'<p class="course_correcter">Add More Categories Till It Equals <b  class="percentage_numbers">100%</b></p>';
+		}
+
+		$(".course_info").html(course_info);
+    });
 }
 
 function getLetterGrade(percent){

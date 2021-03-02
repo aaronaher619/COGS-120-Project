@@ -43,7 +43,6 @@ app.get("/all_courses/catData", all_courses.getData);
 app.post("/all_courses/catData", all_courses.postData);
 
 app.get("/all_courses/course/:course_name", course.viewCourse);
-app.post("/all_courses/course/:course_name", course.postUpdated);
 app.get("/all_courses/course/:course_name/catData", course.getData);
 app.post("/all_courses/course/:course_name/catData", course.postData);
 
