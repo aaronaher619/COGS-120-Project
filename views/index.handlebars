@@ -26,24 +26,65 @@
         </nav>
     </section>
 
-    <!-- Classes -->
-    <h1 class="welcome_header">Please Login</h1>
-    <hr>
-    <div>
-      <form id="addFriendForm" class="form" role="form" method="post" action="/all_courses">
-        <div class="form-group ">
-          <input type="text" class="form-control" id="username" required maxlength="15" placeholder="Username" name="username">
-        </div>
+    <!-- Header -->
+    <section id="header">
+      <h1 class="welcome_header">Welcome</h1>
+      <hr>
+    </section>
 
-        <div class="form-group ">
-          <input type="password" class="form-control" id="password" required maxlength="15" placeholder="Password" name="password">
-        </div>
+    <!-- Login -->
+    <section id="login_page">
+      <div>
+        <button type="button" style="display: show" onclick="show_login()" class="btn buttons btn-lg addButton cancel_button">Login</button>
+        <button type="button" style="display: show" onclick="show_signUp()" class="btn buttons btn-lg addButton">Sign Up</button>
+      </div>
 
-        <div class="submit">
-          <input type="submit" id="submitBtn" class="btn buttons btn-lg" value="Login"></input>
-        </div>
-      </form>
-    </div>
+      <div id="loginLabel" style="display: none">
+        <h1 class="welcome_header">Login</h1>
+      </div>
+
+      <div id="wrong_login" style="display: none">
+        <h1 class="welcome_header">Wrong! Please Try again</h1>
+      </div>
+
+      <div id="login_input" style="display: none">
+        <form id="loginForm" class="form">
+          <div class="form-group ">
+            <input type="text" class="form-control" id="username" required maxlength="15" placeholder="Enter Username" name="username">
+          </div>
+
+          <div class="form-group ">
+            <input type="password" class="form-control" id="password" required maxlength="15" placeholder="Enter Password" name="password">
+          </div>
+
+          <div class="submit">
+            <button type="button" onclick="cancelLogin()" class="btn buttons btn-lg cancel_button">Cancel</button>
+            <input type="submit" class="btn buttons btn-lg" value="Login"></input>
+          </div>
+        </form>
+      </div>
+
+      <div id="signUpLabel" style="display: none">
+        <h1 class="welcome_header">Sign Up</h1>
+      </div>
+
+      <div id="signUp_input" style="display: none">
+        <form id="signUpForm" class="form">
+          <div class="form-group ">
+            <input type="text" class="form-control" id="new_username" required maxlength="15" placeholder="Enter New Username" name="new_username">
+          </div>
+
+          <div class="form-group ">
+            <input type="password" class="form-control" id="new_password" required maxlength="15" placeholder="Enter New Password" name="new_password">
+          </div>
+
+          <div class="submit">
+            <button type="button" onclick="cancelSignUp()" class="btn buttons btn-lg cancel_button">Cancel</button>
+            <input type="submit" class="btn buttons btn-lg" value="Sign Up"></input>
+          </div>
+        </form>
+      </div>
+    </section>
 
     <footer id="footer">
       <p class="footer_text">Grade Guru 2021</p>
@@ -54,5 +95,6 @@
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="/js/accounts.js"></script>
   </body>
 </html>

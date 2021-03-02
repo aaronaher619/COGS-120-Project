@@ -1,11 +1,9 @@
-var data = require("../data.json");
+var fs = require('fs')
 
-  exports.view = function(request, response){
+exports.view = function(req, res){
+  var username = req.params.username;
 
-    var username = request.body.username;
-    var password = request.body.password;
-
-    response.render('all_courses', {
+  res.render('all_courses', {
       "username": username
   });
 };
@@ -22,5 +20,8 @@ exports.postData = function(req, res) {
 }
 
 exports.getData = function(req, res) {
-  res.json(data);
+  var username = req.params.username;
+  var jsonString = fs.readFileSync('./data.json');
+  var data = JSON.parse(jsonString);
+  res.json(data[username]['classes']);
 }

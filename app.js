@@ -36,20 +36,21 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', index.view);
+app.get('/catData', index.getData);
+app.post('/catData', index.postData);
 
-app.get("/all_courses", all_courses.view);
-app.post("/all_courses", all_courses.view)
-app.get("/all_courses/catData", all_courses.getData);
-app.post("/all_courses/catData", all_courses.postData);
+app.get("/:username/all_courses", all_courses.view);
+app.get("/:username/all_courses/catData", all_courses.getData);
+app.post("/:username/all_courses/catData", all_courses.postData);
 
-app.get("/all_courses/course/:course_name", course.viewCourse);
-app.get("/all_courses/course/:course_name/catData", course.getData);
-app.post("/all_courses/course/:course_name/catData", course.postData);
+app.get("/:username/all_courses/course/:course_name", course.viewCourse);
+app.get("/:username/all_courses/course/:course_name/catData", course.getData);
+app.post("/:username/all_courses/course/:course_name/catData", course.postData);
 
-app.get("/all_courses/course/:course_name/category/:category_name", category.viewCategory);
-app.post("/all_courses/course/:course_name/category/:category_name", category.postUpdated);
-app.get("/all_courses/course/:course_name/category/:category_name/catData", category.getData);
-app.post("/all_courses/course/:course_name/category/:category_name/catData", category.postData);
+app.get("/:username/all_courses/course/:course_name/category/:category_name", category.viewCategory);
+app.post("/:username/all_courses/course/:course_name/category/:category_name", category.postUpdated);
+app.get("/:username/all_courses/course/:course_name/category/:category_name/catData", category.getData);
+app.post("/:username/all_courses/course/:course_name/category/:category_name/catData", category.postData);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

@@ -39,7 +39,6 @@ function requestClasses (url) {
 		$(".root-container").html(newClass);
 
 		$('#addClassForm').submit(function(e){
-
 			//Prevents default submit + reload (we only want submit part)
 			e.preventDefault();
 
@@ -78,7 +77,7 @@ function requestClasses (url) {
 					"categories": {"N/A": "N/A"}
 				}, class_name
 			}, postCallback);
-		  });
+		});
 
 		function postCallback(){
 			alert("Class Successfully Added!");

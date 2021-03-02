@@ -123,7 +123,7 @@ function requestCategories (url) {
 					"items": {"N/A": "N/A"}
 				}, category_name
 			}, postCallback);
-		  });
+		});
 
 		function postCallback(){
 			alert("Category Successfully Added!");
