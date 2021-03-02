@@ -555,13 +555,13 @@
 					"Midterm": {
 						"points_received": "90",
 						"points_total": "100",
-						"grade": "60",
+						"grade": "90",
 						"completion_type": "Finalized"
 					},
 					"Final": {
 						"points_received": "90",
 						"points_total": "100",
-						"grade": "60",
+						"grade": "90",
 						"completion_type": "Test"
 					}
 				}
@@ -753,25 +753,25 @@
 					"Exam 1": {
 						"points_received": "85",
 						"points_total": "100",
-						"grade": "60",
+						"grade": "85",
 						"completion_type": "Finalized"
 					},
 					"Exam 2": {
 						"points_received": "90",
 						"points_total": "100",
-						"grade": "60",
+						"grade": "90",
 						"completion_type": "Finalized"
 					},
 					"Exam 3": {
 						"points_received": "85",
 						"points_total": "100",
-						"grade": "60",
+						"grade": "85",
 						"completion_type": "Test"
 					},
 					"Exam 4": {
 						"points_received": "90",
 						"points_total": "100",
-						"grade": "60",
+						"grade": "90",
 						"completion_type": "Test"
 					}
 				}
