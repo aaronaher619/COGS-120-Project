@@ -16,6 +16,40 @@ a:link {
     color: inherit;
 }
 
+/* Login Screen Section */
+.label{
+    color: black;
+    font-size: 5rem;
+    margin: 0px;
+    padding: 0px;
+}
+
+#loginLabel{
+    margin-bottom: 20px;
+}
+
+#wrong_login{
+    margin-bottom: 20px;
+}
+
+.wrong_label{
+    color: red;
+    font-size: 2rem;
+    margin: 0px;
+    padding: 0px;
+}
+
+.info_label{
+    color: gray;
+    font-size: 1.5rem;
+    margin: 0px;
+    padding: 0px;
+}
+
+#signUpLabel{
+    margin-bottom: 20px;
+}
+
 /* Navigation Bar Section*/
 #navigation{
     margin-bottom: 25px;

@@ -40,25 +40,35 @@ function show_login() {
 	$("#login_input").show();
 	$(".addButton").hide();
     $("#loginLabel").show();
+    $("#login_info_login").show();
 }
 
 function cancelLogin(){
+    $('#username').val('');
+    $('#password').val('');
+
 	$("#login_input").hide();
 	$(".addButton").show();
     $("#wrong_login").hide();
     $("#loginLabel").hide();
+    $("#login_info_login").hide();
 }
 
 function show_signUp(){
     $("#signUp_input").show();
 	$(".addButton").hide();
     $("#signUpLabel").show();
+    $("#login_info_signup").show();
 }
 
 function cancelSignUp(){
+    $('#new_username').val('');
+    $('#new_password').val('');
+
 	$("#signUp_input").hide();
 	$(".addButton").show();
     $("#signUpLabel").hide();
+    $("#login_info_signup").hide();
 }
 
 function signUp(){

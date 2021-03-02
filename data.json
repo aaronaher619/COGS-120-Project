@@ -772,35 +772,10 @@
       }
     }
   },
-  "aaron": {
+  "asd": {
     "password": "asd",
     "classes": {
-      "COGS188": {
-        "professer": "Gupta",
-        "grade": "F",
-        "percent": "0",
-        "percentile": "N/A",
-        "focus": "N/A",
-        "categories": {
-          "Tests": {
-            "current_percent": "44.00",
-            "total_percent": "50",
-            "grade": "B+",
-            "percent": "88.00",
-            "first": "1",
-            "second": "1",
-            "tests": "0",
-            "items": {
-              "Final": {
-                "points_received": "88",
-                "points_total": "100",
-                "grade": "88.00",
-                "completion_type": "Finalized"
-              }
-            }
-          }
-        }
-      }
+      "N/A": "N/A"
     }
   }
 }
