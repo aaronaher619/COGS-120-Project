@@ -12,6 +12,7 @@ var index = require('./routes/index');
 var all_courses = require('./routes/all_courses');
 var course = require('./routes/course');
 var category = require('./routes/category');
+var reload = require('./routes/reload');
 
 var app = express();
 
@@ -47,6 +48,8 @@ app.get("/all_courses/course/:course_name/catData", course.getData);
 app.post("/all_courses/course/:course_name/catData", course.postData);
 
 app.get("/all_courses/course/:course_name/category/:category_name", category.viewCategory);
+app.get('/all_courses/course/:course_name/category/:category_name/reload', reload.reloadCat);
+app.post("/all_courses/course/:course_name/category/:category_name", category.postUpdated);
 app.get("/all_courses/course/:course_name/category/:category_name/catData", category.getData);
 app.post("/all_courses/course/:course_name/category/:category_name/catData", category.postData);
 

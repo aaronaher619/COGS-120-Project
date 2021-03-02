@@ -1,6 +1,7 @@
 var data = require("../data.json");
 
 exports.viewCategory = function(request, response){
+    console.log("rendering")
 
     var course_name = request.params.course_name;
     var category_name = request.params.category_name;
@@ -16,6 +17,23 @@ exports.viewCategory = function(request, response){
         "second": data[course_name]['categories'][category_name]['second'],
         "tests": data[course_name]['categories'][category_name]['tests']
     });
+}
+
+exports.postUpdated= function(req, res) {
+    var course_name = req.params.course_name;
+    var category_name = req.params.category_name;
+
+    var updatedCategory = req.body.updatedCategory;
+
+    data[course_name]['categories'][category_name]['current_percent'] = updatedCategory['current_percent'];
+    data[course_name]['categories'][category_name]['grade'] = updatedCategory['grade'];
+    data[course_name]['categories'][category_name]['percent'] = updatedCategory['percent'];
+    data[course_name]['categories'][category_name]['first'] = updatedCategory['first'];
+    data[course_name]['categories'][category_name]['second'] = updatedCategory['second'];
+    data[course_name]['categories'][category_name]['tests'] = updatedCategory['tests'];
+
+    res.json(data[course_name]['categories'][category_name]);
+    console.log(data[course_name]['categories'][category_name]);
 }
 
 exports.postData = function(req, res) {

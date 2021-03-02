@@ -24,7 +24,6 @@ function requestItems (url) {
                 if (value['completion_type'] == "Finalized"){
                     var bubble_color = "final_color";
                 }
-
                 else{
                     var bubble_color = "test_color";
                 }
@@ -48,7 +47,7 @@ function requestItems (url) {
 			var item_name = $('#item_name').val();
 			var pointsR = $('#pointsR').val();
             var pointsT = $('#pointsT').val();
-            var grade = ((parseInt(pointsR, 10) * 100) / parseInt(pointsT, 10)).toFixed(2);
+            var grade = ((Number(pointsR) * 100) / Number(pointsT)).toFixed(2);
 			var ForT = $('#ForT').val();
 
             var bubble_color;
@@ -96,7 +95,9 @@ function requestItems (url) {
 
 			$("#addItem").hide();
 			$(".addButton").show();
-		  }
+
+            update_category();
+		}
     });
 }
 
@@ -108,4 +109,91 @@ function addItem() {
 function cancelAddItem(){
 	$("#addItem").hide();
 	$(".addButton").show();
+}
+
+function update_category(){
+    var parsedURL = url.concat("/catData");
+
+    $.get(parsedURL, (res, req) => {
+        console.log("Updating Category");
+        var total_cat_points = 0;
+        var toral_cat_points_received = 0;
+        var first = 0;
+        var second = 0;
+        var tests = 0;
+        var current_percent;
+        var grade;
+        var percent;
+
+        for (var [key, value] of Object.entries(res.items)) {
+            total_cat_points += Number(value['points_total']);
+            toral_cat_points_received += Number(value['points_received']);
+
+            if (value['completion_type'] == 'Test'){
+                tests += 1;
+            }
+            else{
+                first +=1;
+            }
+        }
+
+        second = first + tests;
+
+        percent = ((toral_cat_points_received * 100) / total_cat_points).toFixed(2);
+        
+        current_percent = (percent * res['total_percent']) * .01;
+
+        if(percent <= 59.99){
+            grade = 'F';
+        }
+        else if(percent <= 62.99){
+            grade = 'D-';
+        }
+        else if(percent <= 66.99){
+            grade = 'D';
+        }
+        else if(percent <= 69.99){
+            grade = 'D+';
+        }
+        else if(percent <= 72.99){
+            grade = 'C-';
+        }
+        else if(percent <= 76.99){
+            grade = 'C';
+        }
+        else if(percent <= 79.99){
+            grade = 'C+';
+        }
+        else if(percent <= 82.99){
+            grade = 'B-';
+        }
+        else if(percent <= 86.99){
+            grade = 'B';
+        }
+        else if(percent <= 89.99){
+            grade = 'B+';
+        }
+        else if(percent <= 92.99){
+            grade = 'A-';
+        }
+        else if(percent <= 96.99){
+            grade = 'A';
+        }
+        else{
+            grade = 'A+';
+        }
+        
+        $.post(url, {
+            updatedCategory: {
+                "current_percent": current_percent,
+				"grade": grade,
+				"percent": percent,
+				"first": first,
+				"second": second,
+				"tests": tests,
+            }
+        });
+        var reloadURL = url.concat("/reload");
+        $.get(reloadURL);
+    });
 }

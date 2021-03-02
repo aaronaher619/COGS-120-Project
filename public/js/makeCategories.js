@@ -24,9 +24,8 @@ function requestCategories (url) {
 				'<a href="' + url + '/category/' + key + '" class="category_bubble">' +
 					'<div class="container-fluid categories">' +
 						'<h3 class="category_name">' + key + '</h3>' +
-						'<p class="info">Grade: ' + value["grade"] + ' with ' + value["percent"] + '%</p>' +
-						'<p class="info">Attained ' + value["current_percent"] + '% of ' + value["total_percent"] + '% Category Total</p>' +
-						'<p class="info">' + value["first"] + ' of ' + value["second"] + ' (' + value["tests"] + ' tests)' + '</p>' +
+						'<p class="info">Grade: ' + value["grade"] + ' (' + value["percent"] + '%)</p>' +
+						'<p class="info">Attained <b>' + value["current_percent"] + '% of ' + value["total_percent"] + '%</b> Category Total</p>' +
 					'</div>' +
 				'</a>';
 			}
@@ -49,9 +48,8 @@ function requestCategories (url) {
 			'<a href="' + url + '/category/' + category_name + '" class="category_bubble">' +
 				'<div class="container-fluid categories">' +
 					'<h3 class="category_name">' + category_name + '</h3>' +
-					'<p class="info">Grade: ' + 'N/A' + ' with ' + '0' + '%</p>' +
-					'<p class="info">Attained 0% of ' + percentage + '% Category Total</p>' +
-					'<p class="info"> 0 of 0 (0 tests)</p>' +
+					'<p class="info">Grade: ' + 'N/A' + ' (' + '0' + '%)</p>' +
+					'<p class="info">Attained <b>0% of ' + percentage + '%</b> Category Total</p>' +
 				'</div>' +
 			'</a>';
 
