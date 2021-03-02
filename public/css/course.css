@@ -40,8 +40,24 @@ text-align: center;
 	font-size: 3rem;
 }
 
-.percentile {
+.course_info{
+	margin: 25px 0%;
 	color: grey;
+}
+
+.course_percentage{
+	margin-bottom: 10px;
+	color: grey;
+}
+
+.percentage_numbers{
+	color: black;
+}
+
+.course_correcter{
+	margin: 0%;
+	color: red;
+	font-weight: bold;
 }
 
 .helper_div{

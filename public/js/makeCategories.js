@@ -66,19 +66,24 @@ function requestCategories (url) {
 
 			$(".grade_bubble").html(grade_bubble);
 			$.post(url, {letter_grade});
+			var course_info;
 
 			if (total_possible_percent == 100){
-				var percentile = '<p>' + total_percentile.toFixed(2) + '% of Final Grade Received</p>';
+				course_info = '<p>' + total_percentile.toFixed(2) + '% of Final Grade Received</p>';
 			}
 
 			else{
-				var percentile =
-			'<p>' + total_percentile.toFixed(2) + '% of Final Grade Received</p>' +
-			'<p>All Total Category %\'s Summed Equals: ' + total_possible_percent + '%</p>' +
-			'<p>Add More Categories Till It Equals 100%</p>';
+				course_info =
+			'<p class="course_percentage">' +
+				'<b class="percentage_numbers">' + total_percentile.toFixed(2) + '%</b> of Final Grade Received' +
+				'</p>' +
+			'<p class="course_correcter">All Total Category %\'s Summed Equals: ' +
+				'<b class="percentage_numbers">' + total_possible_percent + '%</b>' +
+			'</p>' +
+			'<p class="course_correcter">Add More Categories Till It Equals <b  class="percentage_numbers">100%</b></p>';
 			}
 
-			$(".percentile").html(percentile);
+			$(".course_info").html(course_info);
 			$(".root-container").html(newCategory);
 		}
 
