@@ -192,6 +192,7 @@ hr{
     font-size: 3rem;
     color: black;
     font-weight: bold;
+    word-wrap: break-word;
 }
 
 .prof{
@@ -250,7 +251,7 @@ hr{
     }
 
     #loginForm, #signUpForm{
-        padding: 5% 10%
+        padding: 5% 10%;
     }
 
     /* Classes Section */
@@ -276,7 +277,7 @@ hr{
 
     .class_bubble{
         width: 85vw;
-        margin: 5%
+        margin: 5% auto;
     }
 
     .class_name{
@@ -289,5 +290,12 @@ hr{
 
     .grade{
         font-size: 12vw;
+    }
+
+    @media (max-width: 320px) {
+        .buttons{
+            font-size: 6vw;
+            padding: 6px 10px;
+        }
     }
 }

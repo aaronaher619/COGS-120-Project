@@ -31,11 +31,11 @@
         <section id="header">
             <div class="button_header">
                 <a href="/{{username}}/all_courses"class="back_button">
-                    <button type="button" class="btn buttons btn-lg">Back To Classes</button>
+                    <button type="button" class="btn buttons btn-lg course_button">Back To Classes</button>
                 </a>
 
                 <a href="/" class="logoff_button">
-                    <button type="button" class="btn buttons btn-lg">Log Off</button>
+                    <button type="button" class="btn buttons btn-lg course_button">Log Off</button>
                 </a>
             </div>
             <br/>
@@ -43,6 +43,7 @@
 
             <div class="grade_bubble"></div>
             <div class="course_info"></div>
+
             <hr>
         </section>
 
@@ -55,7 +56,7 @@
             <div id="addCategory" style="display: none">
                 <form id="addCategoryForm" class="form">
                 <div class="form-group ">
-                    <label for="category_name">Enter Category Name</label>
+                    <label for="category_name">Enter Category Name<br/>(e.g. Quizzes, HW)</label>
                     <input type="text" class="form-control" id="category_name" maxlength="15" required name="category_name">
                 </div>
 

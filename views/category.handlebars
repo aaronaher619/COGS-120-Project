@@ -42,7 +42,6 @@
             <h1 class="category_header"> {{category}} </h1>
 
             <div class="grade_bubble"></div>
-
             <div class="category_info"></div>
             <hr>
         </section>
@@ -51,6 +50,11 @@
         <section id="Items">
             <div class="add_item">
                 <button type="button" style="display: show" onclick="addItem()" class="btn buttons btn-lg addButton">Add A Category Item</button>
+            </div>           
+            <br/>
+            <div class="edit_button" style="display: none">
+                <button type="button" style="display: show" onclick="edit_mode()" class="btn buttons btn-lg editModeButton">Edit Mode</button>
+                <button type="button" style="display: none" onclick="cancel_edit_mode()" class="btn buttons btn-lg cancel_editModeButton">Cancel Edit Mode</button>
             </div>
 
             <div id="addItem" style="display: none">

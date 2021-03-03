@@ -13,6 +13,8 @@ function requestItems (url) {
     var parsedURL = url.concat("/catData");
 
     $.get(parsedURL, (res, req) => {
+        erase();
+        edit();
         console.log(res);
 
         var grade_bubble =
@@ -37,6 +39,7 @@ function requestItems (url) {
 		}
 
         if (!res.items.hasOwnProperty('N/A')){
+            $(".edit_button").show();
             var newItems = '';
 
             for (var [key, value] of Object.entries(res.items)) {
@@ -55,6 +58,11 @@ function requestItems (url) {
                         '<p class="info">' + value['points_received'] + ' out of ' + value['points_total'] + ' Points</p>' +
                         '<p class="item_grade">Grade: ' + value['grade'] + '%</p>' +
                         '<p class="info">' + value['completion_type'] + '</p>' +
+
+                        '<button type="button" style="display: none" id="del_' + key + '"' +
+                            'class="btn btn-dark btn-lg mode deleteButton">Delete</button>' +
+                        '<button type="button" style="display: none" id="edit_' + key + '"' +
+                            'class="btn btn-dark btn-lg mode editButton">Edit</button>' +
                     '</div>';
             }
             $(".root-container").html(newItems);
@@ -245,4 +253,29 @@ function getLetterGrade(percent){
     else{
         return 'A+';
     }
+}
+
+function edit_mode(){
+    $(".editModeButton").hide();
+    $(".cancel_editModeButton").show();
+    $(".mode").show();
+
+}
+
+function cancel_edit_mode(){
+    $(".editModeButton").show();
+    $(".cancel_editModeButton").hide();
+    $(".mode").hide();
+}
+
+function erase(){
+    $(".deleteButton").click(function() {
+        alert(this.id);
+    });
+}
+
+function edit(){
+    $(".editButton").click(function() {
+        alert(this.id);
+    });
 }
