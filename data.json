@@ -1,778 +1,775 @@
 {
-	"username":{
-		"password": "password",
-		"classes":{
-			"COGS 120":{
-				"professer": "Klemmer",
-				"grade": "B",
-				"percent": "84.41",
-				"categories": {
-					"Weekly Assignments":{
-						"current_percent": "54.78",
-						"total_percent": "66",
-						"grade": "B",
-						"percent": "83",
-						"first": "5",
-						"second": "10",
-						"tests": "5",
-						"items": {
-							"Assignment 1": {
-								"points_received": "9",
-								"points_total": "10",
-								"grade": "90",
-								"completion_type": "Finalized"
-							},
-							"Assignment 2": {
-								"points_received": "8",
-								"points_total": "10",
-								"grade": "80",
-								"completion_type": "Finalized"
-							},
-							"Assignment 3": {
-								"points_received": "9",
-								"points_total": "10",
-								"grade": "90",
-								"completion_type": "Finalized"
-							},
-							"Assignment 4": {
-								"points_received": "7",
-								"points_total": "10",
-								"grade": "70",
-								"completion_type": "Finalized"
-							},
-							"Assignment 5": {
-								"points_received": "10",
-								"points_total": "10",
-								"grade": "100",
-								"completion_type": "Finalized"
-							},
-							"Assignment 6": {
-								"points_received": "8",
-								"points_total": "10",
-								"grade": "80",
-								"completion_type": "Test"
-							},
-							"Assignment 7": {
-								"points_received": "8",
-								"points_total": "10",
-								"grade": "80",
-								"completion_type": "Test"
-							},
-							"Assignment 8": {
-								"points_received": "8",
-								"points_total": "10",
-								"grade": "80",
-								"completion_type": "Test"
-							},
-							"Assignment 9": {
-								"points_received": "8",
-								"points_total": "10",
-								"grade": "80",
-								"completion_type": "Test"
-							},
-							"Assignment 10": {
-								"points_received": "8",
-								"points_total": "10",
-								"grade": "80",
-								"completion_type": "Test"
-							}
-						}
-					},
-					"In-Class Quiz":{
-						"current_percent": "12.95",
-						"total_percent": "14",
-						"grade": "A-",
-						"percent": "92.5",
-						"first": "2",
-						"second": "4",
-						"tests": "2",
-						"items": {
-							"Quiz 1": {
-								"points_received": "8",
-								"points_total": "10",
-								"grade": "80",
-								"completion_type": "Finalized"
-							},
-							"Quiz 2": {
-								"points_received": "10",
-								"points_total": "10",
-								"grade": "100",
-								"completion_type": "Finalized"
-							},
-							"Quiz 3": {
-								"points_received": "9",
-								"points_total": "10",
-								"grade": "90",
-								"completion_type": "Test"
-							},
-							"Quiz 4": {
-								"points_received": "10",
-								"points_total": "10",
-								"grade": "100",
-								"completion_type": "Test"
-							}
-						}
-					},
-					"Labs":{
-						"current_percent": "7.08",
-						"total_percent": "8",
-						"grade": "B+",
-						"percent": "88.5",
-						"first": "5",
-						"second": "10",
-						"tests": "5",
-						"items" : {
-							"Lab 1": {
-								"points_received": "80",
-								"points_total": "100",
-								"grade": "80",
-								"completion_type": "Finalized"
-							},
-							"Lab 2": {
-								"points_received": "95",
-								"points_total": "100",
-								"grade": "95",
-								"completion_type": "Finalized"
-							},
-							"Lab 3": {
-								"points_received": "85",
-								"points_total": "100",
-								"grade": "85",
-								"completion_type": "Finalized"
-							},
-							"Lab 4": {
-								"points_received": "95",
-								"points_total": "100",
-								"grade": "95",
-								"completion_type": "Finalized"
-							},
-							"Lab 5": {
-								"points_received": "90",
-								"points_total": "100",
-								"grade": "90",
-								"completion_type": "Finalized"
-							},
-							"Lab 6": {
-								"points_received": "85",
-								"points_total": "100",
-								"grade": "85",
-								"completion_type": "Test"
-							},
-							"Lab 7": {
-								"points_received": "95",
-								"points_total": "100",
-								"grade": "95",
-								"completion_type": "Test"
-							},
-							"Lab 8": {
-								"points_received": "90",
-								"points_total": "100",
-								"grade": "90",
-								"completion_type": "Test"
-							},
-							"Lab 9": {
-								"points_received": "90",
-								"points_total": "100",
-								"grade": "90",
-								"completion_type": "Test"
-							},
-							"Lab 10": {
-								"points_received": "80",
-								"points_total": "100",
-								"grade": "80",
-								"completion_type": "Test"
-							}
-						}
-					},
-					"Participation":{
-						"current_percent": "6.4",
-						"total_percent": "8",
-						"grade": "B-",
-						"percent": "80",
-						"first": "0",
-						"second": "1",
-						"tests": "1",
-						"items": {
-							"Participation": {
-								"points_received": "8",
-								"points_total": "10",
-								"grade": "80",
-								"completion_type": "Test"
-							}
-						}
-					},
-					"Self & Team Assessments":{
-						"current_percent": "3.2",
-						"total_percent": "4",
-						"grade": "B-",
-						"percent": "80",
-						"first": "5",
-						"second": "10",
-						"tests": "5",
-						"items": {
-							"Assessment 1": {
-								"points_received": "1",
-								"points_total": "1",
-								"grade": "100",
-								"completion_type": "Finalized"
-							},
-							"Assessment 2": {
-								"points_received": "1",
-								"points_total": "1",
-								"grade": "100",
-								"completion_type": "Finalized"
-							},
-							"Assessment 3": {
-								"points_received": "1",
-								"points_total": "1",
-								"grade": "100",
-								"completion_type": "Finalized"
-							},
-							"Assessment 4": {
-								"points_received": "0",
-								"points_total": "1",
-								"grade": "0",
-								"completion_type": "Finalized"
-							},
-							"Assessment 5": {
-								"points_received": "1",
-								"points_total": "1",
-								"grade": "100",
-								"completion_type": "Finalized"
-							},
-							"Assessment 6": {
-								"points_received": "1",
-								"points_total": "1",
-								"grade": "100",
-								"completion_type": "Test"
-							},
-							"Assessment 7": {
-								"points_received": "1",
-								"points_total": "1",
-								"grade": "100",
-								"completion_type": "Test"
-							},
-							"Assessment 8": {
-								"points_received": "1",
-								"points_total": "1",
-								"grade": "100",
-								"completion_type": "Test"
-							},
-							"Assessment 9": {
-								"points_received": "0",
-								"points_total": "1",
-								"grade": "0",
-								"completion_type": "Test"
-							},
-							"Assessment 10": {
-								"points_received": "1",
-								"points_total": "1",
-								"grade": "100",
-								"completion_type": "Test"
-							}
-						}
-					}
-				}
-			},
-
-			"TDGE 124":{
-				"professer": "Fulton",
-				"grade": "A-",
-				"percent": "91.34",
-				"categories": {
-					"Collages":{
-						"current_percent": "45.84",
-						"total_percent": "50",
-						"grade": "A-",
-						"percent": "91.67",
-						"first": "2",
-						"second": "3",
-						"tests": "1",
-						"items": {
-							"Collage 1": {
-								"points_received": "85",
-								"points_total": "100",
-								"grade": "85",
-								"completion_type": "Finalized"
-							},
-							"Collage 2": {
-								"points_received": "100",
-								"points_total": "100",
-								"grade": "100",
-								"completion_type": "Finalized"
-							},
-							"Collage 3": {
-								"points_received": "90",
-								"points_total": "100",
-								"grade": "90",
-								"completion_type": "Test"
-							}
-						}
-					},
-					"Initial Designs":{
-						"current_percent": "12.88",
-						"total_percent": "14",
-						"grade": "A-",
-						"percent": "91.67",
-						"first": "2",
-						"second": "3",
-						"tests": "1",
-						"items": {
-							"Design 1": {
-								"points_received": "90",
-								"points_total": "100",
-								"grade": "90",
-								"completion_type": "Finalized"
-							},
-							"Design 2": {
-								"points_received": "95",
-								"points_total": "100",
-								"grade": "95",
-								"completion_type": "Finalized"
-							},
-							"Design 3": {
-								"points_received": "90",
-								"points_total": "100",
-								"grade": "90",
-								"completion_type": "Test"
-							}
-						}
-					},
-					"Quizes":{
-						"current_percent": "10.12",
-						"total_percent": "11",
-						"grade": "A-",
-						"percent": "92",
-						"first": "5",
-						"second": "10",
-						"tests": "5",
-						"items": {
-							"Quiz 1": {
-								"points_received": "9",
-								"points_total": "10",
-								"grade": "90",
-								"completion_type": "Finalized"
-							},
-							"Quiz 2": {
-								"points_received": "10",
-								"points_total": "10",
-								"grade": "100",
-								"completion_type": "Finalized"
-							},
-							"Quiz 3": {
-								"points_received": "10",
-								"points_total": "10",
-								"grade": "100",
-								"completion_type": "Finalized"
-							},
-							"Quiz 4": {
-								"points_received": "9",
-								"points_total": "10",
-								"grade": "90",
-								"completion_type": "Finalized"
-							},
-							"Quiz 5": {
-								"points_received": "8",
-								"points_total": "10",
-								"grade": "80",
-								"completion_type": "Finalized"
-							},
-							"Quiz 6": {
-								"points_received": "9",
-								"points_total": "10",
-								"grade": "90",
-								"completion_type": "Test"
-							},
-							"Quiz 7": {
-								"points_received": "9",
-								"points_total": "10",
-								"grade": "90",
-								"completion_type": "Test"
-							},
-							"Quiz 8": {
-								"points_received": "10",
-								"points_total": "10",
-								"grade": "100",
-								"completion_type": "Test"
-							},
-							"Quiz 9": {
-								"points_received": "8",
-								"points_total": "10",
-								"grade": "80",
-								"completion_type": "Test"
-							},
-							"Quiz 10": {
-								"points_received": "10",
-								"points_total": "10",
-								"grade": "100",
-								"completion_type": "Test"
-							}
-						}
-					},
-					"Final Exam":{
-						"current_percent": "22.5",
-						"total_percent": "25",
-						"grade": "A-",
-						"percent": "90",
-						"first": "0",
-						"second": "1",
-						"tests": "1",
-						"items": {
-							"Final Exam": {
-								"points_received": "90",
-								"points_total": "100",
-								"grade": "90",
-								"completion_type": "Test"
-							}
-						}
-					}
-				}
-			},
-
-			"COGS 100":{
-				"professer": "Kirsh",
-				"grade": "A-",
-				"percent": "91.45",
-				"categories": {
-					"Weekly Quiz":{
-						"current_percent": "9.1",
-						"total_percent": "10",
-						"grade": "A-",
-						"percent": "91",
-						"first": "5",
-						"second": "10",
-						"tests": "5",
-						"items": {
-							"Quiz 1": {
-								"points_received": "9",
-								"points_total": "10",
-								"grade": "90",
-								"completion_type": "Finalized"
-							},
-							"Quiz 2": {
-								"points_received": "9",
-								"points_total": "10",
-								"grade": "90",
-								"completion_type": "Finalized"
-							},
-							"Quiz 3": {
-								"points_received": "10",
-								"points_total": "10",
-								"grade": "100",
-								"completion_type": "Finalized"
-							},
-							"Quiz 4": {
-								"points_received": "10",
-								"points_total": "10",
-								"grade": "100",
-								"completion_type": "Finalized"
-							},
-							"Quiz 5": {
-								"points_received": "9",
-								"points_total": "10",
-								"grade": "90",
-								"completion_type": "Finalized"
-							},
-							"Quiz 6": {
-								"points_received": "9",
-								"points_total": "10",
-								"grade": "90",
-								"completion_type": "Test"
-							},
-							"Quiz 7": {
-								"points_received": "8",
-								"points_total": "10",
-								"grade": "80",
-								"completion_type": "Test"
-							},
-							"Quiz 8": {
-								"points_received": "9",
-								"points_total": "10",
-								"grade": "90",
-								"completion_type": "Test"
-							},
-							"Quiz 9": {
-								"points_received": "10",
-								"points_total": "10",
-								"grade": "100",
-								"completion_type": "Test"
-							},
-							"Quiz 10": {
-								"points_received": "8",
-								"points_total": "10",
-								"grade": "80",
-								"completion_type": "Test"
-							}
-						}
-					},
-					"Assignments":{
-						"current_percent": "33.75",
-						"total_percent": "36",
-						"grade": "A",
-						"percent": "93.75",
-						"first": "2",
-						"second": "4",
-						"tests": "2",
-						"items": {
-							"Assignment 1": {
-								"points_received": "100",
-								"points_total": "100",
-								"grade": "100",
-								"completion_type": "Finalized"
-							},
-							"Assignment 2": {
-								"points_received": "95",
-								"points_total": "100",
-								"grade": "95",
-								"completion_type": "Finalized"
-							},
-							"Assignment 3": {
-								"points_received": "90",
-								"points_total": "100",
-								"grade": "90",
-								"completion_type": "Test"
-							},
-							"Assignment 4": {
-								"points_received": "90",
-								"points_total": "100",
-								"grade": "90",
-								"completion_type": "Test"
-							}
-						}
-					},
-					"Midterm & Final":{
-						"current_percent": "48.6",
-						"total_percent": "54",
-						"grade": "A-",
-						"percent": "90",
-						"first": "1",
-						"second": "2",
-						"tests": "1",
-						"items": {
-							"Midterm": {
-								"points_received": "90",
-								"points_total": "100",
-								"grade": "90",
-								"completion_type": "Finalized"
-							},
-							"Final": {
-								"points_received": "90",
-								"points_total": "100",
-								"grade": "90",
-								"completion_type": "Test"
-							}
-						}
-					}
-				}
-			},
-
-			"COGS 107B": {
-				"professer": "Rangel",
-				"grade": "B-",
-				"percent": "82.6",
-				"categories": {
-					"Peer Discussion":{
-						"current_percent": "7",
-						"total_percent": "8",
-						"grade": "B+",
-						"percent": "87.5",
-						"first": "4",
-						"second": "8",
-						"tests": "4",
-						"items": {
-							"Peer Discussion 1": {
-								"points_received": "1",
-								"points_total": "1",
-								"grade": "100",
-								"completion_type": "Finalized"
-							},
-							"Peer Discussion 2": {
-								"points_received": "1",
-								"points_total": "1",
-								"grade": "100",
-								"completion_type": "Finalized"
-							},
-							"Peer Discussion 3": {
-								"points_received": "1",
-								"points_total": "1",
-								"grade": "100",
-								"completion_type": "Finalized"
-							},
-							"Peer Discussion 4": {
-								"points_received": "0",
-								"points_total": "1",
-								"grade": "0",
-								"completion_type": "Finalized"
-							},
-							"Peer Discussion 5": {
-								"points_received": "1",
-								"points_total": "1",
-								"grade": "100",
-								"completion_type": "Test"
-							},
-							"Peer Discussion 6": {
-								"points_received": "1",
-								"points_total": "1",
-								"grade": "100",
-								"completion_type": "Test"
-							},
-							"Peer Discussion 7": {
-								"points_received": "1",
-								"points_total": "1",
-								"grade": "100",
-								"completion_type": "Test"
-							},
-							"Peer Discussion 8": {
-								"points_received": "1",
-								"points_total": "1",
-								"grade": "100",
-								"completion_type": "Test"
-							}
-						}
-					},
-					"Quizzes":{
-						"current_percent": "7.1",
-						"total_percent": "8",
-						"grade": "B+",
-						"percent": "88.75",
-						"first": "4",
-						"second": "8",
-						"tests": "4",
-						"items": {
-							"Quiz 1": {
-								"points_received": "9",
-								"points_total": "10",
-								"grade": "90",
-								"completion_type": "Finalized"
-							},
-							"Quiz 2": {
-								"points_received": "10",
-								"points_total": "10",
-								"grade": "100",
-								"completion_type": "Finalized"
-							},
-							"Quiz 3": {
-								"points_received": "8",
-								"points_total": "10",
-								"grade": "80",
-								"completion_type": "Finalized"
-							},
-							"Quiz 4": {
-								"points_received": "8",
-								"points_total": "10",
-								"grade": "80",
-								"completion_type": "Finalized"
-							},
-							"Quiz 5": {
-								"points_received": "9",
-								"points_total": "10",
-								"grade": "90",
-								"completion_type": "Test"
-							},
-							"Quiz 6": {
-								"points_received": "10",
-								"points_total": "10",
-								"grade": "100",
-								"completion_type": "Test"
-							},
-							"Quiz 7": {
-								"points_received": "9",
-								"points_total": "10",
-								"grade": "90",
-								"completion_type": "Test"
-							},
-							"Quiz 8": {
-								"points_received": "8",
-								"points_total": "10",
-								"grade": "80",
-								"completion_type": "Test"
-							}
-						}
-					},
-					"Section Activities":{
-						"current_percent": "16",
-						"total_percent": "24",
-						"grade": "D+",
-						"percent": "66.67",
-						"first": "3",
-						"second": "6",
-						"tests": "3",
-						"items": {
-							"Activity 1": {
-								"points_received": "1",
-								"points_total": "1",
-								"grade": "100",
-								"completion_type": "Finalized"
-							},
-							"Activity 2": {
-								"points_received": "0",
-								"points_total": "1",
-								"grade": "0",
-								"completion_type": "Finalized"
-							},
-							"Activity 3": {
-								"points_received": "0",
-								"points_total": "1",
-								"grade": "0",
-								"completion_type": "Finalized"
-							},
-							"Activity 4": {
-								"points_received": "1",
-								"points_total": "1",
-								"grade": "100",
-								"completion_type": "Test"
-							},
-							"Activity 5": {
-								"points_received": "1",
-								"points_total": "1",
-								"grade": "100",
-								"completion_type": "Test"
-							},
-							"Activity 6": {
-								"points_received": "1",
-								"points_total": "1",
-								"grade": "100",
-								"completion_type": "Test"
-							}
-						}
-					},
-					"Exams":{
-						"current_percent": "52.5",
-						"total_percent": "60",
-						"grade": "B+",
-						"percent": "87.5",
-						"first": "2",
-						"second": "4",
-						"tests": "2",
-						"items": {
-							"Exam 1": {
-								"points_received": "85",
-								"points_total": "100",
-								"grade": "85",
-								"completion_type": "Finalized"
-							},
-							"Exam 2": {
-								"points_received": "90",
-								"points_total": "100",
-								"grade": "90",
-								"completion_type": "Finalized"
-							},
-							"Exam 3": {
-								"points_received": "85",
-								"points_total": "100",
-								"grade": "85",
-								"completion_type": "Test"
-							},
-							"Exam 4": {
-								"points_received": "90",
-								"points_total": "100",
-								"grade": "90",
-								"completion_type": "Test"
-							}
-						}
-					}
-				}
-			}
-		}
-	}
+  "username": {
+    "password": "password",
+    "classes": {
+      "COGS 120": {
+        "professer": "Klemmer",
+        "grade": "B",
+        "percent": "84.41",
+        "categories": {
+          "Weekly Assignments": {
+            "current_percent": "54.78",
+            "total_percent": "66",
+            "grade": "B",
+            "percent": "83",
+            "first": "5",
+            "second": "10",
+            "tests": "5",
+            "items": {
+              "Assignment 1": {
+                "points_received": "9",
+                "points_total": "10",
+                "grade": "90",
+                "completion_type": "Finalized"
+              },
+              "Assignment 2": {
+                "points_received": "8",
+                "points_total": "10",
+                "grade": "80",
+                "completion_type": "Finalized"
+              },
+              "Assignment 3": {
+                "points_received": "9",
+                "points_total": "10",
+                "grade": "90",
+                "completion_type": "Finalized"
+              },
+              "Assignment 4": {
+                "points_received": "7",
+                "points_total": "10",
+                "grade": "70",
+                "completion_type": "Finalized"
+              },
+              "Assignment 5": {
+                "points_received": "10",
+                "points_total": "10",
+                "grade": "100",
+                "completion_type": "Finalized"
+              },
+              "Assignment 6": {
+                "points_received": "8",
+                "points_total": "10",
+                "grade": "80",
+                "completion_type": "Test"
+              },
+              "Assignment 7": {
+                "points_received": "8",
+                "points_total": "10",
+                "grade": "80",
+                "completion_type": "Test"
+              },
+              "Assignment 8": {
+                "points_received": "8",
+                "points_total": "10",
+                "grade": "80",
+                "completion_type": "Test"
+              },
+              "Assignment 9": {
+                "points_received": "8",
+                "points_total": "10",
+                "grade": "80",
+                "completion_type": "Test"
+              },
+              "Assignment 10": {
+                "points_received": "8",
+                "points_total": "10",
+                "grade": "80",
+                "completion_type": "Test"
+              }
+            }
+          },
+          "In-Class Quiz": {
+            "current_percent": "12.95",
+            "total_percent": "14",
+            "grade": "A-",
+            "percent": "92.5",
+            "first": "2",
+            "second": "4",
+            "tests": "2",
+            "items": {
+              "Quiz 1": {
+                "points_received": "8",
+                "points_total": "10",
+                "grade": "80",
+                "completion_type": "Finalized"
+              },
+              "Quiz 2": {
+                "points_received": "10",
+                "points_total": "10",
+                "grade": "100",
+                "completion_type": "Finalized"
+              },
+              "Quiz 3": {
+                "points_received": "9",
+                "points_total": "10",
+                "grade": "90",
+                "completion_type": "Test"
+              },
+              "Quiz 4": {
+                "points_received": "10",
+                "points_total": "10",
+                "grade": "100",
+                "completion_type": "Test"
+              }
+            }
+          },
+          "Labs": {
+            "current_percent": "7.08",
+            "total_percent": "8",
+            "grade": "B+",
+            "percent": "88.5",
+            "first": "5",
+            "second": "10",
+            "tests": "5",
+            "items": {
+              "Lab 1": {
+                "points_received": "80",
+                "points_total": "100",
+                "grade": "80",
+                "completion_type": "Finalized"
+              },
+              "Lab 2": {
+                "points_received": "95",
+                "points_total": "100",
+                "grade": "95",
+                "completion_type": "Finalized"
+              },
+              "Lab 3": {
+                "points_received": "85",
+                "points_total": "100",
+                "grade": "85",
+                "completion_type": "Finalized"
+              },
+              "Lab 4": {
+                "points_received": "95",
+                "points_total": "100",
+                "grade": "95",
+                "completion_type": "Finalized"
+              },
+              "Lab 5": {
+                "points_received": "90",
+                "points_total": "100",
+                "grade": "90",
+                "completion_type": "Finalized"
+              },
+              "Lab 6": {
+                "points_received": "85",
+                "points_total": "100",
+                "grade": "85",
+                "completion_type": "Test"
+              },
+              "Lab 7": {
+                "points_received": "95",
+                "points_total": "100",
+                "grade": "95",
+                "completion_type": "Test"
+              },
+              "Lab 8": {
+                "points_received": "90",
+                "points_total": "100",
+                "grade": "90",
+                "completion_type": "Test"
+              },
+              "Lab 9": {
+                "points_received": "90",
+                "points_total": "100",
+                "grade": "90",
+                "completion_type": "Test"
+              },
+              "Lab 10": {
+                "points_received": "80",
+                "points_total": "100",
+                "grade": "80",
+                "completion_type": "Test"
+              }
+            }
+          },
+          "Participation": {
+            "current_percent": "6.4",
+            "total_percent": "8",
+            "grade": "B-",
+            "percent": "80",
+            "first": "0",
+            "second": "1",
+            "tests": "1",
+            "items": {
+              "Participation": {
+                "points_received": "8",
+                "points_total": "10",
+                "grade": "80",
+                "completion_type": "Test"
+              }
+            }
+          },
+          "Self & Team Assessments": {
+            "current_percent": "3.2",
+            "total_percent": "4",
+            "grade": "B-",
+            "percent": "80",
+            "first": "5",
+            "second": "10",
+            "tests": "5",
+            "items": {
+              "Assessment 1": {
+                "points_received": "1",
+                "points_total": "1",
+                "grade": "100",
+                "completion_type": "Finalized"
+              },
+              "Assessment 2": {
+                "points_received": "1",
+                "points_total": "1",
+                "grade": "100",
+                "completion_type": "Finalized"
+              },
+              "Assessment 3": {
+                "points_received": "1",
+                "points_total": "1",
+                "grade": "100",
+                "completion_type": "Finalized"
+              },
+              "Assessment 4": {
+                "points_received": "0",
+                "points_total": "1",
+                "grade": "0",
+                "completion_type": "Finalized"
+              },
+              "Assessment 5": {
+                "points_received": "1",
+                "points_total": "1",
+                "grade": "100",
+                "completion_type": "Finalized"
+              },
+              "Assessment 6": {
+                "points_received": "1",
+                "points_total": "1",
+                "grade": "100",
+                "completion_type": "Test"
+              },
+              "Assessment 7": {
+                "points_received": "1",
+                "points_total": "1",
+                "grade": "100",
+                "completion_type": "Test"
+              },
+              "Assessment 8": {
+                "points_received": "1",
+                "points_total": "1",
+                "grade": "100",
+                "completion_type": "Test"
+              },
+              "Assessment 9": {
+                "points_received": "0",
+                "points_total": "1",
+                "grade": "0",
+                "completion_type": "Test"
+              },
+              "Assessment 10": {
+                "points_received": "1",
+                "points_total": "1",
+                "grade": "100",
+                "completion_type": "Test"
+              }
+            }
+          }
+        }
+      },
+      "TDGE 124": {
+        "professer": "Fulton",
+        "grade": "A-",
+        "percent": "91.34",
+        "categories": {
+          "Collages": {
+            "current_percent": "45.84",
+            "total_percent": "50",
+            "grade": "A-",
+            "percent": "91.67",
+            "first": "2",
+            "second": "3",
+            "tests": "1",
+            "items": {
+              "Collage 1": {
+                "points_received": "85",
+                "points_total": "100",
+                "grade": "85",
+                "completion_type": "Finalized"
+              },
+              "Collage 2": {
+                "points_received": "100",
+                "points_total": "100",
+                "grade": "100",
+                "completion_type": "Finalized"
+              },
+              "Collage 3": {
+                "points_received": "90",
+                "points_total": "100",
+                "grade": "90",
+                "completion_type": "Test"
+              }
+            }
+          },
+          "Initial Designs": {
+            "current_percent": "12.88",
+            "total_percent": "14",
+            "grade": "A-",
+            "percent": "91.67",
+            "first": "2",
+            "second": "3",
+            "tests": "1",
+            "items": {
+              "Design 1": {
+                "points_received": "90",
+                "points_total": "100",
+                "grade": "90",
+                "completion_type": "Finalized"
+              },
+              "Design 2": {
+                "points_received": "95",
+                "points_total": "100",
+                "grade": "95",
+                "completion_type": "Finalized"
+              },
+              "Design 3": {
+                "points_received": "90",
+                "points_total": "100",
+                "grade": "90",
+                "completion_type": "Test"
+              }
+            }
+          },
+          "Quizes": {
+            "current_percent": "10.12",
+            "total_percent": "11",
+            "grade": "A-",
+            "percent": "92",
+            "first": "5",
+            "second": "10",
+            "tests": "5",
+            "items": {
+              "Quiz 1": {
+                "points_received": "9",
+                "points_total": "10",
+                "grade": "90",
+                "completion_type": "Finalized"
+              },
+              "Quiz 2": {
+                "points_received": "10",
+                "points_total": "10",
+                "grade": "100",
+                "completion_type": "Finalized"
+              },
+              "Quiz 3": {
+                "points_received": "10",
+                "points_total": "10",
+                "grade": "100",
+                "completion_type": "Finalized"
+              },
+              "Quiz 4": {
+                "points_received": "9",
+                "points_total": "10",
+                "grade": "90",
+                "completion_type": "Finalized"
+              },
+              "Quiz 5": {
+                "points_received": "8",
+                "points_total": "10",
+                "grade": "80",
+                "completion_type": "Finalized"
+              },
+              "Quiz 6": {
+                "points_received": "9",
+                "points_total": "10",
+                "grade": "90",
+                "completion_type": "Test"
+              },
+              "Quiz 7": {
+                "points_received": "9",
+                "points_total": "10",
+                "grade": "90",
+                "completion_type": "Test"
+              },
+              "Quiz 8": {
+                "points_received": "10",
+                "points_total": "10",
+                "grade": "100",
+                "completion_type": "Test"
+              },
+              "Quiz 9": {
+                "points_received": "8",
+                "points_total": "10",
+                "grade": "80",
+                "completion_type": "Test"
+              },
+              "Quiz 10": {
+                "points_received": "10",
+                "points_total": "10",
+                "grade": "100",
+                "completion_type": "Test"
+              }
+            }
+          },
+          "Final Exam": {
+            "current_percent": "22.5",
+            "total_percent": "25",
+            "grade": "A-",
+            "percent": "90",
+            "first": "0",
+            "second": "1",
+            "tests": "1",
+            "items": {
+              "Final Exam": {
+                "points_received": "90",
+                "points_total": "100",
+                "grade": "90",
+                "completion_type": "Test"
+              }
+            }
+          }
+        }
+      },
+      "COGS 100": {
+        "professer": "Kirsh",
+        "grade": "A-",
+        "percent": "91.45",
+        "categories": {
+          "Weekly Quiz": {
+            "current_percent": "9.1",
+            "total_percent": "10",
+            "grade": "A-",
+            "percent": "91",
+            "first": "5",
+            "second": "10",
+            "tests": "5",
+            "items": {
+              "Quiz 1": {
+                "points_received": "9",
+                "points_total": "10",
+                "grade": "90",
+                "completion_type": "Finalized"
+              },
+              "Quiz 2": {
+                "points_received": "9",
+                "points_total": "10",
+                "grade": "90",
+                "completion_type": "Finalized"
+              },
+              "Quiz 3": {
+                "points_received": "10",
+                "points_total": "10",
+                "grade": "100",
+                "completion_type": "Finalized"
+              },
+              "Quiz 4": {
+                "points_received": "10",
+                "points_total": "10",
+                "grade": "100",
+                "completion_type": "Finalized"
+              },
+              "Quiz 5": {
+                "points_received": "9",
+                "points_total": "10",
+                "grade": "90",
+                "completion_type": "Finalized"
+              },
+              "Quiz 6": {
+                "points_received": "9",
+                "points_total": "10",
+                "grade": "90",
+                "completion_type": "Test"
+              },
+              "Quiz 7": {
+                "points_received": "8",
+                "points_total": "10",
+                "grade": "80",
+                "completion_type": "Test"
+              },
+              "Quiz 8": {
+                "points_received": "9",
+                "points_total": "10",
+                "grade": "90",
+                "completion_type": "Test"
+              },
+              "Quiz 9": {
+                "points_received": "10",
+                "points_total": "10",
+                "grade": "100",
+                "completion_type": "Test"
+              },
+              "Quiz 10": {
+                "points_received": "8",
+                "points_total": "10",
+                "grade": "80",
+                "completion_type": "Test"
+              }
+            }
+          },
+          "Assignments": {
+            "current_percent": "33.75",
+            "total_percent": "36",
+            "grade": "A",
+            "percent": "93.75",
+            "first": "2",
+            "second": "4",
+            "tests": "2",
+            "items": {
+              "Assignment 1": {
+                "points_received": "100",
+                "points_total": "100",
+                "grade": "100",
+                "completion_type": "Finalized"
+              },
+              "Assignment 2": {
+                "points_received": "95",
+                "points_total": "100",
+                "grade": "95",
+                "completion_type": "Finalized"
+              },
+              "Assignment 3": {
+                "points_received": "90",
+                "points_total": "100",
+                "grade": "90",
+                "completion_type": "Test"
+              },
+              "Assignment 4": {
+                "points_received": "90",
+                "points_total": "100",
+                "grade": "90",
+                "completion_type": "Test"
+              }
+            }
+          },
+          "Midterm & Final": {
+            "current_percent": "48.6",
+            "total_percent": "54",
+            "grade": "A-",
+            "percent": "90",
+            "first": "1",
+            "second": "2",
+            "tests": "1",
+            "items": {
+              "Midterm": {
+                "points_received": "90",
+                "points_total": "100",
+                "grade": "90",
+                "completion_type": "Finalized"
+              },
+              "Final": {
+                "points_received": "90",
+                "points_total": "100",
+                "grade": "90",
+                "completion_type": "Test"
+              }
+            }
+          }
+        }
+      },
+      "COGS 107B": {
+        "professer": "Rangel",
+        "grade": "B-",
+        "percent": "82.6",
+        "categories": {
+          "Peer Discussion": {
+            "current_percent": "7",
+            "total_percent": "8",
+            "grade": "B+",
+            "percent": "87.5",
+            "first": "4",
+            "second": "8",
+            "tests": "4",
+            "items": {
+              "Peer Discussion 1": {
+                "points_received": "1",
+                "points_total": "1",
+                "grade": "100",
+                "completion_type": "Finalized"
+              },
+              "Peer Discussion 2": {
+                "points_received": "1",
+                "points_total": "1",
+                "grade": "100",
+                "completion_type": "Finalized"
+              },
+              "Peer Discussion 3": {
+                "points_received": "1",
+                "points_total": "1",
+                "grade": "100",
+                "completion_type": "Finalized"
+              },
+              "Peer Discussion 4": {
+                "points_received": "0",
+                "points_total": "1",
+                "grade": "0",
+                "completion_type": "Finalized"
+              },
+              "Peer Discussion 5": {
+                "points_received": "1",
+                "points_total": "1",
+                "grade": "100",
+                "completion_type": "Test"
+              },
+              "Peer Discussion 6": {
+                "points_received": "1",
+                "points_total": "1",
+                "grade": "100",
+                "completion_type": "Test"
+              },
+              "Peer Discussion 7": {
+                "points_received": "1",
+                "points_total": "1",
+                "grade": "100",
+                "completion_type": "Test"
+              },
+              "Peer Discussion 8": {
+                "points_received": "1",
+                "points_total": "1",
+                "grade": "100",
+                "completion_type": "Test"
+              }
+            }
+          },
+          "Quizzes": {
+            "current_percent": "7.1",
+            "total_percent": "8",
+            "grade": "B+",
+            "percent": "88.75",
+            "first": "4",
+            "second": "8",
+            "tests": "4",
+            "items": {
+              "Quiz 1": {
+                "points_received": "9",
+                "points_total": "10",
+                "grade": "90",
+                "completion_type": "Finalized"
+              },
+              "Quiz 2": {
+                "points_received": "10",
+                "points_total": "10",
+                "grade": "100",
+                "completion_type": "Finalized"
+              },
+              "Quiz 3": {
+                "points_received": "8",
+                "points_total": "10",
+                "grade": "80",
+                "completion_type": "Finalized"
+              },
+              "Quiz 4": {
+                "points_received": "8",
+                "points_total": "10",
+                "grade": "80",
+                "completion_type": "Finalized"
+              },
+              "Quiz 5": {
+                "points_received": "9",
+                "points_total": "10",
+                "grade": "90",
+                "completion_type": "Test"
+              },
+              "Quiz 6": {
+                "points_received": "10",
+                "points_total": "10",
+                "grade": "100",
+                "completion_type": "Test"
+              },
+              "Quiz 7": {
+                "points_received": "9",
+                "points_total": "10",
+                "grade": "90",
+                "completion_type": "Test"
+              },
+              "Quiz 8": {
+                "points_received": "8",
+                "points_total": "10",
+                "grade": "80",
+                "completion_type": "Test"
+              }
+            }
+          },
+          "Section Activities": {
+            "current_percent": "16",
+            "total_percent": "24",
+            "grade": "D+",
+            "percent": "66.67",
+            "first": "3",
+            "second": "6",
+            "tests": "3",
+            "items": {
+              "Activity 1": {
+                "points_received": "1",
+                "points_total": "1",
+                "grade": "100",
+                "completion_type": "Finalized"
+              },
+              "Activity 2": {
+                "points_received": "0",
+                "points_total": "1",
+                "grade": "0",
+                "completion_type": "Finalized"
+              },
+              "Activity 3": {
+                "points_received": "0",
+                "points_total": "1",
+                "grade": "0",
+                "completion_type": "Finalized"
+              },
+              "Activity 4": {
+                "points_received": "1",
+                "points_total": "1",
+                "grade": "100",
+                "completion_type": "Test"
+              },
+              "Activity 5": {
+                "points_received": "1",
+                "points_total": "1",
+                "grade": "100",
+                "completion_type": "Test"
+              },
+              "Activity 6": {
+                "points_received": "1",
+                "points_total": "1",
+                "grade": "100",
+                "completion_type": "Test"
+              }
+            }
+          },
+          "Exams": {
+            "current_percent": "52.5",
+            "total_percent": "60",
+            "grade": "B+",
+            "percent": "87.5",
+            "first": "2",
+            "second": "4",
+            "tests": "2",
+            "items": {
+              "Exam 1": {
+                "points_received": "85",
+                "points_total": "100",
+                "grade": "85",
+                "completion_type": "Finalized"
+              },
+              "Exam 2": {
+                "points_received": "90",
+                "points_total": "100",
+                "grade": "90",
+                "completion_type": "Finalized"
+              },
+              "Exam 3": {
+                "points_received": "85",
+                "points_total": "100",
+                "grade": "85",
+                "completion_type": "Test"
+              },
+              "Exam 4": {
+                "points_received": "90",
+                "points_total": "100",
+                "grade": "90",
+                "completion_type": "Test"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
