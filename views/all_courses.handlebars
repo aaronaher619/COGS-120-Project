@@ -34,9 +34,9 @@
               <button type="button" class="btn buttons btn-lg">Log Off</button>
           </a>
       </div>
-
+      <br/>
       <h1 class="welcome_header">Welcome </h1>
-      <h1 class="welcome_header">{{username}}</h1>
+      <h1 class="username_header">{{username}}</h1>
       <br/>
       <h1 class="header">Select Your Class:</h1>
       <hr>
@@ -52,7 +52,7 @@
         <form id="addClassForm" class="form">
           <div class="form-group ">
             <label for="class_name">Enter Class Name</label>
-            <input type="text" class="form-control" id="class_name" maxlength="10" required name="class_name">
+            <input type="text" class="form-control" id="class_name" maxlength="9" required name="class_name">
           </div>
 
           <div class="form-group ">
@@ -62,13 +62,13 @@
 
           <div class="submit">
             <button type="button" onclick="cancelAddClass()" class="btn buttons btn-lg cancel_button">Cancel</button>
-            <input type="submit" id="submitClass" class="btn buttons btn-lg" value="Add The Class"></input>
+            <input type="submit" id="submitClass" class="btn buttons btn-lg" value="Add"></input>
           </div>
         </form>
       </div>
 
       <div class="helper_div" style="display: none">
-          <p class="helper">Nothing Here</p>
+          <p class="helper">Nothing Here!</p>
           <p class="helper">Press Add A Class</p>
       </div>
 

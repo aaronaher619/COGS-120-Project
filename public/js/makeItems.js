@@ -27,8 +27,8 @@ function requestItems (url) {
                 '<b class="percentage_numbers">' + res.current_percent + '%</b> of ' +
                 '<b class="percentage_numbers">' + res.total_percent + '%</b> Category Total' +
             '</p>' +
-            '<p class="category_numbers">' + res.first + ' of ' + res.second + ' Category Items Finalized</p>' +
-            '<p class="category_numbers">' + res.tests + ' Test Item(s)</p>';
+            '<p class="category_numbers"><b class="percentage_numbers">' + res.first + ' of ' + res.second + '</b> Category Items Finalized</p>' +
+            '<p class="category_numbers"><b class="percentage_numbers">' + res.tests + '</b> Test Item(s)</p>';
 
         $(".category_info").html(category_info);
 
@@ -129,6 +129,11 @@ function addItem() {
 }
 
 function cancelAddItem(){
+    $('#item_name').val('');
+    $('#pointsR').val('');
+    $('#pointsT').val('');
+    $('#ForT').val('');
+
 	$("#addItem").hide();
 	$(".addButton").show();
 }

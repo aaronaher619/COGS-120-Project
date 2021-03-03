@@ -769,6 +769,78 @@
             }
           }
         }
+      },
+      "COGS188B": {
+        "professer": "Gupta",
+        "grade": "N/A",
+        "percent": "0",
+        "categories": {
+          "N/A": "N/A"
+        }
+      },
+      "COGS 118B": {
+        "professer": "Gupta",
+        "grade": "N/A",
+        "percent": "0",
+        "categories": {
+          "N/A": "N/A"
+        }
+      },
+      "COGS188Bas": {
+        "professer": "Gupta",
+        "grade": "N/A",
+        "percent": "0",
+        "categories": {
+          "asd": {
+            "current_percent": "0",
+            "total_percent": "50",
+            "grade": "N/A",
+            "percent": "0",
+            "first": "0",
+            "second": "0",
+            "tests": "0",
+            "items": {
+              "N/A": "N/A"
+            }
+          }
+        }
+      },
+      "COGS118B a": {
+        "professer": "Gupta",
+        "grade": "N/A",
+        "percent": "0",
+        "categories": {
+          "N/A": "N/A"
+        }
+      },
+      "asdfghjkl": {
+        "professer": "Gupta",
+        "grade": "N/A",
+        "percent": "0",
+        "categories": {
+          "N/A": "N/A"
+        }
+      },
+      "CCCCCCCCA": {
+        "professer": "Gupta",
+        "grade": "N/A",
+        "percent": "0",
+        "categories": {
+          "N/A": "N/A"
+        }
+      }
+    }
+  },
+  "aaron": {
+    "password": "asd",
+    "classes": {
+      "asdfghjkl": {
+        "professer": "asd",
+        "grade": "N/A",
+        "percent": "0",
+        "categories": {
+          "N/A": "N/A"
+        }
       }
     }
   }

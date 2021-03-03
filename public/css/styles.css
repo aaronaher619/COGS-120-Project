@@ -114,6 +114,14 @@ a:link {
     text-align: right;
     display: block;
 }
+.username_header{
+    color: black;
+    font-weight: bold;
+    font-size: 5rem;
+    margin: 0px;
+    padding: 0px;
+
+}
 
 .welcome_header{
     color: black;
@@ -192,7 +200,7 @@ hr{
     color: black;
 }
 
-.class_column{
+.class_column, .grade_column{
     padding: 1% 2%;
 }
 
@@ -201,7 +209,7 @@ hr{
 }
 
 .helper{
-	color: grey;
+	color: red;
 	font-size: 5rem;
 	margin-bottom: 0%;
 }
@@ -216,4 +224,70 @@ hr{
     font-family: 'Alegreya SC', serif;
     text-align: center;
     color: black;
+}
+
+@media (max-width: 415px) {
+    /* Login Screen Section */
+    .welcome_header{
+        font-size: 15vw;
+    }
+
+    .label{
+        font-size: 12vw;
+    }
+
+    .info_label{
+        font-size: 4.5vw;
+        margin: 0% 15%;
+    }
+
+    #wrong_login{
+        margin-bottom: 10px;
+    }
+
+    .wrong_label{
+        font-size: 6vw;
+    }
+
+    #loginForm, #signUpForm{
+        padding: 5% 10%
+    }
+
+    /* Classes Section */
+    .username_header{
+        font-size: 10vw;
+    }
+
+    .header{
+        font-size: 6vw;
+    }
+
+	.helper{
+        font-size: 5vw;
+	}
+
+    #addClassForm{
+        padding: 0% 15%
+    }
+
+    .classes{
+        padding: 10px;
+    }
+
+    .class_bubble{
+        width: 85vw;
+        margin: 5%
+    }
+
+    .class_name{
+        font-size: 8vw;
+    }
+
+    .prof{
+        font-size: 5vw;
+    }
+
+    .grade{
+        font-size: 12vw;
+    }
 }

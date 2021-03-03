@@ -32,6 +32,7 @@ text-align: center;
 	line-height: 100%;
 	margin: 0%;
 	font-family: 'Georgia';
+	padding-bottom: 10px;
 }
 
 .percent{
@@ -87,4 +88,48 @@ text-align: center;
 	margin: 0%;
 	font-size: 1.5rem;
 	color: black;
+}
+
+@media (max-width: 415px) {
+	.class_header{
+        font-size: 18vw;
+    }
+
+	.grade_bubble{
+		width: 65vw;
+		padding: 20px 10px;
+	}
+
+	.current_grade{
+		font-size: 8vw;
+	}
+
+	.score{
+		font-size: 16vw;
+	}
+
+	.percent{
+		font-size: 8vw;
+	}
+
+	.add_class{
+		margin-top: 7%;
+	}
+
+	#addCategoryForm{
+		padding: 0% 15%
+	}
+
+	.category_bubble{
+		margin: 8% auto;
+		width: 85vw;
+	}
+
+	.category_name{
+		font-size: 10vw;
+	}
+
+	.info{
+		font-size: 5vw;
+	}
 }

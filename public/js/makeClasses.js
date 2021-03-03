@@ -29,12 +29,12 @@ function requestClasses (url) {
 				'<a href="all_courses/course/' + key + '" class="class_bubble">' +
 					'<div class="container-fluid classes">' +
 						'<div class="row align-items-center">' +
-							'<div class="col-lg-6 col-md-6 class_column">' +
+							'<div class="col-8 class_column">' +
 								'<h3 class="class_name">' + key + '</h3>' +
 								'<p class="prof">' + value["professer"] + '</p>' +
 							'</div>' +
 
-							'<div class="col-lg-6 col-md-6 class_column">' +
+							'<div class="col-auto grade_column">' +
 								'<h3 class="grade">' + value["grade"] + '</h3>' +
 							'</div>' +
 						'</div>' +
@@ -61,12 +61,12 @@ function requestClasses (url) {
 			'<a href="all_courses/course/' + class_name + '" class="class_bubble">' +
 				'<div class="container-fluid classes">' +
 					'<div class="row align-items-center">' +
-						'<div class="col-lg-6 col-md-6 class_column">' +
+						'<div class="col-8 class_column">' +
 							'<h3 class="class_name">' + class_name + '</h3>' +
 							'<p class="prof">' + professer + '</p>' +
 						'</div>' +
 
-						'<div class="col-lg-6 col-md-6 class_column">' +
+						'<div class="col-auto class_column">' +
 							'<h3 class="grade">N/A</h3>' +
 						'</div>' +
 					'</div>' +
@@ -104,6 +104,9 @@ function addClass() {
 }
 
 function cancelAddClass(){
+    $('#class_name').val('');
+    $('#professer').val('');
+
 	$("#addClass").hide();
 	$(".addButton").show();
 }

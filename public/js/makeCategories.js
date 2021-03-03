@@ -53,14 +53,14 @@ function requestCategories (url) {
 					'<div class="container-fluid categories">' +
 						'<h3 class="category_name">' + key + '</h3>' +
 						'<p class="info">Grade: ' + value["grade"] + ' (' + value["percent"] + '%)</p>' +
-						'<p class="info">Attained <b>' + value["current_percent"] + '% of ' + value["total_percent"] + '%</b> Category Total</p>' +
+						'<p class="info">Attained <b>' + value["current_percent"] + '%</b> of <b>' + value["total_percent"] + '%</b></p>' +
 					'</div>' +
 				'</a>';
 			}
 
 			letter_grade = getLetterGrade(total_percent)
 			var grade_bubble =
-				'<h3 class="current_grade">Category Grade:</h3>' +
+				'<h3 class="current_grade">Class Grade:</h3>' +
 				'<p class="score">' + letter_grade + '</p>' +
 				'<p class="percent">' + total_percent.toFixed(2) + '%</p>';
 
@@ -69,7 +69,7 @@ function requestCategories (url) {
 			var course_info;
 
 			if (total_possible_percent == 100){
-				course_info = '<p>' + total_percentile.toFixed(2) + '% of Final Grade Received</p>';
+				course_info = '<p><b class="percentage_numbers">' + total_percentile.toFixed(2) + '%</b> of Final Grade Received</p>';
 			}
 
 			else{
@@ -146,6 +146,9 @@ function addCategory() {
 }
 
 function cancelAddCategory(){
+    $('#category_name').val('');
+    $('#percentage').val('');
+
 	$("#addCategory").hide();
 	$(".addButton").show();
 }
@@ -177,7 +180,7 @@ function update_course(){
 		letter_grade = getLetterGrade(total_percent)
 
 		var grade_bubble =
-			'<h3 class="current_grade">Category Grade:</h3>' +
+			'<h3 class="current_grade">Class Grade:</h3>' +
 			'<p class="score">' + letter_grade + '</p>' +
 			'<p class="percent">' + total_percent.toFixed(2) + '%</p>';
 
@@ -187,7 +190,7 @@ function update_course(){
 		var course_info;
 
 		if (total_possible_percent == 100){
-			course_info = '<p>' + total_percentile.toFixed(2) + '% of Final Grade Received</p>';
+			course_info = '<p><b class="percentage_numbers">' + total_percentile.toFixed(2) + '%</b> of Final Grade Received</p>';
 		}
 
 		else{

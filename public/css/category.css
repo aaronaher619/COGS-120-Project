@@ -37,6 +37,7 @@ text-align: center;
 	line-height: 100%;
 	margin: 0%;
 	font-family: 'Georgia';
+	margin-bottom: 10px;
 }
 
 .percent{
@@ -68,7 +69,6 @@ text-align: center;
 	border-radius: 60px;
 	width: 50vw;
 	margin: 2.5% auto;
-	font-size: 2em;
 	padding: 20px;
 }
 
@@ -98,4 +98,57 @@ text-align: center;
 	margin: 0%;
 	font-size: 1.5rem;
 	font-weight: bold;
+}
+
+@media (max-width: 415px) {
+	.class_header{
+		font-size: 10vw;
+	}
+
+	.category_header{
+		font-size: 15vw;
+		margin-bottom: 35px;
+	}
+
+	.grade_bubble{
+		width: 65vw;
+		padding: 20px 10px;
+	}
+
+	.current_grade{
+		font-size: 8vw;
+	}
+
+	.score{
+		font-size: 16vw;
+	}
+
+	.percent{
+		font-size: 8vw;
+	}
+
+	.add_item{
+		margin-top: 7%;
+	}
+
+	#addItemForm{
+		padding: 0% 15%
+	}
+
+	.item_bubble{
+		width: 85vw;
+		margin: 8% auto;
+	}
+
+	.item_name{
+		font-size: 10vw;
+	}
+
+	.info{
+		font-size: 5vw;
+	}
+
+	.item_grade{
+		font-size: 5vw;
+	}
 }
