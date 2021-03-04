@@ -40,18 +40,24 @@ app.get('/catData', index.getData);
 app.post('/catData', index.postData);
 
 app.get("/:username/all_courses", all_courses.view);
+
 app.get("/:username/all_courses/catData", all_courses.getData);
 app.post("/:username/all_courses/catData", all_courses.postData);
 
 app.get("/:username/all_courses/course/:course_name", course.viewCourse);
 app.post("/:username/all_courses/course/:course_name", course.postLetterGrade);
+
 app.get("/:username/all_courses/course/:course_name/catData", course.getData);
 app.post("/:username/all_courses/course/:course_name/catData", course.postData);
 
 app.get("/:username/all_courses/course/:course_name/category/:category_name", category.viewCategory);
 app.post("/:username/all_courses/course/:course_name/category/:category_name", category.postUpdated);
+
 app.get("/:username/all_courses/course/:course_name/category/:category_name/catData", category.getData);
 app.post("/:username/all_courses/course/:course_name/category/:category_name/catData", category.postData);
+
+app.post("/:username/all_courses/course/:course_name/category/:category_name/delData", category.delData);
+app.post("/:username/all_courses/course/:course_name/category/:category_name/editData", category.editData);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

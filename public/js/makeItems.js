@@ -13,8 +13,6 @@ function requestItems (url) {
     var parsedURL = url.concat("/catData");
 
     $.get(parsedURL, (res, req) => {
-        erase();
-        edit();
         console.log(res);
 
         var grade_bubble =
@@ -53,16 +51,50 @@ function requestItems (url) {
                 }
 
                 newItems +=
-                    '<div class="container-fluid item_bubble ' + bubble_color + '">' +
+                    '<div class="container-fluid item_bubble ' + bubble_color + '" id="bubble_' + key + '">' +
                         '<h3 class="item_name">' + key + '</h3>' +
                         '<p class="info">' + value['points_received'] + ' out of ' + value['points_total'] + ' Points</p>' +
                         '<p class="item_grade">Grade: ' + value['grade'] + '%</p>' +
                         '<p class="info">' + value['completion_type'] + '</p>' +
 
-                        '<button type="button" style="display: none" id="del_' + key + '"' +
+                        '<button type="button" style="display: none; margin: 10px 10px 0px 0px;" onclick="erase(this.id)" id="' + key + '"' +
                             'class="btn btn-dark btn-lg mode deleteButton">Delete</button>' +
-                        '<button type="button" style="display: none" id="edit_' + key + '"' +
+
+                        '<button type="button" style="display: none; margin-top: 10px" onclick="edit(this.id)"   id="' + key + '"' +
                             'class="btn btn-dark btn-lg mode editButton">Edit</button>' +
+
+                        '<div id="editItem" style="display: none">' +
+                            '<form id="editItemForm" class="form">' +
+                            '<div class="form-group ">' +
+                                '<label for="new_item_name">New Category Item Name</label>' +
+                                '<input type="text" class="form-control" id="new_item_name" maxlength="15" required name="new_item_name" value="' + key + '">' +
+                            '</div>' +
+            
+                            '<div class="form-group ">' +
+                                '<label for="new_pointsR">New Points Received</label>' +
+                                '<input type="number" class="form-control" id="new_pointsR" required name="new_pointsR" value="' + value['points_received'] + '">' +
+                            '</div>' +
+            
+                            '<div class="form-group ">' +
+                                '<label for="new_pointsT">New Total Points</label>' +
+                                '<input type="number" class="form-control" id="new_pointsT" required name="new_pointsT" value="' + value['points_total'] + '">' +
+                            '</div>' +
+            
+                            '<div class="form-group ">' +
+                                '<label for="new_ForT">Is This Grade Finalized or Test</label>' +
+                                '<select id="new_ForT" name="new_ForT" required class="form-control">' +
+                                    '<option value="">Please select</option>' +
+                                    '<option value="Finalized">Finalized</option>' +
+                                    '<option value="Test">Test</option>' +
+                                '</select>' +
+                            '</div>' +
+            
+                            '<div class="submit">' +
+                                '<button type="button" onclick="cancelEditItem()" class="btn btn-dark btn-lg cancel_button">Cancel</button>'  +
+                                '<input type="submit" id="submitEdit" class="btn btn-dark btn-lg" value="Edit"></input>' +
+                            '</div>' +
+                            '</form>' +
+                        '</div>' +
                     '</div>';
             }
             $(".root-container").html(newItems);
@@ -95,11 +127,17 @@ function requestItems (url) {
 			var currentHTML = $(".root-container").html();
 
 			currentHTML +=
-            '<div class="container-fluid item_bubble ' + bubble_color + '">' +
+            '<div class="container-fluid item_bubble ' + bubble_color + '" id="bubble_' + key + '">' +
                 '<h3 class="item_name">' + item_name + '</h3>' +
                 '<p class="info">' + pointsR + ' out of ' + pointsT + ' Points</p>' +
                 '<p class="item_grade">Grade: ' + grade + '%</p>' +
                 '<p class="info">' + ForT + '</p>' +
+
+                '<button type="button" style="display: none; margin: 10px 10px 0px 0px;" onclick="erase(this.id)" id="' + key + '"' +
+                    'class="btn btn-dark btn-lg mode deleteButton">Delete</button>' +
+
+                '<button type="button" style="display: none; margin-top: 10px" onclick="edit(this.id)"   id="' + key + '"' +
+                    'class="btn btn-dark btn-lg mode editButton">Edit</button>' +
             '</div>';
 
     		$(".root-container").html(currentHTML);
@@ -268,14 +306,31 @@ function cancel_edit_mode(){
     $(".mode").hide();
 }
 
-function erase(){
-    $(".deleteButton").click(function() {
-        alert(this.id);
-    });
+function erase(item_name){
+    var parsedURL = url.concat("/delData");
+    console.log("Deleteing " + item_name);
+
+    $.post(parsedURL, {item_name});
+
+    alert("Deleted " + item_name + "!")
+    update_category()
+
+    var myobj = document.getElementById("bubble_" + item_name);
+    myobj.remove();
 }
 
-function edit(){
-    $(".editButton").click(function() {
-        alert(this.id);
-    });
+function cancelEditItem(){
+    $("#editItem").hide();
+    $(".editButton").show();
+    $(".deleteButton").show();
+    $(".cancel_editModeButton").show();
+}
+
+function edit(key){
+    $("#editItem").show();
+    $(".editButton").hide();
+    $(".deleteButton").hide();
+    $(".cancel_editModeButton").hide();
+    
+    console.log(key);
 }

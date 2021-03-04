@@ -66,3 +66,25 @@ exports.getData = function(req, res) {
   
     res.json(data[username]['classes'][course_name]['categories'][category_name]);
 }
+
+exports.delData = function(req, res) {
+    var username = req.params.username;
+    var course_name = req.params.course_name;
+    var category_name = req.params.category_name;
+
+    var item_name = req.body.item_name;
+    
+    var jsonString = fs.readFileSync('./data.json');
+    var data = JSON.parse(jsonString);
+
+    delete data[username]['classes'][course_name]['categories'][category_name]['items'][item_name];
+
+    var jsonUpdated = JSON.stringify(data, null, 2)
+    fs.writeFileSync('./data.json', jsonUpdated)
+
+    res.send(item_name);
+}
+
+exports.editData = function(req, res) {
+    
+}
