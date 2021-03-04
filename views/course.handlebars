@@ -31,11 +31,11 @@
         <section id="header">
             <div class="button_header">
                 <a href="/{{username}}/all_courses"class="back_button">
-                    <button type="button" class="btn buttons btn-lg course_button">Back To Classes</button>
+                    <button type="button" class="btn btn-dark btn-lg course_button">Back To Classes</button>
                 </a>
 
                 <a href="/" class="logoff_button">
-                    <button type="button" class="btn buttons btn-lg course_button">Log Off</button>
+                    <button type="button" class="btn btn-danger btn-lg course_button">Log Off</button>
                 </a>
             </div>
             <br/>
@@ -49,25 +49,30 @@
 
         <!-- Categories -->
         <section id="categories">
-            <div class="add_class">
-                <button type="button" style="display: show" onclick="addCategory()" class="btn buttons btn-lg addButton">Add A Category</button>
+            <div>
+                <button type="button" style="display: show" onclick="addCategory()" class="btn btn-info btn-lg addButton add_item_button">Add a Category</button>
+            </div>
+            <br/>
+            <div class="edit_button" style="display: show">
+                <button type="button" style="display: show" onclick="edit_mode()" class="btn bg-info btn-lg editModeButton">Edit Mode</button>
+                <button type="button" style="display: none" onclick="cancel_edit_mode()" class="btn btn-warning btn-lg cancel_editModeButton">Cancel Edit Mode</button>
             </div>
 
             <div id="addCategory" style="display: none">
                 <form id="addCategoryForm" class="form">
                 <div class="form-group ">
-                    <label for="category_name">Enter Category Name<br/>(e.g. Quizzes, HW)</label>
-                    <input type="text" class="form-control" id="category_name" maxlength="15" required name="category_name">
+                    <label for="category_name">Enter Category Name</label>
+                    <input type="text" class="form-control" id="category_name" maxlength="15" required name="category_name" placeholder="(e.g. Quizzes, HW)">
                 </div>
 
                 <div class="form-group ">
                     <label for="percentage">Enter Total Category Percentage</label>
-                    <input type="number" class="form-control" id="percentage" required name="percentage">
+                    <input type="number" class="form-control" id="percentage" required name="percentage" placeholder="Whole Number">
                 </div>
 
                 <div class="submit">
-                    <button type="button" onclick="cancelAddCategory()" class="btn buttons btn-lg cancel_button">Cancel</button>
-                    <input type="submit" id="submitCategory" class="btn buttons btn-lg" value="Add"></input>
+                    <button type="button" onclick="cancelAddCategory()" class="btn btn-warning btn-lg cancel_button">Cancel</button>
+                    <input type="submit" id="submitCategory" class="btn btn-success btn-lg" value="Add"></input>
                 </div>
                 </form>
             </div>
@@ -76,6 +81,8 @@
                 <p class="helper">Nothing Here!</p>
                 <p class="helper">Press Add A Category</p>
             </div>
+
+            <h1 class="select_helper" style="display: show">Select a Category Below:</h1>
 
             <div class="root-container"></div>
         </section>

@@ -44,11 +44,21 @@ app.get("/:username/all_courses", all_courses.view);
 app.get("/:username/all_courses/catData", all_courses.getData);
 app.post("/:username/all_courses/catData", all_courses.postData);
 
+app.post("/:username/all_courses/delData", all_courses.delData);
+app.post("/:username/all_courses/editData", all_courses.editData);
+
+
+
 app.get("/:username/all_courses/course/:course_name", course.viewCourse);
 app.post("/:username/all_courses/course/:course_name", course.postLetterGrade);
 
 app.get("/:username/all_courses/course/:course_name/catData", course.getData);
 app.post("/:username/all_courses/course/:course_name/catData", course.postData);
+
+app.post("/:username/all_courses/course/:course_name/delData", course.delData);
+app.post("/:username/all_courses/course/:course_name/editData", course.editData);
+
+
 
 app.get("/:username/all_courses/course/:course_name/category/:category_name", category.viewCategory);
 app.post("/:username/all_courses/course/:course_name/category/:category_name", category.postUpdated);

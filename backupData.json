@@ -14,7 +14,7 @@
 						"percent": "83",
 						"first": "5",
 						"second": "10",
-						"tests": "5",
+						"predictions": "5",
 						"items": {
 							"Assignment 1": {
 								"points_received": "9",
@@ -50,31 +50,31 @@
 								"points_received": "8",
 								"points_total": "10",
 								"grade": "80",
-								"completion_type": "Test"
+								"completion_type": "Predicted"
 							},
 							"Assignment 7": {
 								"points_received": "8",
 								"points_total": "10",
 								"grade": "80",
-								"completion_type": "Test"
+								"completion_type": "Predicted"
 							},
 							"Assignment 8": {
 								"points_received": "8",
 								"points_total": "10",
 								"grade": "80",
-								"completion_type": "Test"
+								"completion_type": "Predicted"
 							},
 							"Assignment 9": {
 								"points_received": "8",
 								"points_total": "10",
 								"grade": "80",
-								"completion_type": "Test"
+								"completion_type": "Predicted"
 							},
 							"Assignment 10": {
 								"points_received": "8",
 								"points_total": "10",
 								"grade": "80",
-								"completion_type": "Test"
+								"completion_type": "Predicted"
 							}
 						}
 					},
@@ -85,7 +85,7 @@
 						"percent": "92.5",
 						"first": "2",
 						"second": "4",
-						"tests": "2",
+						"predictions": "2",
 						"items": {
 							"Quiz 1": {
 								"points_received": "8",
@@ -103,13 +103,13 @@
 								"points_received": "9",
 								"points_total": "10",
 								"grade": "90",
-								"completion_type": "Test"
+								"completion_type": "Predicted"
 							},
 							"Quiz 4": {
 								"points_received": "10",
 								"points_total": "10",
 								"grade": "100",
-								"completion_type": "Test"
+								"completion_type": "Predicted"
 							}
 						}
 					},
@@ -120,7 +120,7 @@
 						"percent": "88.5",
 						"first": "5",
 						"second": "10",
-						"tests": "5",
+						"predictions": "5",
 						"items" : {
 							"Lab 1": {
 								"points_received": "80",
@@ -156,31 +156,31 @@
 								"points_received": "85",
 								"points_total": "100",
 								"grade": "85",
-								"completion_type": "Test"
+								"completion_type": "Predicted"
 							},
 							"Lab 7": {
 								"points_received": "95",
 								"points_total": "100",
 								"grade": "95",
-								"completion_type": "Test"
+								"completion_type": "Predicted"
 							},
 							"Lab 8": {
 								"points_received": "90",
 								"points_total": "100",
 								"grade": "90",
-								"completion_type": "Test"
+								"completion_type": "Predicted"
 							},
 							"Lab 9": {
 								"points_received": "90",
 								"points_total": "100",
 								"grade": "90",
-								"completion_type": "Test"
+								"completion_type": "Predicted"
 							},
 							"Lab 10": {
 								"points_received": "80",
 								"points_total": "100",
 								"grade": "80",
-								"completion_type": "Test"
+								"completion_type": "Predicted"
 							}
 						}
 					},
@@ -191,13 +191,13 @@
 						"percent": "80",
 						"first": "0",
 						"second": "1",
-						"tests": "1",
+						"predictions": "1",
 						"items": {
 							"Participation": {
 								"points_received": "8",
 								"points_total": "10",
 								"grade": "80",
-								"completion_type": "Test"
+								"completion_type": "Predicted"
 							}
 						}
 					},
@@ -208,7 +208,7 @@
 						"percent": "80",
 						"first": "5",
 						"second": "10",
-						"tests": "5",
+						"predictions": "5",
 						"items": {
 							"Assessment 1": {
 								"points_received": "1",
@@ -244,31 +244,31 @@
 								"points_received": "1",
 								"points_total": "1",
 								"grade": "100",
-								"completion_type": "Test"
+								"completion_type": "Predicted"
 							},
 							"Assessment 7": {
 								"points_received": "1",
 								"points_total": "1",
 								"grade": "100",
-								"completion_type": "Test"
+								"completion_type": "Predicted"
 							},
 							"Assessment 8": {
 								"points_received": "1",
 								"points_total": "1",
 								"grade": "100",
-								"completion_type": "Test"
+								"completion_type": "Predicted"
 							},
 							"Assessment 9": {
 								"points_received": "0",
 								"points_total": "1",
 								"grade": "0",
-								"completion_type": "Test"
+								"completion_type": "Predicted"
 							},
 							"Assessment 10": {
 								"points_received": "1",
 								"points_total": "1",
 								"grade": "100",
-								"completion_type": "Test"
+								"completion_type": "Predicted"
 							}
 						}
 					}
@@ -287,7 +287,7 @@
 						"percent": "91.67",
 						"first": "2",
 						"second": "3",
-						"tests": "1",
+						"predictions": "1",
 						"items": {
 							"Collage 1": {
 								"points_received": "85",
@@ -305,7 +305,7 @@
 								"points_received": "90",
 								"points_total": "100",
 								"grade": "90",
-								"completion_type": "Test"
+								"completion_type": "Predicted"
 							}
 						}
 					},
@@ -316,7 +316,7 @@
 						"percent": "91.67",
 						"first": "2",
 						"second": "3",
-						"tests": "1",
+						"predictions": "1",
 						"items": {
 							"Design 1": {
 								"points_received": "90",
@@ -334,7 +334,7 @@
 								"points_received": "90",
 								"points_total": "100",
 								"grade": "90",
-								"completion_type": "Test"
+								"completion_type": "Predicted"
 							}
 						}
 					},
@@ -345,7 +345,7 @@
 						"percent": "92",
 						"first": "5",
 						"second": "10",
-						"tests": "5",
+						"predictions": "5",
 						"items": {
 							"Quiz 1": {
 								"points_received": "9",
@@ -381,31 +381,31 @@
 								"points_received": "9",
 								"points_total": "10",
 								"grade": "90",
-								"completion_type": "Test"
+								"completion_type": "Predicted"
 							},
 							"Quiz 7": {
 								"points_received": "9",
 								"points_total": "10",
 								"grade": "90",
-								"completion_type": "Test"
+								"completion_type": "Predicted"
 							},
 							"Quiz 8": {
 								"points_received": "10",
 								"points_total": "10",
 								"grade": "100",
-								"completion_type": "Test"
+								"completion_type": "Predicted"
 							},
 							"Quiz 9": {
 								"points_received": "8",
 								"points_total": "10",
 								"grade": "80",
-								"completion_type": "Test"
+								"completion_type": "Predicted"
 							},
 							"Quiz 10": {
 								"points_received": "10",
 								"points_total": "10",
 								"grade": "100",
-								"completion_type": "Test"
+								"completion_type": "Predicted"
 							}
 						}
 					},
@@ -416,13 +416,13 @@
 						"percent": "90",
 						"first": "0",
 						"second": "1",
-						"tests": "1",
+						"predictions": "1",
 						"items": {
 							"Final Exam": {
 								"points_received": "90",
 								"points_total": "100",
 								"grade": "90",
-								"completion_type": "Test"
+								"completion_type": "Predicted"
 							}
 						}
 					}
@@ -441,7 +441,7 @@
 						"percent": "91",
 						"first": "5",
 						"second": "10",
-						"tests": "5",
+						"predictions": "5",
 						"items": {
 							"Quiz 1": {
 								"points_received": "9",
@@ -477,31 +477,31 @@
 								"points_received": "9",
 								"points_total": "10",
 								"grade": "90",
-								"completion_type": "Test"
+								"completion_type": "Predicted"
 							},
 							"Quiz 7": {
 								"points_received": "8",
 								"points_total": "10",
 								"grade": "80",
-								"completion_type": "Test"
+								"completion_type": "Predicted"
 							},
 							"Quiz 8": {
 								"points_received": "9",
 								"points_total": "10",
 								"grade": "90",
-								"completion_type": "Test"
+								"completion_type": "Predicted"
 							},
 							"Quiz 9": {
 								"points_received": "10",
 								"points_total": "10",
 								"grade": "100",
-								"completion_type": "Test"
+								"completion_type": "Predicted"
 							},
 							"Quiz 10": {
 								"points_received": "8",
 								"points_total": "10",
 								"grade": "80",
-								"completion_type": "Test"
+								"completion_type": "Predicted"
 							}
 						}
 					},
@@ -512,7 +512,7 @@
 						"percent": "93.75",
 						"first": "2",
 						"second": "4",
-						"tests": "2",
+						"predictions": "2",
 						"items": {
 							"Assignment 1": {
 								"points_received": "100",
@@ -530,13 +530,13 @@
 								"points_received": "90",
 								"points_total": "100",
 								"grade": "90",
-								"completion_type": "Test"
+								"completion_type": "Predicted"
 							},
 							"Assignment 4": {
 								"points_received": "90",
 								"points_total": "100",
 								"grade": "90",
-								"completion_type": "Test"
+								"completion_type": "Predicted"
 							}
 						}
 					},
@@ -547,7 +547,7 @@
 						"percent": "90",
 						"first": "1",
 						"second": "2",
-						"tests": "1",
+						"predictions": "1",
 						"items": {
 							"Midterm": {
 								"points_received": "90",
@@ -559,7 +559,7 @@
 								"points_received": "90",
 								"points_total": "100",
 								"grade": "90",
-								"completion_type": "Test"
+								"completion_type": "Predicted"
 							}
 						}
 					}
@@ -578,7 +578,7 @@
 						"percent": "87.5",
 						"first": "4",
 						"second": "8",
-						"tests": "4",
+						"predictions": "4",
 						"items": {
 							"Peer Discussion 1": {
 								"points_received": "1",
@@ -608,25 +608,25 @@
 								"points_received": "1",
 								"points_total": "1",
 								"grade": "100",
-								"completion_type": "Test"
+								"completion_type": "Predicted"
 							},
 							"Peer Discussion 6": {
 								"points_received": "1",
 								"points_total": "1",
 								"grade": "100",
-								"completion_type": "Test"
+								"completion_type": "Predicted"
 							},
 							"Peer Discussion 7": {
 								"points_received": "1",
 								"points_total": "1",
 								"grade": "100",
-								"completion_type": "Test"
+								"completion_type": "Predicted"
 							},
 							"Peer Discussion 8": {
 								"points_received": "1",
 								"points_total": "1",
 								"grade": "100",
-								"completion_type": "Test"
+								"completion_type": "Predicted"
 							}
 						}
 					},
@@ -637,7 +637,7 @@
 						"percent": "88.75",
 						"first": "4",
 						"second": "8",
-						"tests": "4",
+						"predictions": "4",
 						"items": {
 							"Quiz 1": {
 								"points_received": "9",
@@ -667,25 +667,25 @@
 								"points_received": "9",
 								"points_total": "10",
 								"grade": "90",
-								"completion_type": "Test"
+								"completion_type": "Predicted"
 							},
 							"Quiz 6": {
 								"points_received": "10",
 								"points_total": "10",
 								"grade": "100",
-								"completion_type": "Test"
+								"completion_type": "Predicted"
 							},
 							"Quiz 7": {
 								"points_received": "9",
 								"points_total": "10",
 								"grade": "90",
-								"completion_type": "Test"
+								"completion_type": "Predicted"
 							},
 							"Quiz 8": {
 								"points_received": "8",
 								"points_total": "10",
 								"grade": "80",
-								"completion_type": "Test"
+								"completion_type": "Predicted"
 							}
 						}
 					},
@@ -696,7 +696,7 @@
 						"percent": "66.67",
 						"first": "3",
 						"second": "6",
-						"tests": "3",
+						"predictions": "3",
 						"items": {
 							"Activity 1": {
 								"points_received": "1",
@@ -720,19 +720,19 @@
 								"points_received": "1",
 								"points_total": "1",
 								"grade": "100",
-								"completion_type": "Test"
+								"completion_type": "Predicted"
 							},
 							"Activity 5": {
 								"points_received": "1",
 								"points_total": "1",
 								"grade": "100",
-								"completion_type": "Test"
+								"completion_type": "Predicted"
 							},
 							"Activity 6": {
 								"points_received": "1",
 								"points_total": "1",
 								"grade": "100",
-								"completion_type": "Test"
+								"completion_type": "Predicted"
 							}
 						}
 					},
@@ -743,7 +743,7 @@
 						"percent": "87.5",
 						"first": "2",
 						"second": "4",
-						"tests": "2",
+						"predictions": "2",
 						"items": {
 							"Exam 1": {
 								"points_received": "85",
@@ -761,13 +761,13 @@
 								"points_received": "85",
 								"points_total": "100",
 								"grade": "85",
-								"completion_type": "Test"
+								"completion_type": "Predicted"
 							},
 							"Exam 4": {
 								"points_received": "90",
 								"points_total": "100",
 								"grade": "90",
-								"completion_type": "Test"
+								"completion_type": "Predicted"
 							}
 						}
 					}

@@ -34,6 +34,10 @@ exports.getData = function(req, res) {
 
   var jsonString = fs.readFileSync('./data.json');
   var data = JSON.parse(jsonString);
-  
+
   res.json(data[username]);
 }
+
+exports.delData = function(req, res) {}
+
+exports.editData = function(req, res) {}

@@ -23,7 +23,7 @@ exports.postLetterGrade = function(req, res) {
 
   var jsonUpdated = JSON.stringify(data, null, 2)
   fs.writeFileSync('./data.json', jsonUpdated)
-  
+
   res.send(letter_grade);
 }
 
@@ -58,3 +58,48 @@ exports.getData = function(req, res) {
 
   res.json(data[username]['classes'][course_name]);
 }
+
+exports.delData = function(req, res) {
+  var username = req.params.username;
+  var course_name = req.params.course_name;
+
+  var category_name = req.body.category_name;
+
+  var jsonString = fs.readFileSync('./data.json');
+  var data = JSON.parse(jsonString);
+
+  delete data[username]['classes'][course_name]['categories'][category_name];
+
+  if(Object.keys(data[username]['classes'][course_name]['categories']).length == 0){
+      data[username]['classes'][course_name]['categories']["N/A"] = "N/A";
+  }
+  console.log(data[username]['classes'][course_name]['categories'])
+  var jsonUpdated = JSON.stringify(data, null, 2)
+  fs.writeFileSync('./data.json', jsonUpdated)
+
+  res.send(category_name);
+}
+
+exports.editData = function(req, res) {
+  var username = req.params.username;
+  var course_name = req.params.course_name;
+
+  var new_percentage = req.body.new_percentage;
+  var new_category_name = req.body.new_category_name;
+  var category_name = req.body.category_name;
+
+  var jsonString = fs.readFileSync('./data.json');
+
+  var data = JSON.parse(jsonString);
+
+  str = JSON.stringify(data);
+  str = str.replace(category_name, new_category_name);
+
+  var data = JSON.parse(str);
+
+  data[username]['classes'][course_name]['categories'][new_category_name]["total_percent"] = new_percentage;
+
+  var jsonUpdated = JSON.stringify(data, null, 2)
+  fs.writeFileSync('./data.json', jsonUpdated)
+
+  res.send(new_percentage);}

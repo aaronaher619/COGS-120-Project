@@ -25,7 +25,7 @@ exports.postUpdated= function(req, res) {
     data[username]['classes'][course_name]['categories'][category_name]['percent'] = updatedCategory['percent'];
     data[username]['classes'][course_name]['categories'][category_name]['first'] = updatedCategory['first'];
     data[username]['classes'][course_name]['categories'][category_name]['second'] = updatedCategory['second'];
-    data[username]['classes'][course_name]['categories'][category_name]['tests'] = updatedCategory['tests'];
+    data[username]['classes'][course_name]['categories'][category_name]['predictions'] = updatedCategory['predictions'];
 
     var jsonUpdated = JSON.stringify(data, null, 2)
     fs.writeFileSync('./data.json', jsonUpdated)
@@ -63,7 +63,7 @@ exports.getData = function(req, res) {
 
     var jsonString = fs.readFileSync('./data.json');
     var data = JSON.parse(jsonString);
-  
+
     res.json(data[username]['classes'][course_name]['categories'][category_name]);
 }
 
@@ -73,11 +73,15 @@ exports.delData = function(req, res) {
     var category_name = req.params.category_name;
 
     var item_name = req.body.item_name;
-    
+
     var jsonString = fs.readFileSync('./data.json');
     var data = JSON.parse(jsonString);
 
     delete data[username]['classes'][course_name]['categories'][category_name]['items'][item_name];
+
+    if(Object.keys(data[username]['classes'][course_name]['categories'][category_name]['items']).length == 0){
+        data[username]['classes'][course_name]['categories'][category_name]['items']["N/A"] = "N/A";
+    }
 
     var jsonUpdated = JSON.stringify(data, null, 2)
     fs.writeFileSync('./data.json', jsonUpdated)
@@ -86,5 +90,27 @@ exports.delData = function(req, res) {
 }
 
 exports.editData = function(req, res) {
-    
+    var username = req.params.username;
+    var course_name = req.params.course_name;
+    var category_name = req.params.category_name;
+
+    var updatedItem = req.body.updatedItem;
+    var new_item_name = req.body.new_item_name;
+    var item_name = req.body.item_name;
+
+    var jsonString = fs.readFileSync('./data.json');
+
+    var data = JSON.parse(jsonString);
+
+    str = JSON.stringify(data);
+    str = str.replace(item_name, new_item_name);
+
+    var data = JSON.parse(str);
+
+    data[username]['classes'][course_name]['categories'][category_name]['items'][new_item_name] = updatedItem;
+
+    var jsonUpdated = JSON.stringify(data, null, 2)
+    fs.writeFileSync('./data.json', jsonUpdated)
+
+    res.send(updatedItem);
 }

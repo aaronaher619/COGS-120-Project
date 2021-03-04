@@ -18,7 +18,7 @@ text-align: center;
 
 .grade_bubble{
 	border-radius: 25px;
-	background-color: lightskyblue;
+	background-color: rgb(135, 175, 250);
 	width: 300px;
 	margin-left: auto;
 	margin-right: auto;
@@ -64,6 +64,15 @@ text-align: center;
 	color: grey;
 }
 
+.select_helper{
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 3vw;
+	margin: 10px;
+    padding: 0px;
+}
+
 .item_bubble{
 	border: 2px solid black;
 	border-radius: 60px;
@@ -73,14 +82,14 @@ text-align: center;
 }
 
 .item_bubble:hover{
-	background-color: lightseagreen;
+	background-color: lightgray;
 }
 
 .final_color{
 	background-color: lightskyblue;
 }
 
-.test_color{
+.predict_color{
 	background-color: lightgreen;
 }
 
@@ -127,12 +136,21 @@ text-align: center;
 		font-size: 8vw;
 	}
 
-	.add_item{
+	.add_item_button{
 		margin-top: 7%;
 	}
 
 	#addItemForm{
-		padding: 0% 15%
+		padding: 0% 15%;
+	}
+
+	.edit_form{
+		padding: 0%;
+	}
+
+	.select_helper{
+		font-size: 6vw;
+		margin: 20px;
 	}
 
 	.item_bubble{

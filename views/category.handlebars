@@ -30,11 +30,11 @@
         <section id="header">
             <div class="button_header">
                 <a href="../../{{course}}"class="back_button">
-                    <button type="button" class="btn buttons btn-lg">Back To {{course}}</button>
+                    <button type="button" class="btn btn-dark btn-lg">Back To {{course}}</button>
                 </a>
 
                 <a href="/" class="logoff_button">
-                    <button type="button" class="btn buttons btn-lg">Log Off</button>
+                    <button type="button" class="btn btn-danger btn-lg">Log Off</button>
                 </a>
             </div>
             <br/>
@@ -45,55 +45,57 @@
             <div class="category_info"></div>
             <hr>
         </section>
-        
+
         <!-- Items -->
         <section id="Items">
-            <div class="add_item">
-                <button type="button" style="display: show" onclick="addItem()" class="btn buttons btn-lg addButton">Add A Category Item</button>
-            </div>           
+            <div>
+                <button type="button" style="display: show" onclick="addItem()" class="btn bg-info btn-lg addButton add_item_button">Add a Category Item</button>
+            </div>
             <br/>
-            <div class="edit_button" style="display: none">
-                <button type="button" style="display: show" onclick="edit_mode()" class="btn buttons btn-lg editModeButton">Edit Mode</button>
-                <button type="button" style="display: none" onclick="cancel_edit_mode()" class="btn buttons btn-lg cancel_editModeButton">Cancel Edit Mode</button>
+            <div class="edit_button" style="display: show">
+                <button type="button" style="display: show" onclick="edit_mode()" class="btn bg-info btn-lg editModeButton">Edit Mode</button>
+                <button type="button" style="display: none" onclick="cancel_edit_mode()" class="btn btn-warning btn-lg cancel_editModeButton">Cancel Edit Mode</button>
             </div>
 
             <div id="addItem" style="display: none">
                 <form id="addItemForm" class="form">
                 <div class="form-group ">
                     <label for="item_name">Enter Category Item Name</label>
-                    <input type="text" class="form-control" id="item_name" maxlength="15" required name="item_name">
+                    <input type="text" class="form-control" id="item_name" maxlength="15" required name="item_name" placeholder="(e.g. Quiz 1, HW 1)">
                 </div>
 
                 <div class="form-group ">
                     <label for="pointsR">Enter Points Received</label>
-                    <input type="number" class="form-control" id="pointsR" required name="pointsR">
+                    <input type="number" class="form-control" id="pointsR" required name="pointsR" placeholder="Whole Number">
                 </div>
 
                 <div class="form-group ">
                     <label for="pointsT">Enter Total Points</label>
-                    <input type="number" class="form-control" id="pointsT" required name="pointsT">
+                    <input type="number" class="form-control" id="pointsT" required name="pointsT" placeholder="Whole Number">
                 </div>
 
                 <div class="form-group ">
-                    <label for="ForT">Is This Grade Finalized or Test</label>
+                    <label for="ForT">Is This Grade Finalized or Predicted</label>
                     <select id="ForT" name="ForT" required class="form-control">
                         <option value="">Please select</option>
                         <option value="Finalized">Finalized</option>
-                        <option value="Test">Test</option>
+                        <option value="Predicted">Predicted</option>
                     </select>
                 </div>
 
                 <div class="submit">
-                    <button type="button" onclick="cancelAddItem()" class="btn buttons btn-lg cancel_button">Cancel</button>
-                    <input type="submit" id="submitCategory" class="btn buttons btn-lg" value="Add"></input>
+                    <button type="button" onclick="cancelAddItem()" class="btn btn-warning btn-lg cancel_button">Cancel</button>
+                    <input type="submit" id="submitCategory" class="btn btn-success btn-lg" value="Add"></input>
                 </div>
                 </form>
             </div>
 
             <div class="helper_div" style="display: none">
-                <p class="helper">Nothing Here!</p>
-                <p class="helper">Press Add A Category Item</p>
+                <p class="helper_big">Nothing Here!</p>
+                <p class="helper">Press Add a Category Item Above</p>
             </div>
+
+            <h1 class="select_helper" style="display: show">Category Items:</h1>
 
             <div class="root-container"></div>
         </section>
