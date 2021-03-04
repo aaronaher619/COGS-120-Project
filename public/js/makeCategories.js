@@ -66,19 +66,19 @@ function requestCategories (url) {
 
 					'<div id="edit_' + key_id + '" style="display: none">' +
 						'<form id="editCategoryForm" class="form edit_form">' +
-						'<div class="form-group ">' +
+						'<div class="form-group">' +
 							'<label for="new_category_name">New Category Name</label>' +
 							'<input type="text" class="form-control" id="new_category_name" maxlength="15" required name="new_category_name" value="' + key + '">' +
 						'</div>' +
 
-						'<div class="form-group ">' +
-							'<label for="new_percentage">Enter Total Category Percentage</label>' +
-							'<input type="number" class="form-control" id="new_percentage" required name="new_percentage" value="' + Number(value['total_percent']) + '">' +
+						'<div class="form-group">' +
+							'<label for="new_total_percent">Enter Total Category Percentage</label>' +
+							'<input type="number" class="form-control" id="new_total_percent" required name="new_total_percent" value="' + Number(value['total_percent']) + '">' +
 						'</div>' +
 
 						'<div class="submit">' +
 							'<button type="button" id="' + key + '" onclick="cancelEditCategory(this.id)" class="btn btn-warning btn-lg cancel_button">Cancel</button>'  +
-							'<input type="submit" id="submitEdit" class="btn btn-success btn-lg submitEdit_button" value="Confirm Edit"></input>' +
+							'<input type="submit" id="submitEdit" class="btn btn-success btn-lg submitEdit_button" value="Confirm"></input>' +
 						'</div>' +
 						'</form>' +
 					'</div>' +
@@ -96,18 +96,30 @@ function requestCategories (url) {
 			var course_info;
 
 			if (total_possible_percent == 100){
-				course_info = '<p><b class="percentage_numbers">' + total_percentile.toFixed(2) + '%</b> of Final Grade Received</p>';
+				course_info = '<p><b class="percentage_numbers">' + total_percentile.toFixed(2) + '%</b> of Final Grade Finalized</p>';
+			}
+
+			else if(total_possible_percent > 100){
+				var extra_credit = total_possible_percent - 100;
+				course_info =
+			'<p class="course_percentage">' +
+				'<b class="percentage_numbers">' + total_percentile.toFixed(2) + '%</b> of Final Grade Finalized' +
+				'</p>' +
+			'<p class="course_percentage">All Category %\'s Summed Up Equals: ' +
+				'<b class="percentage_numbers">' + total_possible_percent + '%</b>' +
+			'</p>' +
+			'<p class="course_percentage">You have <b class="percentage_numbers">'+ extra_credit + '%</b> Extra Credit</p>';
 			}
 
 			else{
 				course_info =
 			'<p class="course_percentage">' +
-				'<b class="percentage_numbers">' + total_percentile.toFixed(2) + '%</b> of Final Grade Received' +
+				'<b class="percentage_numbers">' + total_percentile.toFixed(2) + '%</b> of Final Grade Finalized' +
 				'</p>' +
-			'<p class="course_correcter">All Total Category %\'s Summed Equals: ' +
+			'<p class="course_correcter">All Category %\'s Summed Up Equals: ' +
 				'<b class="percentage_numbers">' + total_possible_percent + '%</b>' +
 			'</p>' +
-			'<p class="course_correcter">Add More Categories Till It Equals <b  class="percentage_numbers">100%</b></p>';
+			'<p class="course_correcter">Add More Categories Till It Equals <b class="percentage_numbers">100%</b></p>';
 			}
 
 			$(".course_info").html(course_info);
@@ -121,9 +133,9 @@ function requestCategories (url) {
 			$(".helper_div").hide();
 
 			var category_name = $('#category_name').val();
-			var percentage = $('#percentage').val();
+			var total_percent = $('#total_percent').val();
 
-			console.log("Submitting  " + category_name + '  ' + percentage);
+			console.log("Submitting  " + category_name + '  ' + total_percent);
 
 			var currentHTML = $(".root-container").html();
             var category_name_id = category_name.replaceAll(/[^a-zA-Z0-9]/g, "");
@@ -133,7 +145,7 @@ function requestCategories (url) {
 				'<a href="' + url + '/category/' + category_name + '" class="" style="display:block">' +
 					'<h3 class="category_name">' + category_name + '</h3>' +
 					'<p class="info">Grade: ' + 'N/A' + ' (' + '0' + '%)</p>' +
-					'<p class="info">Attained <b>0% of ' + percentage + '%</b> Category Total</p>' +
+					'<p class="info">Attained <b>0% of ' + total_percent + '%</b> Category Total</p>' +
 				'</a>' +
 
 				'<button type="button" style="display: none; margin: 10px 10px 0px 0px;" onclick="erase(this.id)" id="' + category_name + '"' +
@@ -144,19 +156,19 @@ function requestCategories (url) {
 
 				'<div id="edit_' + category_name_id + '" style="display: none">' +
 					'<form id="editCategoryForm" class="form edit_form">' +
-					'<div class="form-group ">' +
+					'<div class="form-group">' +
 						'<label for="new_category_name">New Category Name</label>' +
 						'<input type="text" class="form-control" id="new_category_name" maxlength="15" required name="new_category_name" value="' + category_name + '">' +
 					'</div>' +
 
-					'<div class="form-group ">' +
-						'<label for="new_percentage">Enter Total Category Percentage</label>' +
-						'<input type="number" class="form-control" id="new_percentage" required name="new_percentage"' + Number(percentage) + '">' +
+					'<div class="form-group">' +
+						'<label for="new_total_percent">Enter Total Category Percentage</label>' +
+						'<input type="number" class="form-control" id="new_total_percent" required name="new_total_percent" value="' + Number(total_percent) + '">' +
 					'</div>' +
 
 					'<div class="submit">' +
 						'<button type="button" id="' + category_name + '" onclick="cancelEditCategory(this.id)" class="btn btn-warning btn-lg cancel_button">Cancel</button>'  +
-						'<input type="submit" id="submitEdit" class="btn btn-success btn-lg" value="Confirm Edit"></input>' +
+						'<input type="submit" id="submitEdit" class="btn btn-success btn-lg" value="Confirm"></input>' +
 					'</div>' +
 					'</form>' +
 				'</div>' +
@@ -167,7 +179,7 @@ function requestCategories (url) {
 			$.post(parsedURL, {
 				newAddedCategory: {
 					"current_percent": "0",
-					"total_percent": percentage,
+					"total_percent": total_percent,
 					"grade": "N/A",
 					"percent": "0",
 					"first": "0",
@@ -197,7 +209,8 @@ function requestCategories (url) {
 
 function addCategory() {
 	$("#addCategory").show();
-	$(".addButton").hide();
+	$(".addButton").hide();	
+	$(".editModeButton").hide();
 }
 
 function cancelAddCategory(){
@@ -206,6 +219,7 @@ function cancelAddCategory(){
 
 	$("#addCategory").hide();
 	$(".addButton").show();
+	$(".editModeButton").show();
 }
 
 function update_course(){
@@ -252,18 +266,32 @@ function update_course(){
 		var course_info;
 
 		if (total_possible_percent == 100){
-			course_info = '<p><b class="percentage_numbers">' + total_percentile.toFixed(2) + '%</b> of Final Grade Received</p>';
+			course_info = '<p><b class="percentage_numbers">' + total_percentile.toFixed(2) + '%</b> of Final Grade Finalized</p>';
 		}
+
+		else if(total_possible_percent > 100){
+			var extra_credit = total_possible_percent - 100;
+			course_info =
+		'<p class="course_percentage">' +
+			'<b class="percentage_numbers">' + total_percentile.toFixed(2) + '%</b> of Final Grade Finalized' +
+			'</p>' +
+		'<p class="course_percentage">All Category %\'s Summed Up Equals: ' +
+			'<b class="percentage_numbers">' + total_possible_percent + '%</b>' +
+		'</p>' +
+		'<p class="course_percentage">You have <b class="percentage_numbers">'+ extra_credit + '%</b> Extra Credit</p>';
+		}
+
 		else{
 			course_info =
 		'<p class="course_percentage">' +
-			'<b class="percentage_numbers">' + total_percentile.toFixed(2) + '%</b> of Final Grade Received' +
+			'<b class="percentage_numbers">' + total_percentile.toFixed(2) + '%</b> of Final Grade Finalized' +
 			'</p>' +
-		'<p class="course_correcter">All Total Category %\'s Summed Equals: ' +
+		'<p class="course_correcter">All Category %\'s Summed Up Equals: ' +
 			'<b class="percentage_numbers">' + total_possible_percent + '%</b>' +
 		'</p>' +
-		'<p class="course_correcter">Add More Categories Till It Equals <b  class="percentage_numbers">100%</b></p>';
+		'<p class="course_correcter">Add More Categories Till It Equals <b class="percentage_numbers">100%</b></p>';
 		}
+
 		if (res.categories.hasOwnProperty('N/A')){
 			$(".course_info").html("");
 		}
@@ -349,9 +377,9 @@ function erase(category_name){
 }
 
 function cancelEditCategory(category_name){
-    var key_id = category_name.replaceAll(/[^a-zA-Z0-9]/g, "");
+    var category_name_id = category_name.replaceAll(/[^a-zA-Z0-9]/g, "");
 
-    $("#edit_" + key_id).hide();
+    $("#edit_" + category_name_id).hide();
     $(".editButton").show();
     $(".deleteButton").show();
     $(".cancel_editModeButton").show();
@@ -360,9 +388,9 @@ function cancelEditCategory(category_name){
 function edit(category_name){
     var parsedURL = url.concat("/editData");
 
-    var key_id = category_name.replaceAll(/[^a-zA-Z0-9]/g, "");
+    var category_name_id = category_name.replaceAll(/[^a-zA-Z0-9]/g, "");
 
-    $("#edit_" + key_id).show();
+    $("#edit_" + category_name_id).show();
     $(".editButton").hide();
     $(".deleteButton").hide();
     $(".cancel_editModeButton").hide();
@@ -372,25 +400,22 @@ function edit(category_name){
 		e.preventDefault();
 
 		var new_category_name = $('#new_category_name').val();
-		var new_percentage = $('#new_percentage').val();
-
-		$.post(parsedURL, {new_percentage, new_category_name, category_name});
+		var new_total_percent = $('#new_total_percent').val();
+		var new_current_percent;
 
 		var getURL = url.concat("/catData");
 
     	$.get(getURL, (res, req) => {
-			var data = res['categories'][new_category_name];
+			var data = res['categories'][category_name];
 			var new_category_name_id = new_category_name.replaceAll(/[^a-zA-Z0-9]/g, "");
-			var category_name_id = category_name.replaceAll(/[^a-zA-Z0-9]/g, "");
-
-
+			new_current_percent = ((Number(new_total_percent) * Number(data["percent"])) * .01).toFixed(2);
 
 			var updatedCategoryHTML =
 			'<div class="container-fluid categories category_bubble" id="bubble_' + new_category_name_id + '">' +
 				'<a href="' + url + '/category/' + new_category_name + '" class="" style="display:block">' +
 					'<h3 class="category_name">' + new_category_name + '</h3>' +
-					'<p class="info">Grade: ' + data["grade"] + ' (' + res["percent"] + '%)</p>' +
-					'<p class="info">Attained <b>' + data["current_percent"] + '%</b> of <b>' + Number(new_percentage) + '%</b></p>' +
+					'<p class="info">Grade: ' + data["grade"] + ' (' + data["percent"] + '%)</p>' +
+					'<p class="info">Attained <b>' + new_current_percent + '%</b> of <b>' + new_total_percent + '%</b></p>' +
 				'</a>' +
 
 				'<button type="button" style="display: none; margin: 10px 10px 0px 0px;" onclick="erase(this.id)" id="' + new_category_name + '"' +
@@ -401,19 +426,19 @@ function edit(category_name){
 
 				'<div id="edit_' + new_category_name_id + '" style="display: none">' +
 					'<form id="editCategoryForm" class="form edit_form">' +
-					'<div class="form-group ">' +
+					'<div class="form-group">' +
 						'<label for="new_category_name">New Category Name</label>' +
 						'<input type="text" class="form-control" id="new_category_name" maxlength="15" required name="new_category_name" value="' + new_category_name + '">' +
 					'</div>' +
 
-					'<div class="form-group ">' +
-						'<label for="new_percentage">Enter Total Category Percentage</label>' +
-						'<input type="number" class="form-control" id="new_percentage" required name="new_percentage"' + Number(new_percentage) + '">' +
+					'<div class="form-group">' +
+						'<label for="new_total_percent">Enter Total Category Percentage</label>' +
+						'<input type="number" class="form-control" id="new_total_percent" required name="new_total_percent" value="' + Number(new_total_percent) + '">' +
 					'</div>' +
 
 					'<div class="submit">' +
 						'<button type="button" id="' + new_category_name + '" onclick="cancelEditCategory(this.id)" class="btn btn-warning btn-lg cancel_button">Cancel</button>'  +
-						'<input type="submit" id="submitEdit" class="btn btn-success btn-lg" value="Confirm Edit"></input>' +
+						'<input type="submit" id="submitEdit" class="btn btn-success btn-lg" value="Confirm"></input>' +
 					'</div>' +
 					'</form>' +
 				'</div>' +
@@ -421,8 +446,9 @@ function edit(category_name){
 
 			var bubble = document.getElementById("bubble_" + category_name_id);
 			bubble.outerHTML  = updatedCategoryHTML;
+			$.post(parsedURL, {new_current_percent, new_total_percent, new_category_name, category_name});
+			cancel_edit_mode();
+			update_course();
 		});
-		cancel_edit_mode();
-		update_course();
 	});
 }

@@ -31,46 +31,51 @@
     <section id="header">
       <div>
           <a href="/" class="main_logoff_button">
-              <button type="button" class="btn buttons btn-lg">Log Off</button>
+              <button type="button" class="btn btn-danger btn-lg">Log Off</button>
           </a>
       </div>
       <br/>
       <h1 class="welcome_header">Welcome </h1>
       <h1 class="username_header">{{username}}</h1>
-      <br/>
-      <h1 class="header">Select Your Class:</h1>
       <hr>
     </section>
 
     <!-- Classes -->
     <section id="class_page">
       <div>
-        <button type="button" style="display: show" onclick="addClass()" class="btn buttons btn-lg addButton">Add A Class</button>
+        <button type="button" style="display: show" onclick="addClass()" class="btn btn-info btn-lg addButton">Add a Class</button>
+      </div>      
+      <br/>
+      <div class="edit_button" style="display: show">
+          <button type="button" style="display: show" onclick="edit_mode()" class="btn bg-info btn-lg editModeButton">Edit Mode</button>
+          <button type="button" style="display: none" onclick="cancel_edit_mode()" class="btn btn-warning btn-lg cancel_editModeButton">Cancel Edit Mode</button>
       </div>
 
       <div id="addClass" style="display: none">
         <form id="addClassForm" class="form">
-          <div class="form-group ">
-            <label for="class_name">Enter Class Code<br/>(e.g. COGS 120)</label>
-            <input type="text" class="form-control" id="class_name" maxlength="9" required name="class_name">
+          <div class="form-group">
+            <label for="class_name">Enter Class Code</label>
+            <input type="text" class="form-control" id="class_name" maxlength="9" required name="class_name" placeholder="(e.g. COGS 120)">
           </div>
 
-          <div class="form-group ">
+          <div class="form-group">
             <label for="professer">Enter Professor Name</label>
-            <input type="text" class="form-control" id="professer" maxlength="15" required name="professer">
+            <input type="text" class="form-control" id="professer" maxlength="15" required name="professer" placeholder="Gupta">
           </div>
 
           <div class="submit">
-            <button type="button" onclick="cancelAddClass()" class="btn buttons btn-lg cancel_button">Cancel</button>
-            <input type="submit" id="submitClass" class="btn buttons btn-lg" value="Add"></input>
+            <button type="button" onclick="cancelAddClass()" class="btn btn-warning btn-lg cancel_button">Cancel</button>
+            <input type="submit" id="submitClass" class="btn btn-success btn-lg" value="Add"></input>
           </div>
         </form>
       </div>
 
       <div class="helper_div" style="display: none">
-          <p class="helper">Nothing Here!</p>
-          <p class="helper">Press Add A Class Above</p>
+          <p class="helper_big">Nothing Here!</p>
+          <p class="helper">Press Add a Class Above</p>
       </div>
+
+      <h1 class="select_helper" style="display: show">Select a Category Below:</h1>
 
       <div class="root-container"></div>
     </section>

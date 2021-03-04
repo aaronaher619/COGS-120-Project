@@ -70,34 +70,34 @@ function requestItems(url) {
 
                     '<div id="edit_' + key_id + '" style="display: none">' +
                         '<form id="editItemForm" class="form edit_form">' +
-                        '<div class="form-group ">' +
-                            '<label for="new_item_name">New Category Item Name</label>' +
-                            '<input type="text" class="form-control" id="new_item_name" maxlength="15" required name="new_item_name" value="' + key + '">' +
-                        '</div>' +
+                            '<div class="form-group ">' +
+                                '<label for="new_item_name">New Category Item Name</label>' +
+                                '<input type="text" class="form-control" id="new_item_name" maxlength="15" required name="new_item_name" value="' + key + '">' +
+                            '</div>' +
 
-                        '<div class="form-group ">' +
-                            '<label for="new_pointsR">New Points Received</label>' +
-                            '<input type="number" class="form-control" id="new_pointsR" required name="new_pointsR" value="' + value['points_received'] + '">' +
-                        '</div>' +
+                            '<div class="form-group ">' +
+                                '<label for="new_pointsR">New Points Received</label>' +
+                                '<input type="number" class="form-control" id="new_pointsR" required name="new_pointsR" value="' + value['points_received'] + '">' +
+                            '</div>' +
 
-                        '<div class="form-group ">' +
-                            '<label for="new_pointsT">New Total Points</label>' +
-                            '<input type="number" class="form-control" id="new_pointsT" required name="new_pointsT" value="' + value['points_total'] + '">' +
-                        '</div>' +
+                            '<div class="form-group ">' +
+                                '<label for="new_pointsT">New Total Points</label>' +
+                                '<input type="number" class="form-control" id="new_pointsT" required name="new_pointsT" value="' + value['points_total'] + '">' +
+                            '</div>' +
 
-                        '<div class="form-group ">' +
-                            '<label for="new_ForT">Is This Grade Finalized or Predicted</label>' +
-                            '<select id="new_ForT" name="new_ForT" required class="form-control">' +
-                                '<option value="">Please select</option>' +
-                                '<option value="Finalized" ' + first_option + '>Finalized</option>' +
-                                '<option value="Predicted" ' + second_option + '>Predicted</option>' +
-                            '</select>' +
-                        '</div>' +
+                            '<div class="form-group ">' +
+                                '<label for="new_ForT">Is This Grade Finalized or Predicted</label>' +
+                                '<select id="new_ForT" name="new_ForT" required class="form-control">' +
+                                    '<option value="">Please select</option>' +
+                                    '<option value="Finalized" ' + first_option + '>Finalized</option>' +
+                                    '<option value="Predicted" ' + second_option + '>Predicted</option>' +
+                                '</select>' +
+                            '</div>' +
 
-                        '<div class="submit">' +
-                            '<button type="button" id="' + key + '" onclick="cancelEditItem(this.id)" class="btn btn-warning btn-lg cancel_button">Cancel</button>'  +
-                            '<input type="submit" id="submitEdit" class="btn btn-success btn-lg" value="Confirm Edit"></input>' +
-                        '</div>' +
+                            '<div class="submit">' +
+                                '<button type="button" id="' + key + '" onclick="cancelEditItem(this.id)" class="btn btn-warning btn-lg cancel_button">Cancel</button>'  +
+                                '<input type="submit" id="submitEdit" class="btn btn-success btn-lg" value="Confirm"></input>' +
+                            '</div>' +
                         '</form>' +
                     '</div>' +
                 '</div>';
@@ -150,34 +150,34 @@ function requestItems(url) {
 
                 '<div id="edit_' + item_name_id + '" style="display: none">' +
                     '<form id="editItemForm" class="form edit_form">' +
-                    '<div class="form-group ">' +
-                        '<label for="new_item_name">New Category Item Name</label>' +
-                        '<input type="text" class="form-control" id="new_item_name" maxlength="15" required name="new_item_name" value="' + item_name + '">' +
-                    '</div>' +
+                        '<div class="form-group ">' +
+                            '<label for="new_item_name">New Category Item Name</label>' +
+                            '<input type="text" class="form-control" id="new_item_name" maxlength="15" required name="new_item_name" value="' + item_name + '">' +
+                        '</div>' +
 
-                    '<div class="form-group ">' +
-                        '<label for="new_pointsR">New Points Received</label>' +
-                        '<input type="number" class="form-control" id="new_pointsR" required name="new_pointsR" value="' + pointsR + '">' +
-                    '</div>' +
+                        '<div class="form-group ">' +
+                            '<label for="new_pointsR">New Points Received</label>' +
+                            '<input type="number" class="form-control" id="new_pointsR" required name="new_pointsR" value="' + pointsR + '">' +
+                        '</div>' +
 
-                    '<div class="form-group ">' +
-                        '<label for="new_pointsT">New Total Points</label>' +
-                        '<input type="number" class="form-control" id="new_pointsT" required name="new_pointsT" value="' + pointsR + '">' +
-                    '</div>' +
+                        '<div class="form-group ">' +
+                            '<label for="new_pointsT">New Total Points</label>' +
+                            '<input type="number" class="form-control" id="new_pointsT" required name="new_pointsT" value="' + pointsR + '">' +
+                        '</div>' +
 
-                    '<div class="form-group ">' +
-                        '<label for="new_ForT">Is This Grade Finalized or Predicted</label>' +
-                        '<select id="new_ForT" name="new_ForT" required class="form-control">' +
-                            '<option value="">Please select</option>' +
-                            '<option value="Finalized" ' + first_option + '>Finalized</option>' +
-                            '<option value="Predicted" ' + second_option + '>Predicted</option>' +
-                        '</select>' +
-                    '</div>' +
+                        '<div class="form-group ">' +
+                            '<label for="new_ForT">Is This Grade Finalized or Predicted</label>' +
+                            '<select id="new_ForT" name="new_ForT" required class="form-control">' +
+                                '<option value="">Please select</option>' +
+                                '<option value="Finalized" ' + first_option + '>Finalized</option>' +
+                                '<option value="Predicted" ' + second_option + '>Predicted</option>' +
+                            '</select>' +
+                        '</div>' +
 
-                    '<div class="submit">' +
-                        '<button type="button" id="' + item_name + '" onclick="cancelEditItem(this.id)" class="btn btn-warning btn-lg cancel_button">Cancel</button>'  +
-                        '<input type="submit" id="submitEdit" class="btn btn-success btn-lg" value="Confirm Edit"></input>' +
-                    '</div>' +
+                        '<div class="submit">' +
+                            '<button type="button" id="' + item_name + '" onclick="cancelEditItem(this.id)" class="btn btn-warning btn-lg cancel_button">Cancel</button>'  +
+                            '<input type="submit" id="submitEdit" class="btn btn-success btn-lg" value="Confirm"></input>' +
+                        '</div>' +
                     '</form>' +
                 '</div>' +
             '</div>';
@@ -442,34 +442,34 @@ function edit(item_name){
 
             '<div id="edit_' + new_item_name_id + '" style="display: none">' +
                 '<form id="editItemForm" class="form edit_form">' +
-                '<div class="form-group ">' +
-                    '<label for="new_item_name">New Category Item Name</label>' +
-                    '<input type="text" class="form-control" id="new_item_name" maxlength="15" required name="new_item_name" value="' + new_item_name + '">' +
-                '</div>' +
+                    '<div class="form-group ">' +
+                        '<label for="new_item_name">New Category Item Name</label>' +
+                        '<input type="text" class="form-control" id="new_item_name" maxlength="15" required name="new_item_name" value="' + new_item_name + '">' +
+                    '</div>' +
 
-                '<div class="form-group ">' +
-                    '<label for="new_pointsR">New Points Received</label>' +
-                    '<input type="number" class="form-control" id="new_pointsR" required name="new_pointsR" value="' + new_pointsR + '">' +
-                '</div>' +
+                    '<div class="form-group ">' +
+                        '<label for="new_pointsR">New Points Received</label>' +
+                        '<input type="number" class="form-control" id="new_pointsR" required name="new_pointsR" value="' + new_pointsR + '">' +
+                    '</div>' +
 
-                '<div class="form-group ">' +
-                    '<label for="new_pointsT">New Total Points</label>' +
-                    '<input type="number" class="form-control" id="new_pointsT" required name="new_pointsT" value="' + new_pointsT + '">' +
-                '</div>' +
+                    '<div class="form-group ">' +
+                        '<label for="new_pointsT">New Total Points</label>' +
+                        '<input type="number" class="form-control" id="new_pointsT" required name="new_pointsT" value="' + new_pointsT + '">' +
+                    '</div>' +
 
-                '<div class="form-group ">' +
-                    '<label for="new_ForT">Is This Grade Finalized or Predicted</label>' +
-                    '<select id="new_ForT" name="new_ForT" required class="form-control">' +
-                        '<option value="">Please select</option>' +
-                        '<option value="Finalized" ' + first_option + '>Finalized</option>' +
-                        '<option value="Predicted" ' + second_option + '>Predicted</option>' +
-                    '</select>' +
-                '</div>' +
+                    '<div class="form-group ">' +
+                        '<label for="new_ForT">Is This Grade Finalized or Predicted</label>' +
+                        '<select id="new_ForT" name="new_ForT" required class="form-control">' +
+                            '<option value="">Please select</option>' +
+                            '<option value="Finalized" ' + first_option + '>Finalized</option>' +
+                            '<option value="Predicted" ' + second_option + '>Predicted</option>' +
+                        '</select>' +
+                    '</div>' +
 
-                '<div class="submit">' +
-                    '<button type="button" id="' + new_item_name + '" onclick="cancelEditItem(this.id)" class="btn btn-warning btn-lg cancel_button">Cancel</button>'  +
-                    '<input type="submit" id="submitEdit" class="btn btn-success btn-lg" value="Confirm Edit"></input>' +
-                '</div>' +
+                    '<div class="submit">' +
+                        '<button type="button" id="' + new_item_name + '" onclick="cancelEditItem(this.id)" class="btn btn-warning btn-lg cancel_button">Cancel</button>'  +
+                        '<input type="submit" id="submitEdit" class="btn btn-success btn-lg" value="Confirm"></input>' +
+                    '</div>' +
                 '</form>' +
             '</div>' +
         '</div>';

@@ -109,6 +109,10 @@ a:link {
     display: block;
 }
 
+.addButton{
+    color: black;
+}
+
 .main_logoff_button{
     margin-right: 5%;
     text-align: right;
@@ -226,6 +230,21 @@ hr{
 	margin-bottom: 0%;
 }
 
+.select_helper{
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 3vw;
+	margin: 10px;
+    padding: 0px;
+}
+
+#editClassForm{
+    background-color: rgb(111, 183, 250);
+    border-radius: 60px;
+    margin: 10px 0px;
+}
+
 /* Footer Section */
 #footer{
     padding: 3% 3%;
@@ -238,7 +257,7 @@ hr{
     color: black;
 }
 
-@media (max-width: 415px) {
+@media (max-width: 1200px) {
     /* Login Screen Section */
     .welcome_header{
         font-size: 15vw;
@@ -270,6 +289,10 @@ hr{
         font-size: 10vw;
     }
 
+    .cancel_button{
+        margin-right: 10px;
+    }
+
     .header{
         font-size: 6vw;
     }
@@ -282,8 +305,17 @@ hr{
         font-size: 5vw;
 	}
 
+	.select_helper{
+		font-size: 6vw;
+		margin: 20px;
+	}
+
     #addClassForm{
         padding: 0% 15%
+    }
+
+    #editClassForm{
+        padding: 10px 10px;
     }
 
     .classes{

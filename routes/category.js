@@ -99,7 +99,6 @@ exports.editData = function(req, res) {
     var item_name = req.body.item_name;
 
     var jsonString = fs.readFileSync('./data.json');
-
     var data = JSON.parse(jsonString);
 
     str = JSON.stringify(data);

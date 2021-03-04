@@ -73,6 +73,12 @@ text-align: center;
     padding: 0px;
 }
 
+#editItemForm{
+	background-color: rgb(111, 183, 250);
+	border-radius: 60px;
+	margin: 10px 0px;
+}
+
 .item_bubble{
 	border: 2px solid black;
 	border-radius: 60px;
@@ -81,16 +87,20 @@ text-align: center;
 	padding: 20px;
 }
 
-.item_bubble:hover{
-	background-color: lightgray;
-}
-
 .final_color{
 	background-color: lightskyblue;
 }
 
+.final_color:hover{
+	background-color: lightseagreen;
+}
+
 .predict_color{
 	background-color: lightgreen;
+}
+
+.predict_color:hover{
+	background-color: lime;
 }
 
 .item_name{
@@ -109,7 +119,7 @@ text-align: center;
 	font-weight: bold;
 }
 
-@media (max-width: 415px) {
+@media (max-width: 1200px) {
 	.class_header{
 		font-size: 10vw;
 	}
@@ -144,8 +154,8 @@ text-align: center;
 		padding: 0% 15%;
 	}
 
-	.edit_form{
-		padding: 0%;
+	#editItemForm{
+		padding: 10px 10px;
 	}
 
 	.select_helper{

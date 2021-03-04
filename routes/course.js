@@ -73,7 +73,7 @@ exports.delData = function(req, res) {
   if(Object.keys(data[username]['classes'][course_name]['categories']).length == 0){
       data[username]['classes'][course_name]['categories']["N/A"] = "N/A";
   }
-  console.log(data[username]['classes'][course_name]['categories'])
+
   var jsonUpdated = JSON.stringify(data, null, 2)
   fs.writeFileSync('./data.json', jsonUpdated)
 
@@ -84,12 +84,12 @@ exports.editData = function(req, res) {
   var username = req.params.username;
   var course_name = req.params.course_name;
 
-  var new_percentage = req.body.new_percentage;
+  var new_current_percent = req.body.new_current_percent;
+  var new_total_percent = req.body.new_total_percent;
   var new_category_name = req.body.new_category_name;
   var category_name = req.body.category_name;
 
   var jsonString = fs.readFileSync('./data.json');
-
   var data = JSON.parse(jsonString);
 
   str = JSON.stringify(data);
@@ -97,9 +97,11 @@ exports.editData = function(req, res) {
 
   var data = JSON.parse(str);
 
-  data[username]['classes'][course_name]['categories'][new_category_name]["total_percent"] = new_percentage;
+  data[username]['classes'][course_name]['categories'][new_category_name]["current_percent"] = new_current_percent;
+  data[username]['classes'][course_name]['categories'][new_category_name]["total_percent"] = new_total_percent;
 
   var jsonUpdated = JSON.stringify(data, null, 2)
   fs.writeFileSync('./data.json', jsonUpdated)
 
-  res.send(new_percentage);}
+  res.send(new_total_percent);
+}
