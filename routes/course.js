@@ -90,9 +90,10 @@ exports.editData = function(req, res) {
   var category_name = req.body.category_name;
 
   var jsonString = fs.readFileSync('./data.json');
-  var full_data = JSON.parse(jsonString);
 
+  var full_data = JSON.parse(jsonString);
   var full_str = JSON.stringify(full_data);
+
   var str = JSON.stringify(full_data[username]['classes'][course_name]['categories']);
 
   str = str.replace(category_name, new_category_name);

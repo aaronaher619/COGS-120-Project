@@ -99,14 +99,22 @@ exports.editData = function(req, res) {
     var item_name = req.body.item_name;
 
     var jsonString = fs.readFileSync('./data.json');
-    var data = JSON.parse(jsonString);
 
-    str = JSON.stringify(data);
+    var full_data = JSON.parse(jsonString);
+    var full_str = JSON.stringify(full_data);
+
+    var str = JSON.stringify(full_data[username]['classes'][course_name]['categories'][category_name]['items']);
+
     str = str.replace(item_name, new_item_name);
-
     var data = JSON.parse(str);
 
-    data[username]['classes'][course_name]['categories'][category_name]['items'][new_item_name] = updatedItem;
+    data[new_item_name] = updatedItem;
+
+    replace_str = JSON.stringify(data);
+    find_str = JSON.stringify(full_data[username]['classes'][course_name]['categories'][category_name]['items']);
+
+    str = full_str.replace(find_str, replace_str);
+    data = JSON.parse(str);
 
     var jsonUpdated = JSON.stringify(data, null, 2)
     fs.writeFileSync('./data.json', jsonUpdated)
