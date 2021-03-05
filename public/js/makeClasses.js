@@ -195,10 +195,18 @@ function erase(class_name){
 
 	var bubble = document.getElementById("bubble_" + class_name_id);
 	bubble.remove();
-	$(".helper_div").show();
-	$(".select_helper").hide();
-	$(".cancel_editModeButton").hide();
-    $(".addButton").show();
+
+	parsedURL = url.concat("/catData");
+	$.get(parsedURL, (res, req) => {
+        console.log("Updating Class");
+
+		if (res.classes.hasOwnProperty('N/A')){
+			$(".helper_div").show();
+            $(".select_helper").hide();
+            $(".cancel_editModeButton").hide();
+            $(".addButton").show();
+		}
+	});
 
 }
 
