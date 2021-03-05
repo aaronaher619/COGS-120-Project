@@ -69,25 +69,25 @@ function requestItems(url) {
                         'class="btn btn-success btn-lg mode editButton">Edit</button>' +
 
                     '<div id="edit_' + key_id + '" style="display: none">' +
-                        '<form id="editItemForm" class="form edit_form">' +
-                            '<div class="form-group ">' +
-                                '<label for="new_item_name">New Category Item Name</label>' +
-                                '<input type="text" class="form-control" id="new_item_name" maxlength="15" required name="new_item_name" value="' + key + '">' +
+                        '<form id="editItemForm_' + key_id + '" class="form edit_form">' +
+                            '<div class="form-group">' +
+                                '<label for="new_item_name_' + key_id + '">New Category Item Name</label>' +
+                                '<input type="text" class="form-control" id="new_item_name_' + key_id + '" maxlength="15" required name="new_item_name_' + key_id + '" value="' + key + '">' +
                             '</div>' +
 
-                            '<div class="form-group ">' +
-                                '<label for="new_pointsR">New Points Received</label>' +
-                                '<input type="number" class="form-control" id="new_pointsR" required name="new_pointsR" value="' + value['points_received'] + '">' +
+                            '<div class="form-group">' +
+                                '<label for="new_pointsR_' + key_id + '">New Points Received</label>' +
+                                '<input type="number" class="form-control" id="new_pointsR_' + key_id + '" required name="new_pointsR_' + key_id + '" value="' + value['points_received'] + '">' +
                             '</div>' +
 
-                            '<div class="form-group ">' +
-                                '<label for="new_pointsT">New Total Points</label>' +
-                                '<input type="number" class="form-control" id="new_pointsT" required name="new_pointsT" value="' + value['points_total'] + '">' +
+                            '<div class="form-group">' +
+                                '<label for="new_pointsT_' + key_id + '">New Total Points</label>' +
+                                '<input type="number" class="form-control" id="new_pointsT_' + key_id + '" required name="new_pointsT_' + key_id + '" value="' + value['points_total'] + '">' +
                             '</div>' +
 
-                            '<div class="form-group ">' +
-                                '<label for="new_ForT">Is This Grade Finalized or Predicted</label>' +
-                                '<select id="new_ForT" name="new_ForT" required class="form-control">' +
+                            '<div class="form-group">' +
+                                '<label for="new_ForT_' + key_id + '">Is This Grade Finalized or Predicted</label>' +
+                                '<select id="new_ForT_' + key_id + '" name="new_ForT_' + key_id + '" required class="form-control">' +
                                     '<option value="">Please select</option>' +
                                     '<option value="Finalized" ' + first_option + '>Finalized</option>' +
                                     '<option value="Predicted" ' + second_option + '>Predicted</option>' +
@@ -96,7 +96,7 @@ function requestItems(url) {
 
                             '<div class="submit">' +
                                 '<button type="button" id="' + key + '" onclick="cancelEditItem(this.id)" class="btn btn-warning btn-lg cancel_button">Cancel</button>'  +
-                                '<input type="submit" id="submitEdit" class="btn btn-success btn-lg" value="Confirm"></input>' +
+                                '<input type="submit" id="submitEdit_' + key_id + '" class="btn btn-success btn-lg" value="Confirm"></input>' +
                             '</div>' +
                         '</form>' +
                     '</div>' +
@@ -149,25 +149,25 @@ function requestItems(url) {
                     'class="btn btn-success btn-lg mode editButton">Edit</button>' +
 
                 '<div id="edit_' + item_name_id + '" style="display: none">' +
-                    '<form id="editItemForm" class="form edit_form">' +
-                        '<div class="form-group ">' +
-                            '<label for="new_item_name">New Category Item Name</label>' +
-                            '<input type="text" class="form-control" id="new_item_name" maxlength="15" required name="new_item_name" value="' + item_name + '">' +
+                    '<form id="editItemForm_' + item_name_id + '" class="form edit_form">' +
+                        '<div class="form-group">' +
+                            '<label for="new_item_name_' + item_name_id + '">New Category Item Name</label>' +
+                            '<input type="text" class="form-control" id="new_item_name_' + item_name_id + '" maxlength="15" required name="new_item_name_' + item_name_id + '" value="' + item_name + '">' +
                         '</div>' +
 
-                        '<div class="form-group ">' +
-                            '<label for="new_pointsR">New Points Received</label>' +
-                            '<input type="number" class="form-control" id="new_pointsR" required name="new_pointsR" value="' + pointsR + '">' +
+                        '<div class="form-group">' +
+                            '<label for="new_pointsR_' + item_name_id + '">New Points Received</label>' +
+                            '<input type="number" class="form-control" id="new_pointsR_' + item_name_id + '" required name="new_pointsR_' + item_name_id + '" value="' + pointsR + '">' +
                         '</div>' +
 
-                        '<div class="form-group ">' +
-                            '<label for="new_pointsT">New Total Points</label>' +
-                            '<input type="number" class="form-control" id="new_pointsT" required name="new_pointsT" value="' + pointsR + '">' +
+                        '<div class="form-group">' +
+                            '<label for="new_pointsT_' + item_name_id + '">New Total Points</label>' +
+                            '<input type="number" class="form-control" id="new_pointsT_' + item_name_id + '" required name="new_pointsT_' + item_name_id + '" value="' + pointsR + '">' +
                         '</div>' +
 
-                        '<div class="form-group ">' +
-                            '<label for="new_ForT">Is This Grade Finalized or Predicted</label>' +
-                            '<select id="new_ForT" name="new_ForT" required class="form-control">' +
+                        '<div class="form-group">' +
+                            '<label for="new_ForT_' + item_name_id + '">Is This Grade Finalized or Predicted</label>' +
+                            '<select id="new_ForT_' + item_name_id + '" name="new_ForT_' + item_name_id + '" required class="form-control">' +
                                 '<option value="">Please select</option>' +
                                 '<option value="Finalized" ' + first_option + '>Finalized</option>' +
                                 '<option value="Predicted" ' + second_option + '>Predicted</option>' +
@@ -176,7 +176,7 @@ function requestItems(url) {
 
                         '<div class="submit">' +
                             '<button type="button" id="' + item_name + '" onclick="cancelEditItem(this.id)" class="btn btn-warning btn-lg cancel_button">Cancel</button>'  +
-                            '<input type="submit" id="submitEdit" class="btn btn-success btn-lg" value="Confirm"></input>' +
+                            '<input type="submit" id="submitEdit_' + item_name_id + '" class="btn btn-success btn-lg" value="Confirm"></input>' +
                         '</div>' +
                     '</form>' +
                 '</div>' +
@@ -386,22 +386,22 @@ function cancelEditItem(item_name){
 function edit(item_name){
     var parsedURL = url.concat("/editData");
 
-    var key_id = item_name.replaceAll(/[^a-zA-Z0-9]/g, "");
+    var item_name_id = item_name.replaceAll(/[^a-zA-Z0-9]/g, "");
 
-    $("#edit_" + key_id).show();
+    $("#edit_" + item_name_id).show();
     $(".editButton").hide();
     $(".deleteButton").hide();
     $(".cancel_editModeButton").hide();
 
-    $('#editItemForm').submit(function(e){
+    $('#editItemForm_' + item_name_id).submit(function(e){
         console.log("Editing " + item_name);
         e.preventDefault();
 
-        var new_item_name = $('#new_item_name').val();
-        var new_pointsR = $('#new_pointsR').val();
-        var new_pointsT = $('#new_pointsT').val();
+        var new_item_name = $('#new_item_name_' + item_name_id).val();
+        var new_pointsR = $('#new_pointsR_' + item_name_id).val();
+        var new_pointsT = $('#new_pointsT_' + item_name_id).val();
         var new_grade = ((Number(new_pointsR) * 100) / Number(new_pointsT)).toFixed(2);
-        var new_ForT = $('#new_ForT').val();
+        var new_ForT = $('#new_ForT_' + item_name_id).val();
 
         $.post(parsedURL, {
             updatedItem: {
@@ -425,7 +425,6 @@ function edit(item_name){
             second_option = "selected";
         }
         var new_item_name_id = new_item_name.replaceAll(/[^a-zA-Z0-9]/g, "");
-        var item_name_id = item_name.replaceAll(/[^a-zA-Z0-9]/g, "");
 
         var updatedItemHTML =
         '<div class="container-fluid item_bubble ' + bubble_color + '" id="bubble_' + new_item_name_id + '">' +
@@ -441,25 +440,25 @@ function edit(item_name){
                 'class="btn btn-success btn-lg mode editButton">Edit</button>' +
 
             '<div id="edit_' + new_item_name_id + '" style="display: none">' +
-                '<form id="editItemForm" class="form edit_form">' +
+                '<form id="editItemForm_' + new_item_name_id + '" class="form edit_form">' +
                     '<div class="form-group ">' +
-                        '<label for="new_item_name">New Category Item Name</label>' +
-                        '<input type="text" class="form-control" id="new_item_name" maxlength="15" required name="new_item_name" value="' + new_item_name + '">' +
+                        '<label for="new_item_name_' + new_item_name_id + '">New Category Item Name</label>' +
+                        '<input type="text" class="form-control" id="new_item_name_' + new_item_name_id + '" maxlength="15" required name="new_item_name_' + new_item_name_id + '" value="' + new_item_name + '">' +
                     '</div>' +
 
                     '<div class="form-group ">' +
-                        '<label for="new_pointsR">New Points Received</label>' +
-                        '<input type="number" class="form-control" id="new_pointsR" required name="new_pointsR" value="' + new_pointsR + '">' +
+                        '<label for="new_pointsR_' + new_item_name_id + '">New Points Received</label>' +
+                        '<input type="number" class="form-control" id="new_pointsR_' + new_item_name_id + '" required name="new_pointsR_' + new_item_name_id + '" value="' + new_pointsR + '">' +
                     '</div>' +
 
                     '<div class="form-group ">' +
-                        '<label for="new_pointsT">New Total Points</label>' +
-                        '<input type="number" class="form-control" id="new_pointsT" required name="new_pointsT" value="' + new_pointsT + '">' +
+                        '<label for="new_pointsT_' + new_item_name_id + '">New Total Points</label>' +
+                        '<input type="number" class="form-control" id="new_pointsT_' + new_item_name_id + '" required name="new_pointsT_' + new_item_name_id + '" value="' + new_pointsT + '">' +
                     '</div>' +
 
                     '<div class="form-group ">' +
-                        '<label for="new_ForT">Is This Grade Finalized or Predicted</label>' +
-                        '<select id="new_ForT" name="new_ForT" required class="form-control">' +
+                        '<label for="new_ForT_' + new_item_name_id + '">Is This Grade Finalized or Predicted</label>' +
+                        '<select id="new_ForT_' + new_item_name_id + '" name="new_ForT_' + new_item_name_id + '" required class="form-control">' +
                             '<option value="">Please select</option>' +
                             '<option value="Finalized" ' + first_option + '>Finalized</option>' +
                             '<option value="Predicted" ' + second_option + '>Predicted</option>' +
@@ -468,7 +467,7 @@ function edit(item_name){
 
                     '<div class="submit">' +
                         '<button type="button" id="' + new_item_name + '" onclick="cancelEditItem(this.id)" class="btn btn-warning btn-lg cancel_button">Cancel</button>'  +
-                        '<input type="submit" id="submitEdit" class="btn btn-success btn-lg" value="Confirm"></input>' +
+                        '<input type="submit" id="submitEdit_' + new_item_name_id + '" class="btn btn-success btn-lg" value="Confirm"></input>' +
                     '</div>' +
                 '</form>' +
             '</div>' +

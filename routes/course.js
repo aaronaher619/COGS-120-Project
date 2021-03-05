@@ -90,15 +90,24 @@ exports.editData = function(req, res) {
   var category_name = req.body.category_name;
 
   var jsonString = fs.readFileSync('./data.json');
-  var data = JSON.parse(jsonString);
+  var full_data = JSON.parse(jsonString);
 
-  str = JSON.stringify(data);
+  var full_str = JSON.stringify(full_data);
+  var str = JSON.stringify(full_data[username]['classes'][course_name]['categories']);
+
   str = str.replace(category_name, new_category_name);
-
   var data = JSON.parse(str);
 
-  data[username]['classes'][course_name]['categories'][new_category_name]["current_percent"] = new_current_percent;
-  data[username]['classes'][course_name]['categories'][new_category_name]["total_percent"] = new_total_percent;
+  data[new_category_name]["current_percent"] = new_current_percent;
+  data[new_category_name]["total_percent"] = new_total_percent;
+  console.log(data);
+  console.log(full_data[username]['classes'][course_name]['categories']);
+
+  replace_str = JSON.stringify(data);
+  find_str = JSON.stringify(full_data[username]['classes'][course_name]['categories']);
+
+  str = full_str.replace(find_str, replace_str);
+  data = JSON.parse(str);
 
   var jsonUpdated = JSON.stringify(data, null, 2)
   fs.writeFileSync('./data.json', jsonUpdated)

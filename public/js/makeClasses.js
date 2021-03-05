@@ -50,20 +50,20 @@ function requestClasses (url) {
 						'class="btn btn-success btn-lg mode editButton">Edit</button>' +
 
 					'<div id="edit_' + key_id + '" style="display: none">' +
-						'<form id="editClassForm" class="form edit_form">' +
+						'<form id="editClassForm_' + key_id + '" class="form edit_form">' +
 							'<div class="form-group">' +
-								'<label for="new_class_name">New Class Name</label>' +
-								'<input type="text" class="form-control" id="new_class_name" maxlength="15" required name="new_class_name" value="' + key + '">' +
+								'<label for="new_class_name_' + key_id + '">New Class Name</label>' +
+								'<input type="text" class="form-control" id="new_class_name_' + key_id + '" maxlength="9" required name="new_class_name_' + key_id + '" value="' + key + '">' +
 							'</div>' +
 
 							'<div class="form-group">' +
-								'<label for="new_professer">New Professer Name</label>' +
-								'<input type="text" class="form-control" id="new_professer" required name="new_professer" value="' + value["professer"] + '">' +
+								'<label for="new_professer_' + key_id + '">New Professer Name</label>' +
+								'<input type="text" class="form-control" id="new_professer_' + key_id + '" maxlength="15" required name="new_professer_' + key_id + '" value="' + value["professer"] + '">' +
 							'</div>' +
 
 							'<div class="submit">' +
 								'<button type="button" id="' + key + '" onclick="cancelEditClass(this.id)" class="btn btn-warning btn-lg cancel_button">Cancel</button>'  +
-								'<input type="submit" id="submitEdit" class="btn btn-success btn-lg" value="Confirm"></input>' +
+								'<input type="submit" id="submitEdit_' + key_id + '" class="btn btn-success btn-lg" value="Confirm"></input>' +
 							'</div>' +
 						'</form>' +
 					'</div>' +
@@ -110,20 +110,20 @@ function requestClasses (url) {
 					'class="btn btn-success btn-lg mode editButton">Edit</button>' +
 
 				'<div id="edit_' + class_name_id + '" style="display: none">' +
-					'<form id="editClassForm" class="form edit_form">' +
+					'<form id="editClassForm_' + class_name_id + '" class="form edit_form">' +
 						'<div class="form-group">' +
-							'<label for="new_class_name">New Class Name</label>' +
-							'<input type="text" class="form-control" id="new_class_name" maxlength="15" required name="new_class_name" value="' + class_name + '">' +
+							'<label for="new_class_name_' + class_name_id + '">New Class Name</label>' +
+							'<input type="text" class="form-control" id="new_class_name_' + class_name_id + '" maxlength="9" required name="new_class_name_' + class_name_id + '" value="' + class_name + '">' +
 						'</div>' +
 
 						'<div class="form-group">' +
-							'<label for="new_professer">New Professer Name</label>' +
-							'<input type="text" class="form-control" id="new_professer" required name="new_professer" value="' + professer + '">' +
+							'<label for="new_professer_' + class_name_id + '">New Professer Name</label>' +
+							'<input type="text" class="form-control" id="new_professer_' + class_name_id + '" maxlength="15" required name="new_professer_' + class_name_id + '" value="' + professer + '">' +
 						'</div>' +
 
 						'<div class="submit">' +
 							'<button type="button" id="' + class_name + '" onclick="cancelEditClass(this.id)" class="btn btn-warning btn-lg cancel_button">Cancel</button>'  +
-							'<input type="submit" id="submitEdit" class="btn btn-success btn-lg" value="Confirm"></input>' +
+							'<input type="submit" id="submitEdit_' + class_name_id + '" class="btn btn-success btn-lg" value="Confirm"></input>' +
 						'</div>' +
 					'</form>' +
 				'</div>' +
@@ -196,8 +196,8 @@ function erase(class_name){
 	var bubble = document.getElementById("bubble_" + class_name_id);
 	bubble.remove();
 
-	parsedURL = url.concat("/catData");
-	$.get(parsedURL, (res, req) => {
+	getURL = url.concat("/catData");
+	$.get(getURL, (res, req) => {
         console.log("Updating Class");
 
 		if (res.classes.hasOwnProperty('N/A')){
@@ -229,58 +229,62 @@ function edit(class_name){
     $(".deleteButton").hide();
     $(".cancel_editModeButton").hide();
 
-	$('#editClassForm').submit(function(e){
+	$('#editClassForm_' + class_name_id).submit(function(e){
 		console.log("Editing " + class_name);
 		e.preventDefault();
 
-		var new_class_name = $('#new_class_name').val();
-		var new_professer = $('#new_professer').val();
+		var new_class_name = $('#new_class_name_' + class_name_id).val();
+		var new_professer = $('#new_professer_' + class_name_id).val();
 		var new_class_name_id = new_class_name.replaceAll(/[^a-zA-Z0-9]/g, "");
 
-		var updatedCategoryHTML =
-		'<div class="container-fluid classes class_bubble" id="bubble_' + new_class_name_id + '">' +
-			'<a href="all_courses/course/' + new_class_name + '" class="" style="display:block">' +
-				'<div class="row align-items-center">' +
-					'<div class="col-8 class_column">' +
-						'<h3 class="class_name">' + new_class_name + '</h3>' +
-						'<p class="prof">' + new_professer + '</p>' +
-					'</div>' +
+		var getURL = url.concat("/catData");
+		$.get(getURL, (res, req) => {
 
-					'<div class="col-auto grade_column">' +
-						'<h3 class="grade">N/A</h3>' +
+			var updatedCategoryHTML =
+			'<div class="container-fluid classes class_bubble" id="bubble_' + new_class_name_id + '">' +
+				'<a href="all_courses/course/' + new_class_name + '" class="" style="display:block">' +
+					'<div class="row align-items-center">' +
+						'<div class="col-8 class_column">' +
+							'<h3 class="class_name">' + new_class_name + '</h3>' +
+							'<p class="prof">' + new_professer + '</p>' +
+						'</div>' +
+
+						'<div class="col-auto grade_column">' +
+							'<h3 class="grade">' + res['classes'][class_name]["grade"] + '</h3>' +
+						'</div>' +
 					'</div>' +
+				'</a>'+
+
+				'<button type="button" style="display: none; margin: 10px 10px 0px 0px;" onclick="erase(this.id)" id="' + new_class_name + '"' +
+					'class="btn btn-danger btn-lg mode deleteButton">Delete</button>' +
+
+				'<button type="button" style="display: none; margin-top: 10px" onclick="edit(this.id)"   id="' + new_class_name + '"' +
+					'class="btn btn-success btn-lg mode editButton">Edit</button>' +
+
+				'<div id="edit_' + new_class_name_id + '" style="display: none">' +
+					'<form id="editClassForm_' + new_class_name_id + '" class="form edit_form">' +
+						'<div class="form-group">' +
+							'<label for="new_class_name_' + new_class_name_id + '">New Class Name</label>' +
+							'<input type="text" class="form-control" id="new_class_name_' + new_class_name_id + '" maxlength="9" required name="new_class_name_' + new_class_name_id + '" value="' + new_class_name + '">' +
+						'</div>' +
+
+						'<div class="form-group">' +
+							'<label for="new_professer_' + new_class_name_id + '">New Professer Name</label>' +
+							'<input type="text" class="form-control" id="new_professer_' + new_class_name_id + '" maxlength="15" required name="new_professer_' + new_class_name_id + '" value="' + new_professer + '">' +
+						'</div>' +
+
+						'<div class="submit">' +
+							'<button type="button" id="' + new_class_name + '" onclick="cancelEditClass(this.id)" class="btn btn-warning btn-lg cancel_button">Cancel</button>'  +
+							'<input type="submit" id="submitEdit_' + new_class_name_id + '" class="btn btn-success btn-lg" value="Confirm"></input>' +
+						'</div>' +
+					'</form>' +
 				'</div>' +
-			'</a>'+
+			'</div>';
 
-			'<button type="button" style="display: none; margin: 10px 10px 0px 0px;" onclick="erase(this.id)" id="' + new_class_name + '"' +
-				'class="btn btn-danger btn-lg mode deleteButton">Delete</button>' +
-
-			'<button type="button" style="display: none; margin-top: 10px" onclick="edit(this.id)"   id="' + new_class_name + '"' +
-				'class="btn btn-success btn-lg mode editButton">Edit</button>' +
-
-			'<div id="edit_' + new_class_name_id + '" style="display: none">' +
-				'<form id="editClassForm" class="form edit_form">' +
-					'<div class="form-group">' +
-						'<label for="new_class_name">New Class Name</label>' +
-						'<input type="text" class="form-control" id="new_class_name" maxlength="15" required name="new_class_name" value="' + new_class_name + '">' +
-					'</div>' +
-
-					'<div class="form-group">' +
-						'<label for="new_professer">New Professer Name</label>' +
-						'<input type="text" class="form-control" id="new_professer" required name="new_professer" value="' + new_professer + '">' +
-					'</div>' +
-
-					'<div class="submit">' +
-						'<button type="button" id="' + new_class_name + '" onclick="cancelEditClass(this.id)" class="btn btn-warning btn-lg cancel_button">Cancel</button>'  +
-						'<input type="submit" id="submitEdit" class="btn btn-success btn-lg" value="Confirm"></input>' +
-					'</div>' +
-				'</form>' +
-			'</div>' +
-		'</div>';
-
-		var bubble = document.getElementById("bubble_" + class_name_id);
-		bubble.outerHTML  = updatedCategoryHTML;
-		$.post(parsedURL, {new_professer, new_class_name, class_name});
-		cancel_edit_mode();
+			var bubble = document.getElementById("bubble_" + class_name_id);
+			bubble.outerHTML  = updatedCategoryHTML;
+			$.post(parsedURL, {new_professer, new_class_name, class_name});
+			cancel_edit_mode();
+		});
 	});
 }

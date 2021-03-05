@@ -65,20 +65,20 @@ function requestCategories (url) {
 						'class="btn btn-success btn-lg mode editButton">Edit</button>' +
 
 					'<div id="edit_' + key_id + '" style="display: none">' +
-						'<form id="editCategoryForm" class="form edit_form">' +
+						'<form id="editCategoryForm_' + key_id + '" class="form edit_form">' +
 						'<div class="form-group">' +
-							'<label for="new_category_name">New Category Name</label>' +
-							'<input type="text" class="form-control" id="new_category_name" maxlength="15" required name="new_category_name" value="' + key + '">' +
+							'<label for="new_category_name_' + key_id + '">New Category Name</label>' +
+							'<input type="text" class="form-control" id="new_category_name_' + key_id + '" maxlength="15" required name="new_category_name_' + key_id + '" value="' + key + '">' +
 						'</div>' +
 
 						'<div class="form-group">' +
-							'<label for="new_total_percent">Enter Total Category Percentage</label>' +
-							'<input type="number" class="form-control" id="new_total_percent" required name="new_total_percent" value="' + Number(value['total_percent']) + '">' +
+							'<label for="new_total_percent_' + key_id + '">New Category Weight/Percentage</label>' +
+							'<input type="number" class="form-control" id="new_total_percent_' + key_id + '" required name="new_total_percent_' + key_id + '" value="' + Number(value['total_percent']) + '">' +
 						'</div>' +
 
 						'<div class="submit">' +
 							'<button type="button" id="' + key + '" onclick="cancelEditCategory(this.id)" class="btn btn-warning btn-lg cancel_button">Cancel</button>'  +
-							'<input type="submit" id="submitEdit" class="btn btn-success btn-lg submitEdit_button" value="Confirm"></input>' +
+							'<input type="submit" id="submitEdit_' + key_id + '" class="btn btn-success btn-lg submitEdit_button" value="Confirm"></input>' +
 						'</div>' +
 						'</form>' +
 					'</div>' +
@@ -155,20 +155,20 @@ function requestCategories (url) {
 					'class="btn btn-success btn-lg mode editButton">Edit</button>' +
 
 				'<div id="edit_' + category_name_id + '" style="display: none">' +
-					'<form id="editCategoryForm" class="form edit_form">' +
+					'<form id="editCategoryForm_' + category_name_id + '" class="form edit_form">' +
 					'<div class="form-group">' +
-						'<label for="new_category_name">New Category Name</label>' +
-						'<input type="text" class="form-control" id="new_category_name" maxlength="15" required name="new_category_name" value="' + category_name + '">' +
+						'<label for="new_category_name_' + category_name_id + '">New Category Name</label>' +
+						'<input type="text" class="form-control" id="new_category_name_' + category_name_id + '" maxlength="15" required name="new_category_name_' + category_name_id + '" value="' + category_name + '">' +
 					'</div>' +
 
 					'<div class="form-group">' +
-						'<label for="new_total_percent">Enter Total Category Percentage</label>' +
-						'<input type="number" class="form-control" id="new_total_percent" required name="new_total_percent" value="' + Number(total_percent) + '">' +
+						'<label for="new_total_percent_' + category_name_id + '">New Category Weight/Percentage</label>' +
+						'<input type="number" class="form-control" id="new_total_percent_' + category_name_id + '" required name="new_total_percent_' + category_name_id + '" value="' + Number(total_percent) + '">' +
 					'</div>' +
 
 					'<div class="submit">' +
 						'<button type="button" id="' + category_name + '" onclick="cancelEditCategory(this.id)" class="btn btn-warning btn-lg cancel_button">Cancel</button>'  +
-						'<input type="submit" id="submitEdit" class="btn btn-success btn-lg" value="Confirm"></input>' +
+						'<input type="submit" id="submitEdit_' + category_name_id + '" class="btn btn-success btn-lg" value="Confirm"></input>' +
 					'</div>' +
 					'</form>' +
 				'</div>' +
@@ -209,7 +209,7 @@ function requestCategories (url) {
 
 function addCategory() {
 	$("#addCategory").show();
-	$(".addButton").hide();	
+	$(".addButton").hide();
 	$(".editModeButton").hide();
 }
 
@@ -387,7 +387,6 @@ function cancelEditCategory(category_name){
 
 function edit(category_name){
     var parsedURL = url.concat("/editData");
-
     var category_name_id = category_name.replaceAll(/[^a-zA-Z0-9]/g, "");
 
     $("#edit_" + category_name_id).show();
@@ -395,12 +394,12 @@ function edit(category_name){
     $(".deleteButton").hide();
     $(".cancel_editModeButton").hide();
 
-	$('#editCategoryForm').submit(function(e){
+	$('#editCategoryForm_' + category_name_id).submit(function(e){
 		console.log("Editing " + category_name);
 		e.preventDefault();
 
-		var new_category_name = $('#new_category_name').val();
-		var new_total_percent = $('#new_total_percent').val();
+		var new_category_name = $('#new_category_name_' + category_name_id).val();
+		var new_total_percent = $('#new_total_percent_' + category_name_id).val();
 		var new_current_percent;
 
 		var getURL = url.concat("/catData");
@@ -425,25 +424,24 @@ function edit(category_name){
 					'class="btn btn-success btn-lg mode editButton">Edit</button>' +
 
 				'<div id="edit_' + new_category_name_id + '" style="display: none">' +
-					'<form id="editCategoryForm" class="form edit_form">' +
+					'<form id="editCategoryForm_' + new_category_name_id + '" class="form edit_form">' +
 					'<div class="form-group">' +
-						'<label for="new_category_name">New Category Name</label>' +
-						'<input type="text" class="form-control" id="new_category_name" maxlength="15" required name="new_category_name" value="' + new_category_name + '">' +
+						'<label for="new_category_name_' + new_category_name_id + '">New Category Name</label>' +
+						'<input type="text" class="form-control" id="new_category_name_' + new_category_name_id + '" maxlength="15" required name="new_category_name_' + new_category_name_id + '" value="' + new_category_name + '">' +
 					'</div>' +
 
 					'<div class="form-group">' +
-						'<label for="new_total_percent">Enter Total Category Percentage</label>' +
-						'<input type="number" class="form-control" id="new_total_percent" required name="new_total_percent" value="' + Number(new_total_percent) + '">' +
+						'<label for="new_total_percent_' + new_category_name_id + '">New Category Weight/Percentage</label>' +
+						'<input type="number" class="form-control" id="new_total_percent_' + new_category_name_id + '" required name="new_total_percent_' + new_category_name_id + '" value="' + Number(new_total_percent) + '">' +
 					'</div>' +
 
 					'<div class="submit">' +
 						'<button type="button" id="' + new_category_name + '" onclick="cancelEditCategory(this.id)" class="btn btn-warning btn-lg cancel_button">Cancel</button>'  +
-						'<input type="submit" id="submitEdit" class="btn btn-success btn-lg" value="Confirm"></input>' +
+						'<input type="submit" id="submitEdit_' + new_category_name_id + '" class="btn btn-success btn-lg" value="Confirm"></input>' +
 					'</div>' +
 					'</form>' +
 				'</div>' +
 			'</div>';
-
 			var bubble = document.getElementById("bubble_" + category_name_id);
 			bubble.outerHTML  = updatedCategoryHTML;
 			$.post(parsedURL, {new_current_percent, new_total_percent, new_category_name, category_name});
